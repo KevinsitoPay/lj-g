@@ -6,10 +6,10 @@ export const metadata = {
   keywords: 'how it works, application guide',
 }
 
-function HowItWorks() {
+function Howitworks() {
   return (
-      <h1>HowItWorks</h1>
+      <h1>How It Works</h1>
   )
 }
-export default HowItWorks;
+export default Howitworks;
 

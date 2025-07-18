@@ -1,9 +1,11 @@
 'use client';
+import ArrowRight from '../Icons/ArrowRight';
 import React, { useState } from 'react';
 import dynamic from 'next/dynamic';
 import './Calendario.scss';
 import 'react-calendar/dist/Calendar.css';
 import 'react-time-picker/dist/TimePicker.css';
+import Schedule from '../Icons/Schedule';
 
 const Calendar = dynamic(() => import('react-calendar'), { ssr: false });
 const TimePicker = dynamic(() => import('react-time-picker'), { ssr: false });
@@ -31,7 +33,7 @@ const Calendario = () => {
   return (
     <div className="container">
       <div className="text-top">
-        After submitting your appointment, we will contact you to confirm it or future dates based on our schedule.
+       <span><Schedule size="m" /></span> <p>After submitting your appointment, we will contact you to confirm it or future dates based on our schedule. </p>
       </div>
       <form onSubmit={handleSubmit}>
         <Calendar
@@ -51,7 +53,7 @@ const Calendario = () => {
           />
         </div>
         <button type="submit" className="button">
-          Confirm Appointment
+          Confirm Appointment <ArrowRight size="sm" />
         </button>
       </form>
       {submittedData && (

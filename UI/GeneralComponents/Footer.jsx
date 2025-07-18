@@ -2,6 +2,7 @@
 import './Footer.scss';
 import Button from '../Buttons/Button';
 import Calendario from './Calendario';
+import Link from 'next/link';
 
 function Footer() {
 
@@ -17,14 +18,49 @@ function Footer() {
         <div className="footer-box-calendar-schedule"> <Calendario /> </div>
     </div>
     <div className="footer-box-navegation">
-        <div className="footer-box-navegation-logo"> </div>
-        <div className="footer-box-navegation-information"> </div>
-        <div className="footer-box-navegation-services"> </div>
-        <div className="footer-box-navegation-cta"> </div>
+        <div className="footer-box-navegation-logo">
+          <img src="/Images/logo.png" alt="Logo" />
+         </div>
+        <div className="footer-box-navegation-information">
+          <h6> Information </h6>
+          <ul>
+            <li><Link href="/how-it-works">How It Works</Link></li>
+            <li>FAQ</li>
+            <li>Contractors</li>
+            <li>Book a free consultation</li>
+          </ul>
+         </div>
+        <div className="footer-box-navegation-services">
+          <h6> Our services </h6>
+          <ul>
+            <li>Landscaping</li>
+            <li>Maintenance</li>
+            <li>Design</li>
+            <li>Consulting</li>
+          </ul>
+         </div>
+        <div className="footer-box-navegation-cta">
+          <Button text="View our Google Reviews" size="medium" link="/" variant="filled" textColor="#28282A" backgroundColor="#FCFAF8" iconColor="#FFD131" />
+          <div>
+            <p> +1 (999) 999-99-99 <br /> +1 (999) 999-99-99 </p>
+            <ul> 1901 Thornridge Cir. Shiloh, <br /> Hawaii 81063</ul>
+          </div>
+        </div>
      </div>
     <div className="footer-box-cta">
-        <div className="footer-box-cta-text"> </div>
-        <div className="footer-box-cta-phone"> </div>
+        <div className="footer-box-cta-text"> 
+            <h2> If you want to quote a new project or have a particular question...</h2>
+            <span>©LJ&Gonzalez 2025 | Web Development by Monette Developer</span>
+        </div>
+        <div className="footer-box-cta-phone">
+          <h6>Just send us your contact email and we will contact you.</h6>
+          <form class="form-input">
+            <div class="input-wrapper">
+             <input type="text" placeholder="Your email/phone number" />
+               <span class="arrow">→</span>
+            </div>
+            </form>
+         </div>
      </div>
     </div>
   )
