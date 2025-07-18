@@ -1,5 +1,6 @@
 import Navbar from "../UI/GeneralComponents/Navbar"
 import '../Styles/GlobalStyles.scss'
+import Footer from "@/UI/GeneralComponents/Footer"
  function RootLayout({ children }) {
 
 
@@ -13,6 +14,7 @@ import '../Styles/GlobalStyles.scss'
         <Navbar />
         {children}
         <footer>
+          <Footer />
         </footer>
       </body>
     </html>

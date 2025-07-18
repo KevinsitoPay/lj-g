@@ -1,0 +1,37 @@
+.footer-container {
+  background:linear-gradient(to top, rgba(126, 126, 127, 0.5), rgba(40, 40, 42, 0.6)), url('/Images/footer_bkg.jpg');
+  background-size: cover; 
+  background-position: center;
+  height: auto;
+  padding: 104px 185px;
+
+
+.footer-box-calendar {
+    width: auto;
+    height: auto;
+    display: flex;
+    justify-content: space-around;
+
+    .footer-box-calendar-cta {
+    h2{
+      color: var(--bkg-3);
+      .highlight {
+        color: var(--primary-600);
+      }
+    }
+    p {
+      color: var(--bkg-3);
+    }
+
+    width: 50%;
+    img {
+     width: 100%;// Ajusta el ancho
+     height: 300px; // Ajusta la altura
+     object-fit: cover; // Mantiene la proporción de la imagen
+     border-radius: 16px; // Borde redondeado (opcional)
+    }
+}
+
+}
+
+}

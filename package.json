@@ -11,7 +11,9 @@
   "dependencies": {
     "next": "15.3.5",
     "react": "^19.0.0",
+    "react-calendar": "^6.0.0",
     "react-dom": "^19.0.0",
+    "react-time-picker": "^7.0.0",
     "sass": "^1.89.2"
   },
   "devDependencies": {

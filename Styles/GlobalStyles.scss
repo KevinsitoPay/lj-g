@@ -60,6 +60,7 @@
   /*Background Colors*/
   --bkg-1: #ebe3d2;
   --bkg-2: #FBF9F6;
+  --bkg-3: #FCFAF8;
 
   /* Shadows */
 
@@ -107,7 +108,7 @@ body {
 @font-face {
   font-family: "Outfit";
   src: url("/public/Fonts/Outfit/Outfit-Regular.woff2") format("woff2");
-  font-weight: 400;
+  font-weight: 500;
   font-style: normal;
 }
 @font-face {
@@ -120,9 +121,9 @@ body {
 /*Headings and paragraph mixins*/
 @mixin heading-1 {
   font-family: "Gabarito", sans-serif;
-  font-weight: 500;
-  font-size: 4rem;
-  line-height: 4.5rem;
+  font-weight: 600;
+  font-size: 56px;
+  line-height: 56px;
   letter-spacing: -2%;
 
   @media (max-width: 768px) {
@@ -133,9 +134,9 @@ body {
 
 @mixin heading-2 {
   font-family: "Gabarito", sans-serif;
-  font-weight: 500;
-  font-size: 3.5rem;
-  line-height: 4rem;
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 56px;
   letter-spacing: -2%;
 
   @media (max-width: 768px) {
@@ -146,9 +147,9 @@ body {
 
 @mixin heading-3 {
   font-family: "Gabarito", sans-serif;
-  font-weight: 500;
-  font-size: 2.5rem;
-  line-height: 3rem;
+  font-weight: 600;
+  font-size: 39px;
+  line-height: 48px;
   letter-spacing: -2%;
 
   @media (max-width: 768px) {
@@ -159,9 +160,9 @@ body {
 
 @mixin heading-4 {
   font-family: "Gabarito", sans-serif;
-  font-weight: 500;
-  font-size: 2rem;
-  line-height: 2.5rem;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 36px;
   letter-spacing: -2%;
 
   @media (max-width: 768px) {
@@ -171,10 +172,10 @@ body {
 }
 
 @mixin heading-5 {
-  font-family: "Gabarito", sans-serif;
-  font-weight: 500;
-  font-size: 1.5rem;
-  line-height: 2rem;
+  font-family: "Gabarit", sans-serif;
+  font-weight: 600;
+  font-size: 25px;
+  line-height: 32px;
   letter-spacing: -2%;
 
   @media (max-width: 768px) {
@@ -185,9 +186,9 @@ body {
 
 @mixin heading-6 {
   font-family: "Gabarito", sans-serif;
-  font-weight: 500;
-  font-size: 1.25rem;
-  line-height: 1.5rem;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
   letter-spacing: -2%;
 
   @media (max-width: 768px) {
@@ -198,7 +199,7 @@ body {
 
 @mixin heading-button {
   font-family: "Gabarito", sans-serif;
-  font-weight: 500;
+  font-weight: 600;
   font-size: 1.25rem;
   line-height: 1.5rem;
   letter-spacing: -2%;
@@ -210,10 +211,10 @@ body {
 }
 
 @mixin paragraph-default {
-  font-family: "Outfit", sans-serif;
-  font-weight: 400;
-  font-size: 1.125rem;
-  line-height: 1.5rem;
+  font-family: "Gabarito", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
 
   @media (max-width: 768px) {
     font-size: 1rem;
@@ -222,10 +223,10 @@ body {
 }
 
 @mixin paragraph-small {
-  font-family: "Outfit", sans-serif;
-  font-weight: 400;
-  font-size: 1rem;
-  line-height: 1.5rem;
+  font-family: "Gabarito", sans-serif;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
 
   @media (max-width: 768px) {
     font-size: 0.875rem;
@@ -234,8 +235,8 @@ body {
 }
 
 @mixin small-text {
-  font-family: "Outfit", sans-serif;
-  font-weight: 400;
+  font-family: "Gabarito", sans-serif;
+  font-weight: 500;
   font-size: 0.8125rem;
   line-height: 1rem;
 
@@ -246,8 +247,8 @@ body {
 }
 
 @mixin super-small-text {
-  font-family: "Outfit", sans-serif;
-  font-weight: 400;
+  font-family: "Gabarito", sans-serif;
+  font-weight: 500;
   font-size: 0.625rem;
   line-height: 1rem;
 

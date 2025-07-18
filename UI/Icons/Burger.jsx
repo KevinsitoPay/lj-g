@@ -2,6 +2,7 @@ const ICON_SIZES = {
   sm: 16,
   m: 24,
   lg: 32,
+  xl: 72,
 };
 
 const Burger = ({ size = "m", className = "", ...props }) => {

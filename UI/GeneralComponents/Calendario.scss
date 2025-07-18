@@ -1,0 +1,187 @@
+
+.react-calendar .react-calendar__tile:enabled:hover, .react-calendar .react-calendar__tile:enabled:focus{
+  border-radius: 8px;
+  padding: 0px;
+}
+.react-calendar__navigation__label{
+  display: flex;
+  justify-content: center;  
+  align-items: center;      
+  white-space: nowrap;    
+  padding: 0px 16px;
+             
+}
+.container {
+  max-width: 350px;
+  padding: 50px;
+  background-color: #F1572D;
+  border-radius: 16px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  .text-top {
+    margin-bottom: 10px;
+    font-family: 'Gabarito', sans-serif;
+    font-weight: 500;
+    line-height: 24px;
+    font-size:16px;
+    color: white;
+    text-align: left;
+  }
+  .text {
+    margin-bottom: 20px;
+    font-size: 14px;
+  }
+
+  .timeContainer {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+  }
+
+ .button {
+  display: inline-flex;
+  align-items: center;
+  cursor: pointer;
+  margin-top: 16px;
+  padding: 8px 16px;
+  text-decoration: none;
+  border: none;
+  font-family: 'Gabarito', sans-serif;
+  background-color: transparent;
+  color: #ffffff; // Color del texto
+  font-weight: 600;
+  font-size: 16px;
+  gap: 8px; // Espacio entre texto e icono
+
+  &:hover {
+    color: #28282A; // Color al pasar el ratón por encima
+  }
+
+  .icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px; // Tamaño del icono
+  }
+}
+  .selected {
+    margin-top: 20px;
+    font-size: 16px;
+  }
+}
+
+
+
+.react-calendar {
+  border: none !important;
+  background: none !important;
+  border-radius: 8px;
+  overflow: hidden;
+
+
+
+  .react-calendar__month-view__days {
+    background-color: var(--primary-900);
+  }
+
+  .react-calendar__month-view__days__day--weekend {
+    color: var(--bkg-3); /* Color for weekend days */
+  }
+
+  .react-calendar__month-view__days__day--neighboringMonth, .react-calendar__decade-view__years__year--neighboringDecade, .react-calendar__century-view__decades__decade--neighboringCentury {
+    color: var(--bkg-3); /* Color for neighboring days */
+  }
+
+  .react-calendar__month-view__weekdays {
+    
+    background-color: var(--primary-900);
+    color: var(--bkg-3);
+    font-weight: bold;
+    padding: 10px 0;
+    text-align: center;
+  }
+ 
+  .react-calendar__navigation {
+    background-color: var(--primary-900);
+    button {
+      min-width: 44px;
+      border: none;
+      color: var(--bkg-3);
+      font-size: 16px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+  }
+
+  .react-calendar__navigation button:enabled:hover, .react-calendar__navigation button:enabled:focus {
+    background-color: transparent;
+  }
+  .react-calendar__tile:enabled:hover, .react-calendar__tile:enabled:focus{
+    background-color: var(--primary-700);
+  }
+  .react-calendar__tile--hasActive {
+    background: transparent;
+  }
+  .react-calendar__navigation button:disabled {
+    background-color: transparent !important;
+  }
+  .react-calendar .react-calendar__tile--active {
+    background: transparent !important;
+  }
+
+  .react-calendar__tile {
+    max-width: 100%;
+    height: 64px;
+    text-align: center;
+    padding: 10px;
+    font-size: 16px;
+    color: var(--bkg-3);
+  }
+  
+ .react-calendar__tile:disabled {
+    background-color: transparent !important;
+    color: #cccccc8a;
+    cursor: not-allowed;
+  }
+  
+  .react-calendar__tile--now {
+    background: transparent;
+  }
+
+  .react-calendar__tile--active {
+    background: transparent;
+    color: var(--bkg-3);
+    border-radius: 4px;
+  }
+}
+
+.react-calendar-button:hover {
+  background-color: #06f86ba6;
+}
+.react-time-picker {
+  .react-time-picker__wrapper {
+    background-color: var(--bkg-3);
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  .react-time-picker__inputGroup {
+    padding: 0px 16px;
+  }
+  .react-time-picker__inputGroup__input {
+    font-family: inherit;
+    font-size: 16px;
+    padding: 8px 8px;
+    text-align: center;
+    color: var(--text-900);
+  }
+  .react-time-picker__wrapper {
+    align-items: center;
+  }
+}
+
+.selected{
+  font-family: 'Gabarito', sans-serif;
+  font-weight: 500;
+  line-height: 24px;  
+  color: var(--bkg-3);
+}
