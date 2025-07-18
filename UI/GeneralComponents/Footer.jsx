@@ -54,10 +54,10 @@ function Footer() {
         </div>
         <div className="footer-box-cta-phone">
           <h6>Just send us your contact email and we will contact you.</h6>
-          <form class="form-input">
-            <div class="input-wrapper">
+          <form className="form-input">
+            <div className="input-wrapper">
              <input type="text" placeholder="Your email/phone number" />
-               <span class="arrow">→</span>
+               <span className="arrow">→</span>
             </div>
             </form>
          </div>

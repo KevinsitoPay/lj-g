@@ -1,6 +1,6 @@
 .footer-container {
   background: linear-gradient(to top, rgba(126, 126, 127, 0.5), rgba(40, 40, 42, 0.65)), url('/Images/footer_bkg.jpg');
-  background-size: cover; 
+  background-size: cover;
   background-position: center;
   height: auto;
   padding: 104px;
@@ -47,12 +47,25 @@
       font-weight: 500;
       margin-bottom: 24px;
     }
-    p, li, ul {
+    p {
+      color: var(--bkg-3);
+      font-size: 14px;
+      font-weight: 600;
+      padding-top: 16px;
+      font-family: 'open-sans';
+    }
+    li {
       color: var(--bkg-3);
       font-size: 16px;
-      font-family: 'open-sans';
       padding-bottom: 8px;
-      line-height: 20px; 
+      font-family: 'open-sans';
+    }
+    ul {
+      color: var(--bkg-3);
+      font-size: 16px;
+      padding-bottom: 8px;
+      line-height: 20px;
+      font-family: 'open-sans';
     }
     a {
       text-decoration: none;
@@ -71,7 +84,10 @@
       color: var(--bkg-3);
       padding-bottom: 48px;
     }
-    span, h6 {
+    span {
+      color: var(--bkg-3);
+    }
+    h6 {
       color: var(--bkg-3);
       font-weight: 500;
       margin-bottom: 8px;
@@ -91,7 +107,7 @@
     border-radius: 16px;
     padding: 10px 15px;
     background-color: transparent;
-    width: 600px; // Ajusta el ancho según sea necesario
+    width: 600px;
   }
 
   .input-wrapper input {
@@ -115,6 +131,9 @@
   }
 }
 
+
+//responsive
+
 @media (max-width: 768px) { // Tablets
   .footer-container {
     padding: 50px;
@@ -122,23 +141,23 @@
     .footer-box-calendar,
     .footer-box-navegation,
     .footer-box-cta {
-      display: block; // Cambio a bloque para mejor ajuste en pantallas más pequeñas
+      display: block;
       text-align: center;
 
       h2,
       p {
-        width: 100%; // Asegura que ocupen todo el ancho disponible
+        width: 100%;
       }
 
       img {
         width: 100%;
-        height: auto; // Mantiene la proporción de la imagen
+        height: auto;
       }
     }
 
     .input-wrapper {
       width: 100%;
-      max-width: 400px; // Ajusta el ancho del input
+      max-width: 400px;
     }
   }
 }
@@ -151,11 +170,11 @@
     .footer-box-navegation,
     .footer-box-cta {
       h2 {
-        font-size: 24px; // Ajusta el tamaño del texto
+        font-size: 24px;
       }
 
       p, ul, li {
-        font-size: 14px; // Ajusta el tamaño del texto
+        font-size: 14px;
       }
     }
 
