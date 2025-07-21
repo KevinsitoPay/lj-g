@@ -12,4 +12,3 @@ function Howitworks() {
   )
 }
 export default Howitworks;
-

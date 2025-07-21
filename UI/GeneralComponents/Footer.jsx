@@ -56,7 +56,7 @@ function Footer() {
           <h6>Just send us your contact email and we will contact you.</h6>
           <form className="form-input">
             <div className="input-wrapper">
-             <input type="text" placeholder="Your email/phone number" />
+             <input type="text" placeholder="Your email / phone number" />
                <span className="arrow">→</span>
             </div>
             </form>
