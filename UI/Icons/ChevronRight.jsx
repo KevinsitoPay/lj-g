@@ -1,4 +1,5 @@
 const ICON_SIZES = {
+  xm: 10,
   sm: 16,
   m: 24,
   lg: 32,
