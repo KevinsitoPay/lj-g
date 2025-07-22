@@ -13,6 +13,10 @@ function Navbar() {
     setDropdownOpen(false); // Cierra el dropdown al abrir/cerrar el menú
   };
 
+  const toggleDropdown = () => {
+    setDropdownOpen(!dropdownOpen);
+  };
+
   return (
     <div className="menu-container">
       <div className="logo-container">
@@ -32,12 +36,10 @@ function Navbar() {
         <nav>
           <ul>
             <li><Link href="/how-it-works">How It Works</Link></li>
-            <li 
-              className="dropdown" 
-              onMouseEnter={() => setDropdownOpen(true)} 
-              onMouseLeave={() => setDropdownOpen(false)}
-            >
-              <Link href="/services">Services <ChevronDown size="xm" /></Link>
+            <li className="dropdown" onClick={toggleDropdown}>
+              <div className="dropdown-toggle">
+                Services <ChevronDown size="xm" />
+              </div>
               {(dropdownOpen || menuOpen) && (
                 <ul className="dropdown-content">
                   <li><Link href="/services/landscaping">Landscaping</Link></li>
@@ -57,6 +59,7 @@ function Navbar() {
 }
 
 export default Navbar;
+
 
 
 

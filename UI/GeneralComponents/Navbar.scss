@@ -1,3 +1,5 @@
+// styles/Navbar.scss
+
 .menu-container {
   display: flex;
   justify-content: space-between;
@@ -6,6 +8,11 @@
   padding: 16px 104px;
   position: relative;
   z-index: 1000;
+
+  .dropdown-toggle {
+    cursor: pointer;
+    color: white;
+  }
 
   .logo-container {
     img {
@@ -51,14 +58,14 @@
           .dropdown-content {
             display: none;
             position: absolute;
-            background-color: rgba(0, 0, 0, 0.1);
-            top: 100%;
+            background-color: rgba(0, 0, 0, 0.1); // Mejora la visibilidad
+            top: 100%; // Se coloca justo debajo del padre
             left: 0;
             min-width: 160px;
             z-index: 1000;
-            border-radius: 16px;
+            border-radius: 8px;
             list-style: none;
-            padding: 0;
+            padding: 10px 0; // Mejor espaciado para elementos
 
             li {
               a {
@@ -69,14 +76,15 @@
 
                 &:hover {
                   background-color: transparent;
-                  border-radius: 16px;
+                  border-radius: 8px;
                   color: var(--accent-900);
                 }
               }
             }
           }
 
-          &:hover .dropdown-content {
+          &:hover .dropdown-content,
+          .dropdown-content:hover {
             display: block;
           }
         }
@@ -115,6 +123,20 @@
 
           li {
             margin: 20px 0;
+            position: relative;
+
+            .dropdown-content {
+              display: none;
+              position: relative;
+              background-color: rgba(0, 0, 0, 0);
+              padding: 4px;
+              border-radius: 8px;
+            }
+
+            &:hover .dropdown-content,
+            .dropdown-content:hover {
+              display: block;
+            }
           }
         }
       }
@@ -122,6 +144,7 @@
   }
 
   @media (max-width: 768px) {
+    padding: 8px 30px;
     .hamburger {
       display: flex;
     }
@@ -130,3 +153,4 @@
     }
   }
 }
+
