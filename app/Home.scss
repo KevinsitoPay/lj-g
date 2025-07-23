@@ -1,0 +1,72 @@
+.hero-container {
+  background: linear-gradient(to top, rgba(126, 126, 127, 0.5), rgba(40, 40, 42, 0.3)), url('/Images/house-footer.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 700px;
+  padding: 104px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+  .hero-content {
+    max-width: 650px;
+    margin: 0 auto;
+    color: var(--bkg-3);
+
+    h1 {
+      margin-bottom: 8px;
+    }
+
+    p {
+      margin-bottom: 24px;
+    }
+
+    .highlight {
+      color: var(--accent-900);
+    }
+  }
+}
+
+/* Responsive para tabletas */
+@media (max-width: 1024px) {
+  .hero-container {
+    padding: 80px;
+    height: 600px; /* Ajusta la altura en tabletas */
+    
+    .hero-content {
+      max-width: 90%; /* Reduce el ancho máximo */
+      
+      h1 {
+        font-size: 36px; /* Ajusta el tamaño de fuente */
+        line-height: 36px;
+      }
+      
+      p {
+        font-size: 1em;
+        line-height: 1.4; /* Mejora la legibilidad */
+      }
+    }
+  }
+}
+
+/* Responsive para móviles */
+@media (max-width: 768px) {
+  .hero-container {
+    height: 600px; /* Deja que la altura se ajuste automáticamente */
+    
+    .hero-content {
+      max-width: 100%; /* Usa todo el ancho disponible */
+      
+      h1 {
+        font-size: 36px;
+        line-height: 36px;
+      }
+      
+      p {
+        font-size: 0.9em;
+      }
+    }
+  }
+}
