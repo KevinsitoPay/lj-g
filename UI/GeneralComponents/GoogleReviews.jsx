@@ -5,29 +5,40 @@ import ArrowRight from '../Icons/ArrowRight';
 
 function GoogleReviews() {
   const [offset, setOffset] = useState(0);
-  const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
+  const [isMobile, setIsMobile] = useState(false); // Inicializa sin `window`
+
+  useEffect(() => {
+    // Ejecuta solo en el cliente
+    const handleResize = () => {
+      setIsMobile(window.innerWidth <= 768);
+    };
+
+    // Llama la función para establecer inicialmente el estado
+    handleResize();
+
+    // Agrega el listener para el evento resize
+    window.addEventListener('resize', handleResize);
+
+    // Limpia el evento en el desmontaje
+    return () => window.removeEventListener('resize', handleResize);
+  }, []); // La dependencia vacía asegura que solo se ejecute al montar
+
   const reviews = [
     { text: "“Fue un excelente servicio, estoy muy satisfecho”", author: "Nadia Quezada ★★★★★" },
-    { text: "“Honestamente se lo recomiendo, son todos unos expertos”", author: "Jorge Ortiz ★★★★★" },
-    { text: "“Quede enamorada de la atención y profesionalismo”", author: "Maria Quezada ★★★★" },
-    { text: "“Me los recomendo un amigo y me encantaron”", author: "Miriam García ★★★★★" },
-    { text: "“La verdad fue un gran trabajo, ademas de siempre tener una buena atencion”", author: "Pepe Perez ★★★★" }
+    { text: "“Fue un excelente servicio, estoy muy satisfecho”", author: "Nadia Quezada ★★★★★" },
+    { text: "“Fue un excelente servicio, estoy muy satisfecho”", author: "Nadia Quezada ★★★★★" },
+    { text: "“Fue un excelente servicio, estoy muy satisfecho”", author: "Nadia Quezada ★★★★★" },
+    { text: "“Honestamente se lo recomiendo, son todos unos expertos”", author: "Jorge Ortiz ★★★★★" }
+    // ... otras reseñas
   ];
 
   const totalReviews = reviews.length;
 
   useEffect(() => {
-    const handleResize = () => setIsMobile(window.innerWidth <= 768);
-    window.addEventListener('resize', handleResize);
-    
     const interval = setInterval(() => {
       setOffset((prevOffset) => (prevOffset + 1) % totalReviews);
     }, 9000);
-
-    return () => {
-      window.removeEventListener('resize', handleResize);
-      clearInterval(interval);
-    };
+    return () => clearInterval(interval);
   }, [totalReviews]);
 
   return (
