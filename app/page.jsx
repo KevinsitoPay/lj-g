@@ -1,5 +1,6 @@
 import Button from "@/UI/Buttons/Button";
-import "./Home.scss";
+import "./Home.scss"
+
 
 export const metadata = {
   title: 'Home page Landscaping title',
@@ -18,7 +19,6 @@ function Home() {
         <Button text="Check our projects" size="medium" link="/" variant="minimal" textColor="#FCFAF8" backgroundColor="transparent" />
      </div>
     </div>
-
   )
 }
 
