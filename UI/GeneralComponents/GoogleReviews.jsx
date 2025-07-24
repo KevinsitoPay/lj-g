@@ -5,41 +5,38 @@ import ArrowRight from '../Icons/ArrowRight';
 
 function GoogleReviews() {
   const [offset, setOffset] = useState(0);
-  const [isMobile, setIsMobile] = useState(false); // Inicializa sin `window`
-
-  useEffect(() => {
-    // Ejecuta solo en el cliente
-    const handleResize = () => {
-      setIsMobile(window.innerWidth <= 768);
-    };
-
-    // Llama la función para establecer inicialmente el estado
-    handleResize();
-
-    // Agrega el listener para el evento resize
-    window.addEventListener('resize', handleResize);
-
-    // Limpia el evento en el desmontaje
-    return () => window.removeEventListener('resize', handleResize);
-  }, []); // La dependencia vacía asegura que solo se ejecute al montar
-
+  const [isMobile, setIsMobile] = useState(false);
+  
   const reviews = [
     { text: "“Fue un excelente servicio, estoy muy satisfecho”", author: "Nadia Quezada ★★★★★" },
-    { text: "“Fue un excelente servicio, estoy muy satisfecho”", author: "Nadia Quezada ★★★★★" },
-    { text: "“Fue un excelente servicio, estoy muy satisfecho”", author: "Nadia Quezada ★★★★★" },
-    { text: "“Fue un excelente servicio, estoy muy satisfecho”", author: "Nadia Quezada ★★★★★" },
-    { text: "“Honestamente se lo recomiendo, son todos unos expertos”", author: "Jorge Ortiz ★★★★★" }
-    // ... otras reseñas
+    { text: "“Honestamente se lo recomiendo, son todos unos expertos”", author: "Jorge Ortiz ★★★★★" },
+    { text: "“Quedé enamorada de la atención y profesionalismo”", author: "Maria Quezada ★★★★" },
+    { text: "“Me los recomendó un amigo y me encantaron”", author: "Miriam García ★★★★★" },
+    { text: "“La verdad fue un gran trabajo, además de siempre tener una buena atención”", author: "Pepe Perez ★★★★" }
   ];
 
   const totalReviews = reviews.length;
 
   useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth <= 768);
+    };
+
+    handleResize();
+
+    window.addEventListener('resize', handleResize);
+
     const interval = setInterval(() => {
       setOffset((prevOffset) => (prevOffset + 1) % totalReviews);
     }, 9000);
-    return () => clearInterval(interval);
+
+    return () => {
+      window.removeEventListener('resize', handleResize);
+      clearInterval(interval);
+    };
   }, [totalReviews]);
+
+  const slideWidth = isMobile ? 100 : 100 / 3;
 
   return (
     <div className="google-reviews-container">
@@ -52,9 +49,9 @@ function GoogleReviews() {
       <div className="google-reviews-carousel">
         <div 
           className="google-reviews-slider"
-          style={{ transform: `translateX(-${offset * (isMobile ? 100 : 100 / 3)}%)` }}
+          style={{ transform: `translateX(-${offset * slideWidth}%)` }}
         >
-          {reviews.concat(reviews).map((review, index) => (
+          {reviews.concat(isMobile ? [] : reviews).map((review, index) => (
             <div className="google-review" key={index}>
               <p>{review.text}</p>
               <span>{review.author}</span>

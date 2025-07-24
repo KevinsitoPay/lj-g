@@ -2,7 +2,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-image:url('/Images/reviews-bkg.png');
+  background-image: url('/Images/reviews-bkg.png');
   background-size: cover;
   background-position: center;
   background-repeat: repeat;
@@ -17,51 +17,13 @@
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-
+  
   span {
     font-size: 25px;
     font-weight: 500;
     line-height: 32px;
   }
 }
-
-.google-reviews-stars {
-  font-size: 20px;
-}
-
-.google-reviews-carousel {
-  flex: 3;
-  overflow: hidden;
-  width: 100%;
-}
-
-.google-reviews-slider {
-  display: flex;
-  transition: transform 1s ease-in-out;
-}
-
-.google-review {
-  background-color: rgba(255, 255, 255, 0);
-  margin-right: 20px;
-  border-radius: 16px;
-  padding: 10px;
-  min-width: calc(100% / 3 - 20px);
-  box-sizing: border-box;
-}
-
-.google-review p {
-  margin: 0;
-  font-size: 16px;
-  line-height: 24px;
-  font-weight: 500;
-}
-
-.google-review span {
-  display: block;
-  margin-top: 8px;
-  font-size: 12px;
-}
-
 .google-reviews-buttom {
   flex: 1;
   display: flex;
@@ -92,6 +54,33 @@
   transform: rotate(-45deg);
   color: var(--primary-900);
 }
+.google-reviews-stars {
+  font-size: 20px;
+}
+
+.google-reviews-carousel {
+  flex: 3;
+  overflow: hidden;
+  width: 100%;
+}
+
+.google-reviews-slider {
+  display: flex;
+  transition: transform 1s ease-in-out;
+}
+
+.google-review {
+  background-color: rgba(255, 255, 255, 0);
+  margin-right: 20px;
+  border-radius: 16px;
+  padding: 10px;
+  min-width: calc(100% / 3 - 20px); /* Tres reseñas visibles en escritorio */
+  box-sizing: border-box;
+  p{
+    line-height: 20px;
+    padding-bottom: 8px;
+  }
+}
 
 /* Media Queries para Tablets y Móviles */
 @media (max-width: 768px) {
@@ -100,26 +89,30 @@
     padding: 16px 50px;
   }
 
-  .google-reviews-carousel {
-    overflow: hidden; /* Oculta los desbordes */
-    width: 100%;
-  }
-
   .google-reviews-slider {
     display: flex;
-    transition: transform 0.5s ease-in-out; /* Mantén la transición suave */
+    transition: transform 1s ease-in-out;
   }
 
   .google-review {
-    width:  100%; /* Asegúrate de que cada review ocupe todo el ancho */
+    width: 100%;
+    margin-right: 0;
     flex-shrink: 0;
     box-sizing: border-box;
+    text-align: center;
+    span{
+        font-size: 14px;
+    }
+    p{
+        font-size: 16px;
+        padding-bottom: 8px;
+        padding-top: 8px;
+    }
   }
 
   .google-reviews-header,
   .google-reviews-buttom {
     text-align: center;
-    margin-bottom: 20px;
   }
 }
 
