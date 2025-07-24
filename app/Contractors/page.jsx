@@ -1,4 +1,3 @@
-
 export const metadata = {
   title: 'Contractors',
   description: 'How the application works and its features',

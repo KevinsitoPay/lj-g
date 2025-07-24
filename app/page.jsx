@@ -1,6 +1,6 @@
 import Button from "@/UI/Buttons/Button";
 import "./Home.scss"
-
+import GoogleReviews from "@/UI/GeneralComponents/GoogleReviews";
 
 export const metadata = {
   title: 'Home page Landscaping title',
@@ -11,6 +11,7 @@ export const metadata = {
 function Home() {
   return ( 
     // Hero section home page
+    <div>
     <div className="hero-container"> 
       <div className="hero-content">
         <h1>Tittle where we adress the <span className="highlight"> main pain point</span></h1>
@@ -18,6 +19,11 @@ function Home() {
         <Button text="Adress pain point" size="medium" link="/" variant="filled" textColor="#28282A" backgroundColor="#FCFAF8" iconColor="#F1572D" />
         <Button text="Check our projects" size="medium" link="/" variant="minimal" textColor="#FCFAF8" backgroundColor="transparent" />
      </div>
+    </div>
+
+    <GoogleReviews />
+
+    
     </div>
   )
 }
