@@ -1,0 +1,118 @@
+
+.video-container {
+padding: 160px 104px;
+height: auto;
+
+ .video-box-content {
+    width: auto;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    gap: 0px 40px;
+
+    .video-box-content-title {
+      .highlight {
+        color: var(--primary-900);
+      }
+    }
+    .video-box-content-description {
+        padding-top: 8px;
+      .video-box-content-description-button {
+        text-align: right;
+      }
+    }
+  }
+ 
+
+ .video-box-video {
+
+    padding: 24px 0px;
+    
+    img {
+      width: 100%;
+      height: 666px;
+      object-fit: cover;
+      border-radius: 16px;
+    }
+  }
+ .video-box-cta {
+    width: auto;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+
+    p{
+        color: var(--text-900);
+        font-weight: 600;
+        font-size: 48px;
+        line-height: 56px;
+        letter-spacing: -0.96px;
+    }
+    span{
+        color: var(--text-900);
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 24px;
+         letter-spacing: -0.4px;
+    }
+}
+}
+
+@media (max-width: 768px) {
+  .video-container {
+    padding: 60px 30px; /* Ajusta el padding para pantallas pequeñas */
+
+    .video-box-content {
+      flex-direction: column; /* Cambia la dirección para apilarlos */
+      align-items: center; /* Centra el contenido */
+
+      .video-box-content-title {
+        h2{
+            font-size: 28px;
+            line-height: 28px;
+            text-align: center;
+            padding-bottom: 8px;
+        }
+      }
+      .video-box-content-description {
+        width: 100%; 
+        text-align: center; 
+      }
+
+      .video-box-content-description-button {
+        display: flex;
+        justify-content: center; /* Centra horizontalmente */
+        align-items: center; /* Alinea verticalmente */
+        padding-top: 16px;
+      }
+    }
+
+    .video-box-video {
+      padding: 20px 0;
+
+      img {
+        height: auto; 
+        max-height: 300px; 
+      }
+    }
+
+    .video-box-cta {
+        display: flex;
+        flex-wrap: wrap;
+      div {
+        margin-bottom: 16px;
+        width: 50%;
+      }
+      p{
+        font-size: 46px;
+        line-height: 50px;
+        font-weight: 600;
+      }
+      span {
+        font-size: 1rem; 
+        line-height: 1.2rem;
+      }
+    }
+  }
+}
