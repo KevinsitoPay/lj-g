@@ -2,6 +2,7 @@ import Button from "@/UI/Buttons/Button";
 import "./Home.scss"
 import GoogleReviews from "@/UI/GeneralComponents/GoogleReviews";
 import VideoComponent from "@/UI/GeneralComponents/VideoComponent";
+import CtaSettion from "@/UI/GeneralComponents/CtaSection";
 
 export const metadata = {
   title: 'Home page Landscaping title',
@@ -26,6 +27,8 @@ function Home() {
     <GoogleReviews />
 
     <VideoComponent />
+
+    <CtaSettion title="Lorem ipsum dolor sit amet consectetur adipiscing elit." description="Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices." />
 
     </div>
   )

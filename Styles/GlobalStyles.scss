@@ -97,14 +97,14 @@ body {
   background-size: cover;
   background-position: center;
   background-repeat: repeat;
-  
+
 }
 
 /* Heading Font*/
 @font-face {
   font-family: 'Poppins';
   src: url('/public/fonts/Poppins/Poppins-Medium.woff2') format('woff2'),
-       url('/public/fonts/Poppins/Poppins-Medium.woff') format('woff');
+    url('/public/fonts/Poppins/Poppins-Medium.woff') format('woff');
   font-weight: 500;
   font-style: normal;
 }
@@ -116,6 +116,7 @@ body {
   font-weight: 500;
   font-style: normal;
 }
+
 @font-face {
   font-family: "Open Sans";
   src: url("/public/Fonts/Outfit/Outfit-Medium.woff2") format("woff2");
@@ -268,22 +269,27 @@ h1,
 .heading-1 {
   @include heading-1;
 }
+
 h2,
 .heading-2 {
   @include heading-2;
 }
+
 h3,
 .heading-3 {
   @include heading-3;
 }
+
 h4,
 .heading-4 {
   @include heading-4;
 }
+
 h5,
 .heading-5 {
   @include heading-5;
 }
+
 h6,
 .heading-6 {
   @include heading-6;

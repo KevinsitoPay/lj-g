@@ -41,7 +41,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  transform: rotate(45deg);
   cursor: pointer;
   transition: background-color 0.1s, transform 0.5s ease-out;
 
@@ -83,7 +82,7 @@
 }
 
 /* Media Queries para Tablets y Móviles */
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
   .google-reviews-container {
     display: block;
     padding: 16px 50px;

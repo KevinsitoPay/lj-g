@@ -1,0 +1,66 @@
+.cta-section-container {
+    background: linear-gradient(to top, rgba(126, 126, 127, 0.3), rgba(40, 40, 42, 0.3)), url('/Images/footer_bkg.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 80px 104px;
+
+    h3 {
+        max-width: 600px;
+        font-family: "poppins";
+        font-weight: 600;
+        font-size: 39px;
+        line-height: 48px;
+        letter-spacing: -0.78px;
+        color: var(--bkg-3);
+    }
+
+    p {
+        max-width: 450px;
+        font-family: "Open Sans";
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 24px;
+        padding: 8px 0px;
+        color: var(--bkg-3);
+    }
+}
+
+@media (max-width: 1024px) {
+  .cta-section-container {
+    padding: 50px 50px; // Ajuste para tablets
+
+    h3 {
+      font-size: 34px; // Ajuste de tamaño de fuente para tablets
+      line-height: 42px;
+    }
+
+    p {
+      font-size: 14px; // Ajuste de tamaño de fuente para tablets
+      line-height: 22px;
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .cta-section-container {
+    padding: 32px 30px; // Ajuste para móviles
+    display: block;
+  .cta-section-button {
+    display: flex;
+    justify-content: center;
+  }
+    h3 {
+      font-size: 26px; // Ajuste de tamaño de fuente para móviles
+      line-height: 34px;
+      text-align: center; // Opcional para centrar
+    }
+
+    p {
+      font-size: 16px; // Ajuste de tamaño de fuente para móviles
+      line-height: 18px;
+      text-align: center; // Opcional para centrar
+      padding-bottom: 16px;
+    }
+  }
+}
+
