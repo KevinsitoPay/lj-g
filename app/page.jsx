@@ -48,11 +48,11 @@ function Home() {
         <p> Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sitet. Lorem ipsum dolor sit amet consectetur adipiscing elit. </p>
         <div className="section-2-content-tiltle">
           <div className="section-2-content-tiltle-left">
-            <h3> +8 years </h3>
+            <h4> +8 years </h4>
             <p> Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et </p>
           </div>
           <div className="section-2-content-tiltle-right">
-            <h3> +500 Clients </h3>
+            <h4> +500 Clients </h4>
             <p> Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et </p>
           </div>
         </div>
