@@ -1,3 +1,5 @@
+// Estilos para la sección de hero
+
 .hero-container {
   background: linear-gradient(to top, rgba(126, 126, 127, 0.3), rgba(40, 40, 42, 0.3)), url('/Images/house-footer.jpg');
   background-size: cover;
@@ -75,6 +77,207 @@
       p {
         font-size: 0.9em;
       }
+    }
+  }
+}
+
+// Estilos para la sección 2
+
+.section-2-container {
+padding: 80px 104px;
+height: auto;
+
+
+.section-2-box{
+  width: auto;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+  gap: 0px 109px;
+}
+
+.section-2-content-left {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  max-width: 700px;
+}
+
+.section-2-content-box-1 {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; // Espacia los elementos
+  background: linear-gradient(to top, rgba(126, 126, 127, 0.3), rgba(40, 40, 42, 0.3)), url('/Images/service-1.png');
+  border-radius: 16px;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 250px;
+  padding: 16px;
+  box-sizing: border-box;
+
+  p {
+    align-self: flex-end; // Alinea a la derecha
+    padding: 1px 16px;
+    border: 2px solid var(--bkg-3);
+    border-radius: 32px;
+    color: var(--bkg-3);
+    font-weight: 500;
+    font-size: 12px;
+    background-color: transparent;
+    text-align: center;
+  }
+  
+  h4 {
+    color: var(--bkg-3);
+  }
+}
+
+.section-2-content-box-2,
+.section-2-content-box-3 {
+  position: relative; // Permite a los elementos hijos ser posicionados absolutamente
+  background-size: cover;
+  background-position: center;
+  border-radius: 16px;
+  width: calc(50% - 8px);
+  height: 200px;
+  padding: 16px;
+  box-sizing: border-box;
+
+  p {
+    position: absolute; // Posiciona absolutamente dentro del contenedor
+    top: 16px; // Ajusta según sea necesario
+    right: 16px; // Ajusta según sea necesario
+    padding: 1px 16px;
+    border: 2px solid var(--bkg-3);
+    border-radius: 32px;
+    color: var(--bkg-3);
+    font-weight: 500;
+    font-size: 12px;
+    background-color: transparent;
+    text-align: center;
+  }
+  span{
+    color: var(--accent-900);
+  }
+
+  h6 {
+    color: var(--bkg-3);
+    position: absolute; // Posiciona absolutamente dentro del contenedor
+    bottom: 16px; // Ajusta la distancia desde la parte inferior
+    left: 16px; // Ajusta la distancia desde el lado izquierdo o usa `right` según prefieras
+  }
+}
+
+.section-2-content-box-2 {
+  background: url('/Images/Green-bkg.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.section-2-content-box-3 {
+  background:linear-gradient(to top, rgba(126, 126, 127, 0.3), rgba(40, 40, 42, 0.3)), url('/Images/house-gray.jpg');
+   background-size: cover;
+   background-position: center;
+}
+
+.section-2-content-right {
+  display: flex;
+  flex-direction: column;
+  h6{
+    color: var(--primary-700);
+  }
+  .highlight{
+    color: var(--primary-900);
+  }
+
+  .section-2-content-tiltle{
+    padding: 16px 0px;
+    display: flex;
+    justify-content: space-between;
+
+    .section-2-content-tiltle-left,
+    .section-2-content-tiltle-right{
+      width: calc(50% - 8px);
+    }
+  }
+  .section-2-content-button {
+    margin-top: auto; // Empuja el botón al fondo del contenedor
+    display: flex;
+    justify-content: start;
+    align-items: center;
+  }
+  }
+}
+
+
+/* resonsivo en tablets */
+@media (max-width: 1024px) {
+  .section-2-container {
+    padding: 60px 40px;
+    h3{
+      font-size: 28px;
+      line-height: 28px;
+    }
+    h4{
+      font-size: 26px;
+      line-height: 26px;
+    }
+    .section-2-content-left {
+      max-width: 100%;
+    }
+
+    .section-2-box {
+      flex-direction: column;
+      gap: 24px;
+    }
+    .section-2-content-button {
+      padding-top: 24px;
+    }
+  }
+}
+
+/* resonsivo en celulares */
+@media (max-width: 480px) {
+  .section-2-container {
+    text-align: center;
+    padding: 40px 20px;
+
+    .section-2-box {
+      flex-direction: column;
+      gap: 16px;
+
+      .section-2-content-left,
+      .section-2-content-right {
+        width: 100%;
+        h3{
+          font-size: 28px;
+          line-height: 28px;
+          padding-bottom: 16px;
+        }
+      }
+    }
+
+    .section-2-content-box-1,
+    .section-2-content-box-2,
+    .section-2-content-box-3 {
+      width: 100%;
+    }
+
+    .section-2-content-tiltle {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .section-2-content-button {
+      height: auto; // Ajusta la altura
+      margin-top: 16px; // Añade margen superior para separar del contenido anterior
+      align-self: center; // Centra el botón dentro del contenedor
+      display: flex;
+      flex-direction: column;
     }
   }
 }

@@ -1,6 +1,6 @@
 import Button from "../Buttons/Button";
 import "./CtaSection.scss";
-function CtaSettion({ title, description }) {
+function CtaSection({ title, description }) {
 
     return (
         <div className="cta-section-container">
@@ -13,4 +13,4 @@ function CtaSettion({ title, description }) {
     );
 }
 
-export default CtaSettion;
+export default CtaSection;
