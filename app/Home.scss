@@ -289,3 +289,105 @@ height: auto;
       flex-direction: column;
     }
   }
+
+  //estilos de la seccion 3
+
+  .section-3-container{
+    padding: 160px 104px 80px 104px;
+    height: auto;
+
+    .section-3-content{
+      display: flex;
+      justify-content: space-between;
+      gap: 0px 40px;
+      .section-3-content-left{
+
+        .highlight{
+          color: var(--secondary-900);
+        }
+      }
+      .section-3-content-right{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-end;
+      }
+    }
+
+    .section-3-boxes{
+      padding-top: 32px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 16px;
+
+      .section-3-box-1,
+      .section-3-box-2,
+      .section-3-box-3,
+      .section-3-box-4{
+        flex: 1 1 calc(25% - 16px); 
+        background-color: var(--secondary-300);
+        border-radius: 16px;
+        padding: 32px 16px;
+        box-sizing: border-box;
+         &:hover {
+           background-image: url('/Images/Green-bkg.jpg');; 
+           background-size: cover;
+           background-position: center;
+           transition: background-image 0.5s ease-in-out;
+           *{
+            color: var(--bkg-3);
+           }
+           .text{
+            color: var(--bkg-3)!important;
+           }
+          }
+      }
+    }
+  }
+
+  /* Tablet */
+@media (max-width: 1024px) {
+  .section-3-container {
+    padding: 80px 40px;
+      h4{
+      font-size: 28px;
+      line-height: 28px;
+      padding-bottom: 16px;
+    }
+  }
+  .section-3-boxes {
+    .section-3-box-1,
+    .section-3-box-2,
+    .section-3-box-3,
+    .section-3-box-4 {
+      flex: 1 1 calc(50% - 16px); // Dos columnas en tablet
+    }
+  }
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+  .section-3-container {
+    padding: 80px 30px;
+    h4{
+      font-size: 28px;
+      line-height: 28px;
+      padding-bottom: 16px;
+    }
+
+    .section-3-content {
+      text-align: center;
+      flex-direction: column;
+      gap: 16px;
+    }
+
+    .section-3-boxes {
+      .section-3-box-1,
+      .section-3-box-2,
+      .section-3-box-3,
+      .section-3-box-4 {
+        flex: 1 1 100%; // Una columna en móvil
+      }
+    }
+  }
+}

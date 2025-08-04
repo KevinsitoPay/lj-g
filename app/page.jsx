@@ -3,6 +3,7 @@ import "./Home.scss"
 import GoogleReviews from "@/UI/GeneralComponents/GoogleReviews";
 import VideoComponent from "@/UI/GeneralComponents/VideoComponent";
 import CtaSection from "@/UI/GeneralComponents/CtaSection";
+import List from "@/UI/Icons/List";
 
 export const metadata = {
   title: 'Home page Landscaping title',
@@ -26,9 +27,9 @@ function Home() {
     
     <GoogleReviews />
 
-    <VideoComponent />
-
-    <div className="section-2-container">
+    <VideoComponent /> 
+ 
+    <div className="section-2-container">  
       <div className="section-2-box">
       <div className="section-2-content-left">
         <div className="section-2-content-box-1">
@@ -65,7 +66,45 @@ function Home() {
     </div>
 
     <CtaSection title="Lorem ipsum dolor sit amet consectetur adipiscing elit." description="Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices." /> 
-
+    
+    <div className="section-3-container">
+      <div className="section-3-content">
+        <div className="section-3-content-left">
+          <h4> Lorem ipsum dolor sit amet<span className="highlight"> consectetur adipiscing elit. </span></h4>
+          <p> Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet. </p>
+        </div>
+        <div className="section-3-content-right">
+          <Button text="Adress pain point" size="medium" link="/" variant="filled" textColor="#28282A" backgroundColor="#DBE0D3" iconColor="#6C7A52" />
+        </div>
+      </div>
+      <div className="section-3-boxes">
+      <div className="section-3-box-1">
+        <List size="m" />
+        <h5>Lorem consectetur</h5>
+        <p>Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet.</p>
+        <Button text="Address pain point" size="medium" link="/" variant="minimal" textColor="#28282A" backgroundColor="transparent" iconSvgColor={"#28282A"}/> 
+      </div>
+      <div className="section-3-box-2">
+        <List size="m" />
+        <h5>Lorem consectetur</h5>
+        <p>Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet.</p>
+        <Button text="Address pain point" size="medium" link="/" variant="minimal" textColor="#28282A" backgroundColor="transparent" iconSvgColor={"#28282A"} />
+      </div>
+      <div className="section-3-box-3">
+        <List size="m" />
+        <h5>Lorem consectetur</h5>
+        <p>Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet.</p>
+        <Button text="Address pain point" size="medium" link="/" variant="minimal" textColor="#28282A" backgroundColor="transparent" iconSvgColor={"#28282A"} />
+      </div>
+      <div className="section-3-box-4">
+        <List size="m" />
+        <h5>Lorem consectetur</h5>
+        <p>Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet.</p>
+        <Button text="Address pain point" size="medium" link="/" variant="minimal" textColor="#28282A" backgroundColor="transparent" iconSvgColor={"#28282A"} />
+      </div>
+      </div>
+    </div>
+    
     </div>
   )
 }
