@@ -11,7 +11,7 @@ import Link from 'next/link';
 const services = [
   {
     name: 'Land Leveling',
-    images: ['service-ai-1.png', 'service-ai-2.png', 'service-ai-3.png', 'service-ai-4.png'],
+    images: ['/Images/service-ai-1.png', 'service-ai-2.png', 'service-ai-3.png', 'service-ai-4.png'],
     description: 'Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet.',
     link: '/land-leveling',
     icon: <Grading size='sm' />
