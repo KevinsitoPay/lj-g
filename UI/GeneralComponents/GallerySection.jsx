@@ -104,10 +104,7 @@ const GallerySection = () => {
         </div>
 
         <div className={styles.gallery}>
-          <div
-            className={styles.galleryTrack}
-            ref={galleryTrackRef}
-          >
+          <div className={styles.galleryTrack} ref={galleryTrackRef}>
             {selectedService.images.concat(selectedService.images).map((image, index) => (
               <div className={styles.imageWrapper} key={index}>
                 {console.log(`/images/${image}`)} {/* Imprime la ruta para verificar */}
