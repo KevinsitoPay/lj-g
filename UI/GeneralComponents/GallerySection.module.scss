@@ -16,18 +16,15 @@
 
   .buttons {
     display: flex;
-    flex-wrap: wrap;
     justify-content: flex-start;
     gap: 16px;
     margin-bottom: 24px;
     white-space: nowrap;
-    padding: 0 20px;
 
     button {
       white-space: nowrap;
       display: inline-flex;
       align-items: center;
-      justify-content: center;
       gap: 8px;
       border: 1px solid var(--primary-900);
       background: transparent;
@@ -36,8 +33,6 @@
       cursor: pointer;
       color: var(--primary-900);
       transition: background 0.3s, color 0.3s;
-      flex: 1 1 200px;
-      max-width: calc(50% - 12px);
 
       &.activeButton {
         background: var(--primary-900);
@@ -161,7 +156,10 @@
     }
 
     .buttons {
+      display: flex;
+      flex-wrap: wrap;
       justify-content: center;
+      gap: 12px;
 
       button {
         flex: 1 1 calc(50% - 12px);
@@ -216,12 +214,57 @@
     }
 
     .buttons {
+      display: flex;
+      flex-wrap: wrap;
       justify-content: center;
+      gap: 12px;
+      width: 100%;
 
       button {
         flex: 1 1 100%;
-        max-width: 85%;
-        padding: 16px 8px;
+        max-width: 80%;
+        padding: 12px 12px;
+        justify-content: center;
+      }
+    }
+
+    .galleryWrapper {
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+
+      .cta {
+        width: 85%;
+        margin-bottom: 20px;
+        max-width: 400px;
+      }
+
+      .gallery {
+        width: 100%;
+        overflow: hidden;
+        position: relative;
+
+        .galleryTrack {
+          display: flex;
+          gap: 16px;
+          align-items: center;
+          justify-content: center;
+        }
+
+        .imageWrapper {
+          flex: 0 0 100%;
+          box-sizing: border-box;
+          height: 400px;
+        }
+
+        img {
+          max-width: 100%;
+          max-height: 100%;
+          border-radius: 16px;
+          object-fit: cover;
+          display: block;
+          margin: 0 auto;
+        }
       }
     }
   }
