@@ -88,14 +88,18 @@ const GallerySection = () => {
     prevTranslate.current = currentTranslate.current;
     galleryTrackRef.current.style.cursor = 'grab';
 
-    // Reiniciar posición para bucle
     const galleryTrack = galleryTrackRef.current;
-    const { offsetWidth, scrollWidth } = galleryTrack;
-    if (Math.abs(currentTranslate.current) >= scrollWidth / 2) {
+    const totalWidth = galleryTrack.scrollWidth;
+    const visibleWidth = galleryTrack.offsetWidth;
+
+    if (currentTranslate.current < -totalWidth / 2) {
       currentTranslate.current = 0;
       prevTranslate.current = 0;
-      galleryTrack.style.transition = 'none';
-      galleryTrack.style.transform = 'translateX(0px)';
+      galleryTrack.style.transform = `translateX(0px)`;
+    } else if (currentTranslate.current > visibleWidth) {
+      currentTranslate.current = -totalWidth / 2;
+      prevTranslate.current = -totalWidth / 2;
+      galleryTrack.style.transform = `translateX(${prevTranslate.current}px)`;
     }
   };
 
@@ -144,7 +148,7 @@ const GallerySection = () => {
             className={styles.galleryTrack}
             ref={galleryTrackRef}
           >
-            {selectedService.images.concat(selectedService.images).map((image, index) => (
+            {selectedService.images.concat(selectedService.images, selectedService.images).map((image, index) => (
               <div className={styles.imageWrapper} key={index}>
                 <img src={`/Images/${image}`} alt={selectedService.name} />
               </div>
