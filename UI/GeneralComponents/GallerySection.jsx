@@ -110,8 +110,8 @@ const GallerySection = () => {
           >
             {selectedService.images.concat(selectedService.images).map((image, index) => (
               <div className={styles.imageWrapper} key={index}>
-                {console.log(`/images/${image}`)} {/* Imprime la ruta para verificar */}
-                <img src={`/images/${image}`} alt={selectedService.name} />
+                {console.log(`/Images/${image}`)} {/* Imprime la ruta para verificar */}
+                <img src={`/Images/${image}`} alt={selectedService.name} />
               </div>
             ))}
           </div>
