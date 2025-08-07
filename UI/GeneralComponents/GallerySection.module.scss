@@ -16,15 +16,18 @@
 
   .buttons {
     display: flex;
+    flex-wrap: wrap;
     justify-content: flex-start;
     gap: 16px;
     margin-bottom: 24px;
     white-space: nowrap;
+    padding: 0 20px;
 
     button {
       white-space: nowrap;
       display: inline-flex;
       align-items: center;
+      justify-content: center;
       gap: 8px;
       border: 1px solid var(--primary-900);
       background: transparent;
@@ -33,6 +36,8 @@
       cursor: pointer;
       color: var(--primary-900);
       transition: background 0.3s, color 0.3s;
+      flex: 1 1 200px;
+      max-width: calc(50% - 12px);
 
       &.activeButton {
         background: var(--primary-900);
@@ -42,6 +47,10 @@
       &:hover {
         background: var(--primary-900);
         color: #fff;
+      }
+
+      svg {
+        flex-shrink: 0;
       }
     }
   }
@@ -118,7 +127,7 @@
         display: flex;
         gap: 16px;
         will-change: transform;
-        cursor: grab; // Cambiar cursor a "mano"
+        cursor: grab;
       }
 
       .imageWrapper {
@@ -152,10 +161,7 @@
     }
 
     .buttons {
-      display: flex;
-      flex-wrap: wrap;
       justify-content: center;
-      gap: 12px;
 
       button {
         flex: 1 1 calc(50% - 12px);
@@ -191,8 +197,35 @@
       }
     }
   }
-}
 
+  /* Mobile */
+  @media (max-width: 480px) {
+    padding: 80px 30px;
+    text-align: center;
+
+    h3 {
+      font-size: 28px;
+      line-height: 28px;
+      padding-bottom: 16px;
+    }
+
+    h4 {
+      font-size: 26px;
+      line-height: 26px;
+      padding-bottom: 8px;
+    }
+
+    .buttons {
+      justify-content: center;
+
+      button {
+        flex: 1 1 100%;
+        max-width: 85%;
+        padding: 16px 8px;
+      }
+    }
+  }
+}
 
 
 

@@ -1,5 +1,5 @@
 'use client';
-import React, { useState, useRef } from 'react';
+import React, { useState, useRef, useEffect } from 'react';
 import styles from './GallerySection.module.scss';
 import ArrowRight from '../Icons/ArrowRight';
 import Grading from '../Icons/Grading';
@@ -46,13 +46,19 @@ const GallerySection = () => {
   const startPos = useRef(0);
   const currentTranslate = useRef(0);
   const prevTranslate = useRef(0);
-  const repeatCount = 3; // Para asegurar que siempre hay imágenes visibles
 
   const handleServiceClick = (service) => {
     setSelectedService(service);
     prevTranslate.current = 0;
     currentTranslate.current = 0;
-    galleryTrackRef.current.style.transform = `translateX(0px)`;
+    galleryTrackRef.current.style.transform = 'translateX(0px)';
+  };
+
+  const setPositionByClientX = (clientX) => {
+    const movement = clientX - startPos.current;
+    currentTranslate.current = prevTranslate.current + movement;
+    galleryTrackRef.current.style.transition = 'none';
+    galleryTrackRef.current.style.transform = `translateX(${currentTranslate.current}px)`;
   };
 
   const handleMouseDown = (e) => {
@@ -63,24 +69,34 @@ const GallerySection = () => {
 
   const handleMouseMove = (e) => {
     if (!isDragging.current) return;
-    const currentPosition = e.clientX;
-    const movement = currentPosition - startPos.current;
-    currentTranslate.current = prevTranslate.current + movement;
-    galleryTrackRef.current.style.transform = `translateX(${currentTranslate.current}px)`;
+    e.preventDefault();
+    setPositionByClientX(e.clientX);
+  };
+
+  const handleTouchStart = (e) => {
+    isDragging.current = true;
+    startPos.current = e.touches[0].clientX;
+  };
+
+  const handleTouchMove = (e) => {
+    if (!isDragging.current) return;
+    setPositionByClientX(e.touches[0].clientX);
   };
 
   const endDrag = () => {
     isDragging.current = false;
     prevTranslate.current = currentTranslate.current;
-
-    // Reiniciar la posición si la traducción supera un umbral
-    const galleryTrack = galleryTrackRef.current;
-    if (Math.abs(currentTranslate.current) > galleryTrack.scrollWidth / repeatCount) {
-      prevTranslate.current = 0;
-      currentTranslate.current = 0;
-      galleryTrack.style.transform = `translateX(0px)`;
-    }
     galleryTrackRef.current.style.cursor = 'grab';
+
+    // Reiniciar posición para bucle
+    const galleryTrack = galleryTrackRef.current;
+    const { offsetWidth, scrollWidth } = galleryTrack;
+    if (Math.abs(currentTranslate.current) >= scrollWidth / 2) {
+      currentTranslate.current = 0;
+      prevTranslate.current = 0;
+      galleryTrack.style.transition = 'none';
+      galleryTrack.style.transform = 'translateX(0px)';
+    }
   };
 
   return (
@@ -120,12 +136,15 @@ const GallerySection = () => {
           onMouseMove={handleMouseMove}
           onMouseUp={endDrag}
           onMouseLeave={endDrag}
+          onTouchStart={handleTouchStart}
+          onTouchMove={handleTouchMove}
+          onTouchEnd={endDrag}
         >
           <div
             className={styles.galleryTrack}
             ref={galleryTrackRef}
           >
-            {Array(repeatCount).fill().flatMap(() => selectedService.images).map((image, index) => (
+            {selectedService.images.concat(selectedService.images).map((image, index) => (
               <div className={styles.imageWrapper} key={index}>
                 <img src={`/Images/${image}`} alt={selectedService.name} />
               </div>
@@ -138,7 +157,6 @@ const GallerySection = () => {
 };
 
 export default GallerySection;
-
 
 
 
