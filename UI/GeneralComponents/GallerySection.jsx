@@ -11,7 +11,7 @@ import Link from 'next/link';
 const services = [
   {
     name: 'Land Leveling',
-    images: ['/Images/service-ai-1.png', 'service-ai-2.png', 'service-ai-3.png', 'service-ai-4.png'],
+    images: ['service-ai-1.png', 'service-ai-2.png', 'service-ai-3.png', 'service-ai-4.png'],
     description: 'Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet.',
     link: '/land-leveling',
     icon: <Grading size='sm' />
@@ -104,7 +104,10 @@ const GallerySection = () => {
         </div>
 
         <div className={styles.gallery}>
-          <div className={styles.galleryTrack} ref={galleryTrackRef}>
+          <div
+            className={styles.galleryTrack}
+            ref={galleryTrackRef}
+          >
             {selectedService.images.concat(selectedService.images).map((image, index) => (
               <div className={styles.imageWrapper} key={index}>
                 {console.log(`/images/${image}`)} {/* Imprime la ruta para verificar */}
