@@ -5,6 +5,7 @@ import VideoComponent from "@/UI/GeneralComponents/VideoComponent";
 import CtaSection from "@/UI/GeneralComponents/CtaSection";
 import List from "@/UI/Icons/List";
 import GallerySection from "@/UI/GeneralComponents/GallerySection";
+import Faq from "@/UI/GeneralComponents/Faq";
 
 export const metadata = {
   title: 'Home page Landscaping title',
@@ -107,6 +108,8 @@ function Home() {
     </div>
     
     <GallerySection />
+
+    <Faq />
 
     </div>
   )

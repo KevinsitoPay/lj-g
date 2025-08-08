@@ -1,0 +1,134 @@
+.faq-container {
+  padding: 80px 104px 240px 80px;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; 
+  gap: 0px 36px;
+
+  .faq-box-left {
+    max-width: 750px;
+    h3 {
+      padding-bottom: 16px;
+      color: var(--text-900);
+      .highlight {
+        color: var(--text-700);
+      }
+    }
+  }
+
+  .dropdown {
+    margin-top: 16px;
+
+    details {
+      margin-bottom: 8px;
+      background: transparent;
+      border-radius: 16px;
+
+      summary {
+        font-size: 20px;
+        color: var(--text-900);
+        line-height: 24px;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-top: 16px;
+        font-weight: bold;
+        list-style: none;
+
+        &::marker {
+          content: none;
+        }
+      }
+
+      p {
+        font-size: 16px;
+        color: var(--text-900);
+        line-height: 24px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background: transparent;
+        padding-top: 8px;
+      }
+    }
+  }
+
+  .faq-box-right {
+    background: url('/Images/orange-bkg.png') no-repeat center center / cover;
+    border-radius: 16px;
+    padding: 24px 16px;
+    width: 30%;
+
+    h4 {
+      color: var(--bkg-3);
+      padding-bottom: 8px;
+    }
+
+    p {
+      color: var(--bkg-3);
+      font-size: 16px;
+      padding-bottom: 16px;
+    }
+
+    img {
+      width: 100%;
+      padding-bottom: 8px;
+    }
+  }
+
+  @media (max-width: 1024px) {
+    padding: 40px;
+
+        h3 {
+      font-size: 28px;
+      line-height: 28px;
+    }
+
+    h4 {
+      font-size: 26px;
+      line-height: 26px;
+    }
+
+    .faq-box-left,
+    .faq-box-right {
+      width: 100%;
+    }
+  }
+
+  @media (max-width: 480px) {
+    flex-direction: column;
+    text-align: center;
+    padding: 30px;
+    
+    h3 {
+      font-size: 28px;
+      line-height: 28px;
+    }
+
+    h4 {
+      font-size: 26px;
+      line-height: 26px;
+    }
+
+    .faq-box-left,
+    .faq-box-right {
+      width: 100%;
+      padding: 0 16px; // Añade padding lateral para evitar pegarse al borde
+      box-sizing: border-box; // Asegura que el padding no rompa el diseño
+      img{
+        padding-top: 24px;
+      }
+      a{
+        margin-bottom: 24px !important;
+      }
+    }
+
+    .faq-box-right {
+      margin-top: 20px;
+    }
+  }
+}
+
+
