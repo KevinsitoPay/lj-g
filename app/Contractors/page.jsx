@@ -6,7 +6,7 @@ export const metadata = {
   keywords: 'how it works, application guide',
 }
 
-function Contractors() {
+function contractors() {
   return (
     <div>
 
@@ -17,4 +17,4 @@ function Contractors() {
     </div>
   )
 }
-export default Contractors;
+export default contractors;
