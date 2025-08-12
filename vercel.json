@@ -1,0 +1,27 @@
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "next.config.mjs",
+      "use": "@vercel/static-build"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "index.html"
+    },
+    {
+      "src": "/contractors",
+      "dest": "contractors/index.html"
+    },
+    {
+      "src": "/faq",
+      "dest": "faq/index.html"
+    },
+    {
+      "src": "/how-it-works",
+      "dest": "how-it-works/index.html"
+    }
+  ]
+}
