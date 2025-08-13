@@ -1,21 +1,21 @@
 import React from 'react';
 import './Button.scss';
 import Link from 'next/link';
-import ArrowRight from '../Icons/ArrowRight';
+import ArrowIcon from '../Icons/ArrowIcon';
 
-const Button = ({ text, size, link, variant, textColor, backgroundColor, iconColor, iconSvgColor, className }) => {
+const Button = ({ children, variantClass, extraClasses, href: hrefProp }) => {
+  const href = hrefProp || '';
+
   return (
-    <Link
-      href={link}
-      className={`button ${size} ${variant} ${className}`}
-      style={{ backgroundColor }}
-    >
-      <span className="text" style={{ color: textColor }}>{text}</span>
-      <span className="icon" style={{ backgroundColor: iconColor }}>
-        <ArrowRight size='sm' style={{ color: iconSvgColor }} />
-      </span>
+    <Link className={`button-link ${variantClass} ${extraClasses || ''}`} href={href}>
+      <span className="bg-circle"></span>
+      <span className="button-text">{children}</span>
+      <div className="arrow-icon-container">
+        <ArrowIcon className="arrow-icon" alt="icon of arrow" size="sm" />
+      </div>
     </Link>
   );
 };
 
 export default Button;
+

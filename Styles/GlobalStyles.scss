@@ -67,27 +67,6 @@
   --shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
-/* Space Variables*/
-:root {
-  /* Inncer space*/
-  --space-4: 4px;
-  --space-8: 8px;
-  --space-12: 12px;
-  --space-16: 16px;
-  --space-20: 20px;
-  --space-24: 24px;
-  --space-32: 32px;
-  --space-40: 40px;
-  --space-48: 48px;
-  --space-56: 56px;
-  --space-64: 64px;
-  --space-80: 80px;
-  --space-96: 96px;
-  --space-128: 128px;
-  --space-160: 160px;
-  --space-192: 192px;
-  --space-256: 256px;
-}
 
 body {
   width: 100%;
@@ -103,25 +82,46 @@ body {
 /* Heading Font*/
 @font-face {
   font-family: 'Poppins';
-  src: url('/public/fonts/Poppins/Poppins-Medium.woff2') format('woff2'),
-    url('/public/fonts/Poppins/Poppins-Medium.woff') format('woff');
+  src: url('/fonts/Poppins/Poppins-Medium.woff2') format('woff2'),
+    url('/fonts/Poppins/Poppins-Medium.woff') format('woff');
   font-weight: 500;
   font-style: normal;
+}
+
+/*Heading Bold*/
+@font-face {
+  font-family: 'Poppins';
+  src: url('/fonts/Poppins/Poppins-Medium.woff2') format('woff2'),
+    url('/fonts/Poppins/Poppins-Medium.woff') format('woff');
+  font-weight: 700;
+  font-style: bold;
 }
 
 /* Paragraph Font */
 @font-face {
-  font-family: "Open Sans";
-  src: url("/public/Fonts/Outfit/Outfit-Regular.woff2") format("woff2");
+  font-family: 'Open Sans';
+  src: url('/fonts/OpenSans/OpenSans-Regular.woff2') format('woff2'),
+    url('/fonts/OpenSans/OpenSans-Regular.woff') format('woff');
   font-weight: 500;
   font-style: normal;
 }
 
+/* Paragraph Italic Font */
 @font-face {
-  font-family: "Open Sans";
-  src: url("/public/Fonts/Outfit/Outfit-Medium.woff2") format("woff2");
+  font-family: 'Open Sans';
+  src: url('/fonts/OpenSans/OpenSans-Italic.woff2') format('woff2'),
+    url('/fonts/OpenSans/OpenSans-Italic.woff') format('woff');
+  font-weight: 500;
+  font-style: italic;
+}
+
+/* Paragraph Bold Font */
+@font-face {
+  font-family: 'Open Sans';
+  src: url('/fonts/OpenSans/OpenSans-Bold.woff2') format('woff2'),
+    url('/fonts/OpenSans/OpenSans-Bold.woff') format('woff');
   font-weight: 700;
-  font-style: normal;
+  font-style: bold;
 }
 
 /*Headings and paragraph mixins*/
@@ -152,7 +152,7 @@ body {
 }
 
 @mixin heading-3 {
-  font-family: "poppins";
+  font-family: "Poppins";
   font-weight: 600;
   font-size: 39px;
   line-height: 48px;
@@ -204,7 +204,7 @@ body {
 }
 
 @mixin heading-button {
-  font-family: "poppins";
+  font-family: "Poppins";
   font-weight: 600;
   font-size: 1.25rem;
   line-height: 1.5rem;
@@ -228,6 +228,30 @@ body {
   }
 }
 
+@mixin bold-text {
+  font-family: "Open Sans";
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+
+  @media (max-width: 768px) {
+    font-size: 1rem;
+    line-height: 1.25rem;
+  }
+}
+@mixin link-text {
+  font-family: "Open Sans";
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+
+  @media (max-width: 768px) {
+    font-size: 1rem;
+    line-height: 1.25rem;
+  }
+}
+
+
 @mixin paragraph-small {
   font-family: "open-sans";
   font-weight: 500;
@@ -239,6 +263,7 @@ body {
     line-height: 1.25rem;
   }
 }
+
 
 @mixin small-text {
   font-family: "open-sans";
@@ -300,19 +325,19 @@ h6,
 }
 
 p,
-.plain-text {
+.plain-text, body {
   @include paragraph-default;
 }
 
-link {
+link, a {
   text-decoration: none;
+  @include link-text;
 }
 
 b,
 strong,
 .bold-text {
-  font-family: "Gabarito", sans-serif;
-  font-weight: 700;
+  @include bold-text;
 }
 
 small,
@@ -321,6 +346,6 @@ small,
 }
 
 i {
-  font-style: italic;
   @include paragraph-default;
 }
+

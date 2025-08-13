@@ -1,17 +1,24 @@
+"use client"; 
+
+import { usePathname } from "next/navigation";
 import Navbar from "../UI/GeneralComponents/Navbar"
 import '../Styles/GlobalStyles.scss'
 import Footer from "@/UI/GeneralComponents/Footer"
- function RootLayout({ children }) {
 
 
 
+export default function RootLayout({ children }) {
+
+  const pathname = usePathname();
+
+  const withNavbar = pathname !== "/";
+  
   return (
 
     <html lang="en">
-      <head>
-      </head>
+      <head></head>
       <body>
-        <Navbar />
+        {withNavbar && <Navbar />}
         {children}
         <footer>
           <Footer />
@@ -23,4 +30,3 @@ import Footer from "@/UI/GeneralComponents/Footer"
 
 }
 
-export default RootLayout
