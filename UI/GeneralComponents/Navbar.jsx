@@ -3,6 +3,7 @@ import Link from "next/link";
 import { useState } from "react";
 import "./Navbar.scss";
 import ChevronDown from "../Icons/ChevronDown";
+import LJLogo from "./LJLogo";
 
 function Navbar() {
   const [dropdownOpen, setDropdownOpen] = useState(false);
@@ -58,9 +59,14 @@ function Navbar() {
 
     <div className="menu-container">
       <div className="menu-col">
-        <Link href="/how-it-works">How It Works</Link>
-        <Link href="/how-it-works">    Services <ChevronDown size="xm" /></Link>
-    
+        <Link className="menu-link" href="/how-it-works">
+          How It Works
+        </Link>
+        <Link className="menu-link" href="/how-it-works">
+          {" "}
+          Services <ChevronDown size="xm" />
+        </Link>
+
         {/* <div className="dropdown" onClick={toggleDropdown}>
           <div className="dropdown-toggle">
             Services <ChevronDown size="xm" />
@@ -86,13 +92,17 @@ function Navbar() {
 
       <div className="menu-col menu-col-center">
         <Link href="/">
-        <img src="/Images/logo.png" alt="Logo" />
-      </Link>
+          <LJLogo className="LJLogogogo" />
+        </Link>
       </div>
 
       <div className="menu-col menu-col-right">
-        <Link href="/how-it-works">Contractors</Link>
-        <Link href="/faq">FAQ</Link>
+        <Link className="menu-link" href="/how-it-works">
+          Contractors
+        </Link>
+        <Link className="menu-link" href="/faq">
+          FAQ
+        </Link>
       </div>
     </div>
   );

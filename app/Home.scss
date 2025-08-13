@@ -87,7 +87,6 @@
 // padding: 80px 104px;
 // height: auto;
 
-
 // .section-2-box{
 //   width: auto;
 //   height: auto;
@@ -128,7 +127,7 @@
 //     background-color: transparent;
 //     text-align: center;
 //   }
-  
+
 //   h4 {
 //     color: var(--bkg-3);
 //   }
@@ -217,7 +216,6 @@
 //   }
 // }
 
-
 // /* resonsivo en tablets */
 // @media (max-width: 1024px) {
 //   .section-2-container {
@@ -227,7 +225,7 @@
 //       line-height: 28px;
 //       padding-bottom: 16px;
 //     }
-    
+
 //     h4{
 //       font-size: 28px;
 //       line-height: 28px;
@@ -332,7 +330,7 @@
 //       .section-3-box-2,
 //       .section-3-box-3,
 //       .section-3-box-4{
-//         flex: 1 1 calc(25% - 16px); 
+//         flex: 1 1 calc(25% - 16px);
 //         background-color: var(--secondary-300);
 //         border-radius: 16px;
 //         padding: 32px 16px;
@@ -344,7 +342,7 @@
 //           color: var(--text-900);
 //         }
 //          &:hover {
-//            background-image: url('/Images/Green-bkg.jpg');; 
+//            background-image: url('/Images/Green-bkg.jpg');;
 //            background-size: cover;
 //            background-position: center;
 //            transition: background-image 0.5s ease-in-out;
@@ -406,32 +404,45 @@
 //   }
 // }
 
-
 .hero-container {
   height: 90vh;
-  background-color: darkgrey;
+  background: linear-gradient(
+      to top,
+      rgba(73, 73, 73, 0.6),
+      rgba(40, 40, 42, 0.3)
+    ),
+    url("/Images/house-footer.jpg");
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding: 64px 0 124px 0;
+  padding: 64px 0 104px 0;
   box-sizing: border-box;
-
 
   .hero-content {
     width: 100%;
-    max-width: 780px;
+    max-width: 650px;
     margin: 0 auto;
     text-align: center;
     color: var(--bkg-3);
     display: flex;
     flex-direction: column;
     gap: 24px;
-  
-    .button-container{
+
+    .hero-content-text {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+
+      .highlight{
+        color: var(--accent-900);
+      }
+    }
+
+    .button-container {
       display: flex;
       justify-content: center;
       flex-direction: row;
-
+      gap: 32px;
     }
   }
 }

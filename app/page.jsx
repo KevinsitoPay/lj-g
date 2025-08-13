@@ -1,4 +1,4 @@
-import Button from "@/UI/Buttons/Button";
+import Button from "@/UI/Buttons/ButtonCTA";
 import "./Home.scss";
 import GoogleReviews from "@/UI/GeneralComponents/GoogleReviews";
 import VideoComponent from "@/UI/GeneralComponents/VideoComponent";
@@ -7,6 +7,8 @@ import List from "@/UI/Icons/List";
 import GallerySection from "@/UI/GeneralComponents/GallerySection";
 import Faq from "@/UI/GeneralComponents/Faq";
 import Navbar from "@/UI/GeneralComponents/Navbar";
+import ButtonCTA from "@/UI/Buttons/ButtonCTA";
+import ButtonLink from "@/UI/Buttons/ButtonLink";
 
 export const metadata = {
   title: "Home page Landscaping title",
@@ -21,29 +23,29 @@ function Home() {
         <Navbar />
 
         <div className="hero-content">
+          <div className="hero-content-text">
+            <h1>
+              Tittle where we adress the{" "}
+              <span className="highlight"> main pain point</span>
+            </h1>
 
-          <div>
-          <h1>
-            Tittle where we adress the{" "}
-            <span className="highlight"> main pain point</span>
-          </h1>
-          <p>
-            Description where we adress how we can resolve the main pain point
-            main pain point that the client might have. Proving our value and
-            being apart of our competitors.
-          </p>
+            <p>
+              Description where we adress how we can resolve the main pain point
+              main pain point that the client might have. Proving our value and
+              being apart of our competitors.
+            </p>
           </div>
           <div className="button-container">
-        <Button extraClasses={"primary-button"}>Button text</Button>
-        <Button>Button text</Button>
-
-
-
-
+            <ButtonCTA extraClasses={"primary-button"}>
+              Book a free visit today
+            </ButtonCTA>
+            <ButtonLink>Button text</ButtonLink>
           </div>
-          
         </div>
       </div>
+
+          <GoogleReviews />
+
     </div>
   );
 }

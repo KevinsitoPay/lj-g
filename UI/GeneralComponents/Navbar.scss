@@ -164,7 +164,29 @@
   width: 100%;
   max-width: 1100px;
   margin: 0 auto;
-  
+
+  .menu-link{
+    color: var(--accent-900);
+    position: relative;
+    text-decoration: none;
+
+    &::after {
+      content: '';
+      position: absolute;
+      left: 0;
+      bottom: -2px;
+      width: 100%;
+      height: 2px;
+      background-color: currentColor;
+      transform: scaleX(0);
+      transition: transform 0.3s ease;
+      transform-origin: left;
+    }
+
+    &:hover::after {
+      transform: scaleX(1);
+    }
+  }
 
 
 
@@ -184,3 +206,52 @@
     justify-content: flex-end;
   }
 }
+.lj-logo .LJYellow {
+  fill: var(--accent-900);
+  transition: fill 0.4s ease;
+}
+
+.lj-logo .LJWhite {
+  fill: #EBE3D2;
+  transition: fill 0.4s ease;
+}
+
+.lj-logo:hover .LJYellow,
+.lj-logo:hover .LJWhite {
+  fill: var(--accent-900);
+}
+
+.LJWhite {}
+
+.lj-logo {
+  position: relative;
+  overflow: hidden;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 0;
+    height: 0;
+    background-color: var(--accent-900);
+    border-radius: 50%;
+    transition: width 0.4s ease, height 0.4s ease, top 0.4s ease, left 0.4s ease;
+    z-index: 0;
+  }
+
+  &:hover::before {
+    width: 200%;
+    height: 200%;
+    top: -50%;
+    left: -50%;
+    transition: all 0.4s ease;
+  }
+
+  .LJYellow,
+  .LJWhite {
+    position: relative;
+    z-index: 1;
+  }
+}
+

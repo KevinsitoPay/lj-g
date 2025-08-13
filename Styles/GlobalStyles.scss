@@ -12,6 +12,9 @@
   --primary-400: #FBD1C6;
   --primary-300: #FDE1D9;
   --primary-200: #FEF0EC;
+  --primary-100: #FFFDFD;
+  --primary-50: #FFFDFD;
+  --primary-0: #FFFDFD;
 
   /*Secondary Colors*/
   --secondary-900: #6C7A52;
@@ -43,6 +46,7 @@
   --text-400: #D4D4D4;
   --text-300: #EAEAEA;
   --text-200: #FFFFFF;
+
 
   /*z Colors*/
   --error-900: #c62828;
@@ -115,6 +119,14 @@ body {
   font-style: italic;
 }
 
+/* Paragraph Bold Font */
+@font-face {
+  font-family: 'Open Sans';
+  src: url('/fonts/OpenSans/OpenSans-SemiBold.woff2') format('woff2'),
+    url('/fonts/OpenSans/OpenSans-SemiBold.woff') format('woff');
+  font-weight: 600;
+  font-style: semibold;
+}
 /* Paragraph Bold Font */
 @font-face {
   font-family: 'Open Sans';
@@ -241,7 +253,7 @@ body {
 }
 @mixin link-text {
   font-family: "Open Sans";
-  font-weight: 700;
+  font-weight: 600;
   font-size: 16px;
   line-height: 24px;
 
@@ -347,5 +359,9 @@ small,
 
 i {
   @include paragraph-default;
+}
+
+::selection {
+  background-color: var(--primary-900);
 }
 

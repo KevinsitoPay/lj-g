@@ -3,7 +3,7 @@ import './Button.scss';
 import Link from 'next/link';
 import ArrowIcon from '../Icons/ArrowIcon';
 
-const Button = ({ children, variantClass, extraClasses, href: hrefProp }) => {
+const ButtonCTA = ({ children, variantClass, extraClasses, href: hrefProp }) => {
   const href = hrefProp || '';
 
   return (
@@ -17,5 +17,5 @@ const Button = ({ children, variantClass, extraClasses, href: hrefProp }) => {
   );
 };
 
-export default Button;
+export default ButtonCTA;
 
