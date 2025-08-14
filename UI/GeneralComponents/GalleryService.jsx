@@ -5,7 +5,7 @@ import Grading from "@/UI/Icons/Grading";
 import Button from "@/UI/Buttons/Button";
 import "./GalleryService.scss";
 
-function GalleryService() {
+function GalleryService({ title, highlight, paragraph, images }) {
   useEffect(() => {
     const carousel = document.querySelector('.carousel');
     let isDragging = false;
@@ -33,7 +33,7 @@ function GalleryService() {
       if (!isDragging) return;
       e.preventDefault();
       const x = e.pageX - carousel.offsetLeft;
-      const walk = (x - startX) * 1.5; // Ajusta la velocidad del arrastre según necesites
+      const walk = (x - startX) * 1.5;
       carousel.scrollLeft = scrollLeft - walk;
     };
 
@@ -55,27 +55,16 @@ function GalleryService() {
       <div className="section-3-box-content">
         <Grading size="lg" />
         <h2>
-          Lorem ipsum <span className="highlight">adipiscing Ut.</span>
+          {title} <span className="highlight">{highlight}</span>
         </h2>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipiscing elit. Ut et massa mi.
-          Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla,
-          mattis ligula consectetur, ultrices.
-        </p>
+        <p>{paragraph}</p>
       </div>
       <div className="section-3-box-gallery">
         <div className="carousel">
           <div className="carousel-track">
-            {/* Gallery items */}
-            <img src="/images/service-ai-6.webp" />
-            <img src="/images/service-ai-1.webp" />
-            <img src="/images/service-ai-3.webp" />
-            <img src="/images/service-ai-5.webp" />
-            <img src="/images/service-ai-4.webp" />
-            <img src="/images/service-ai-1.webp" />
-            <img src="/images/service-ai-3.webp" />
-            <img src="/images/service-ai-5.webp" />
-            <img src="/images/service-ai-4.webp" />
+            {images.map((src, index) => (
+              <img key={index} src={src} alt={`Gallery item ${index + 1}`} />
+            ))}
           </div>
         </div>
       </div>

@@ -10,6 +10,9 @@
   import Grading from "@/UI/Icons/Grading";
   import "./service.scss";
   import GalleryService from "@/UI/GeneralComponents/GalleryService";
+  import BenefitsService from "@/UI/GeneralComponents/BenefitsService";
+  
+  
 
   export const metadata = {
     title: 'Design',
@@ -21,7 +24,9 @@
     
     return (
       <div>
-            
+
+
+        {/* Hero Section */}
       <div className="design-container"> 
           <div className="hero-content">
           <h1>Tittle where we adress the <span className="highlight"> main pain point</span></h1>
@@ -31,46 +36,59 @@
         </div>
         </div>
 
+      {/* Seccion de reviews */}
       <GoogleReviews />
+
+      {/* Seccion de video */}
       <VideoComponent />
-      <CtaSection title="Lorem ipsum dolor sit amet consectetur adipiscing elit." description="Hola. Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices." />
-      <Faq />
 
-        <div className="why-service-container">
-        <h2>Why name <span className="highlight">service?</span></h2>
-        
-        <div className="why-service-content">
-          <div className="why-service-quote">
-            <p>“Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in...”</p>
-            <p>Nadia Quezada <span>★★★★★</span></p>
-          </div>
-          
-          <div className="why-service-benefits">
-            <div className="benefit-card">
-              <img src="/images/benefit1.jpg" alt="Benefit 1" />
-              <h5> <Leaf/> Main <span className="highlight">benefit</span></h5>
-              <p>Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi.</p>
-            </div>
-            <div className="benefit-card">
-              <img src="/images/benefit2.jpg" alt="Benefit 2" />
-              <h5> <Grading/> Second <span className="highlight">benefit</span></h5>
-              <p>Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi.</p>
-            </div>
-            <div className="benefit-card">
-              <img src="/images/benefit3.jpg" alt="Benefit 3" />
-              <h5> <Schovel/> Third <span className="highlight">benefit</span></h5>
-              <p>Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi.</p>
-            </div>
-          </div>
-        </div>
-        
-        <div className="why-service-actions">
-          <button className="prev-btn">←</button>
-          <button className="next-btn">→</button>
-          <Button text="Learn more" size="medium" link="/" variant="filled" textColor="#28282A" backgroundColor="#FCFAF8" iconColor="#F1572D" />
-        </div>
-      </div>
+      {/* Seccion de beneficios */} 
 
+       <BenefitsService
+      testimonials={[
+        {
+          quote: "“Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in...”",
+          author: "Barbara Smith"
+        },
+        {
+          quote: "“Second testimonial text goes here, highlighting user experience and satisfaction.”",
+          author: "Andrew Johnson"
+        },
+        {
+          quote: "“Another testimonial to showcase diversity in opinions and positive feedback.”",
+          author: "Jennifer Lee"
+        },
+        {
+          quote: "“Final testimonial snippet to bring more authenticity and customer trust.”",
+          author: "Carlos Perez"
+        }
+      ]}
+      benefits={[
+        { 
+          image: "/images/footer_bkg.jpg",
+          icon: <Leaf />,
+          title: "Primary",
+          highlight: "benefit",
+          text: "Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi."
+        },
+        { 
+          image: "/images/house-gray.jpg",
+          icon: <Grading />,
+          title: "Secundary",
+          highlight: "benefit",
+          text: "Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi."
+        },
+        { 
+          image: "/images/house-footer.jpg",
+          icon: <Schovel />,
+          title: "Tertiary",
+          highlight: "benefit",
+          text: "Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi."
+        }
+      ]}
+    />
+
+         {/* Seccion 2 */}
         <div className="section-2-container">
           <div className="section-2-box-text">
             <h5>Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet. Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet.</h5>
@@ -120,7 +138,28 @@
           </div>
         </div>
 
-      <GalleryService />
+      {/* Seccion de galeria */}
+          <GalleryService
+             title="Lorem ipsum"
+             highlight="dolor sit amet"
+             paragraph="Lorem ipsum dolor sit amet consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices."
+             images={[
+              "/images/service-ai-6.webp",
+              "/images/service-ai-1.webp",
+              "/images/service-ai-3.webp",
+              "/images/service-ai-5.webp",
+             "/images/service-ai-4.webp", 
+              "/images/service-ai-6.webp",
+              "/images/service-ai-1.webp",
+              "/images/service-ai-3.webp",
+              "/images/service-ai-5.webp",
+             "/images/service-ai-4.webp",   ]} />
+
+      {/* Seccion de CTA */}
+      <CtaSection title="Lorem ipsum dolor sit amet consectetur adipiscing elit." description="Hola. Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices." />
+      
+      {/* Seccion de FAQ */}
+      <Faq />
 
       </div>
     )
