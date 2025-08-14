@@ -1,0 +1,97 @@
+"use client";
+
+import React, { useEffect } from "react";
+import Grading from "@/UI/Icons/Grading";
+import Button from "@/UI/Buttons/Button";
+import "./GalleryService.scss";
+
+function GalleryService() {
+  useEffect(() => {
+    const carousel = document.querySelector('.carousel');
+    let isDragging = false;
+    let startX;
+    let scrollLeft;
+
+    const handleMouseDown = (e) => {
+      isDragging = true;
+      carousel.classList.add('active');
+      startX = e.pageX - carousel.offsetLeft;
+      scrollLeft = carousel.scrollLeft;
+    };
+
+    const handleMouseLeave = () => {
+      isDragging = false;
+      carousel.classList.remove('active');
+    };
+
+    const handleMouseUp = () => {
+      isDragging = false;
+      carousel.classList.remove('active');
+    };
+
+    const handleMouseMove = (e) => {
+      if (!isDragging) return;
+      e.preventDefault();
+      const x = e.pageX - carousel.offsetLeft;
+      const walk = (x - startX) * 1.5; // Ajusta la velocidad del arrastre según necesites
+      carousel.scrollLeft = scrollLeft - walk;
+    };
+
+    carousel.addEventListener('mousedown', handleMouseDown);
+    carousel.addEventListener('mouseleave', handleMouseLeave);
+    carousel.addEventListener('mouseup', handleMouseUp);
+    carousel.addEventListener('mousemove', handleMouseMove);
+
+    return () => {
+      carousel.removeEventListener('mousedown', handleMouseDown);
+      carousel.removeEventListener('mouseleave', handleMouseLeave);
+      carousel.removeEventListener('mouseup', handleMouseUp);
+      carousel.removeEventListener('mousemove', handleMouseMove);
+    };
+  }, []);
+
+  return (
+    <div className="section-3-container">
+      <div className="section-3-box-content">
+        <Grading size="lg" />
+        <h2>
+          Lorem ipsum <span className="highlight">adipiscing Ut.</span>
+        </h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipiscing elit. Ut et massa mi.
+          Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla,
+          mattis ligula consectetur, ultrices.
+        </p>
+      </div>
+      <div className="section-3-box-gallery">
+        <div className="carousel">
+          <div className="carousel-track">
+            {/* Gallery items */}
+            <img src="/images/service-ai-6.webp" />
+            <img src="/images/service-ai-1.webp" />
+            <img src="/images/service-ai-3.webp" />
+            <img src="/images/service-ai-5.webp" />
+            <img src="/images/service-ai-4.webp" />
+            <img src="/images/service-ai-1.webp" />
+            <img src="/images/service-ai-3.webp" />
+            <img src="/images/service-ai-5.webp" />
+            <img src="/images/service-ai-4.webp" />
+          </div>
+        </div>
+      </div>
+      <div className="section-3-box-button">
+        <Button
+          text="Check our projects"
+          size="medium"
+          link="/"
+          variant="filled"
+          textColor="#28282A"
+          backgroundColor="#FDE1D9"
+          iconColor="#F1572D"
+        />
+      </div>
+    </div>
+  );
+}
+
+export default GalleryService;
