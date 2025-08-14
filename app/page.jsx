@@ -39,7 +39,7 @@ function Home() {
             <ButtonCTA extraClasses={"primary-button"}>
               Book a free visit today
             </ButtonCTA>
-            <ButtonLink>Button text</ButtonLink>
+            <ButtonLink>Check our projects</ButtonLink>
           </div>
         </div>
       </div>

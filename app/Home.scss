@@ -114,7 +114,7 @@
 //   width: 100%;
 //   height: 250px;
 //   padding: 16px;
-//   box-sizing: border-box;
+//   
 
 //   p {
 //     align-self: flex-end; // Alinea a la derecha
@@ -142,7 +142,7 @@
 //   width: calc(50% - 8px);
 //   height: 200px;
 //   padding: 16px;
-//   box-sizing: border-box;
+//   
 
 //   p {
 //     position: absolute; // Posiciona absolutamente dentro del contenedor
@@ -334,7 +334,7 @@
 //         background-color: var(--secondary-300);
 //         border-radius: 16px;
 //         padding: 32px 16px;
-//         box-sizing: border-box;
+//         
 //         h5{
 //           color: var(--text-900);
 //         }
@@ -405,18 +405,20 @@
 // }
 
 .hero-container {
-  height: 90vh;
+  height: 95vh;
   background: linear-gradient(
       to top,
       rgba(73, 73, 73, 0.6),
       rgba(40, 40, 42, 0.3)
     ),
     url("/Images/house-footer.jpg");
+  background-size: cover;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   padding: 64px 0 104px 0;
-  box-sizing: border-box;
+  
+  
 
   .hero-content {
     width: 100%;
@@ -445,4 +447,15 @@
       gap: 32px;
     }
   }
-}
+
+  
+    @media (max-width: 1200px) {
+      transition: height 0.3s ease;
+      height: 100vh;
+      padding: 32px 5% 52px 5%;
+      
+      
+    }
+  }
+
+
