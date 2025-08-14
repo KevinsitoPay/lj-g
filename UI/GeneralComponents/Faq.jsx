@@ -1,7 +1,7 @@
 "use client";
 import './Faq.scss';
 import React, { useState } from 'react';
-import Button from '../Buttons/Button';
+import Button from '../Buttons/ButtonCTA';
 import ChevronRight from '../Icons/ChevronRight';
 import ChevronDown from '../Icons/ChevronDown';
 

@@ -1,76 +1,225 @@
-.button {
-  white-space: nowrap; // borrrar espacios en blanco
-  display: inline-flex;
+
+.arrow-icon {
+  color: var(--text-200);
+}
+
+
+
+
+.button-link {
+  position: relative;
+  height: 24px;
+  display: flex;
   align-items: center;
-  cursor: pointer;
-  padding: 8px 16px;
-  text-decoration: none;
-  transition: background-color 0.1s, border-color 0.1s, transform 0.5s ease-out; 
+  justify-content: space-between;
   border-radius: 32px;
-  gap: 16px;
-
-  &.filled {
-    background-color: #f2f2f2;
-    border: none;
-    
-    &:hover {
-      background-color: #e0e0e0;
-      transform: scale(1.08);
-    }
-  }
-
-  &.outlined {
-    border: 1px solid #333;
-    background-color: transparent;
-    
-    &:hover {
-      border-color: #000;
-      transform: scale(1.08);
-    }
-  }
-
-  &.minimal {
-    border: none;
-    background-color: transparent;
-
-    &:hover {
-      color: #555;
-      transform: scale(1.08);
-    }
-  }
-
-  .text {
-    margin-right: 16px;
-  }
-
-  .icon {
-    display: inline-flex;
-    color: #fff;
-    border-radius: 50%;
-    width: 30px;
-    height: 30px;
-    align-items: center;
-    justify-content: center;
-  }
+  min-width: 240px;
+  padding: 16px 20px;
+  overflow: hidden;
+  cursor: pointer;
+  color: var(--text-900);
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-.small {
-  font-size: 12px;
-  font-family: "Gabarito", sans-serif;
-  font-weight: 500;
-  line-height: 16px;
+
+
+.bg-circle {
+  position: absolute;
+  top: 50%;
+  left: calc(100% - 36px);
+  transform: translate(-50%, -50%) scale(0);
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  z-index: 0;
+  pointer-events: none;
+  transition: transform 0.6s ease, background-color 0.3s ease;
+  background-color: transparent;
 }
 
-.medium {
-  font-size: 16px;
-  font-family: "Gabarito", sans-serif;
-  font-weight: 500;
-  line-height: 20px;
+.button-link > *:not(.bg-circle) {
+  position: relative;
+  z-index: 1;
+  transition: color 0.3s ease;
 }
 
-.large {
-  font-size: 20px;
-  font-family: "Gabarito", sans-serif;
-  font-weight: 500;
-  line-height: 24px;
+.button-text {
+  color: var(--text-900);
+  transition: color 0.3s ease;
+}
+
+
+
+
+.arrow-icon-container {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 32px;
+  width: 32px;
+  border-radius: 50%;
+  background-color: transparent;
+  transition: background-color 0.3s ease;
+}
+
+.arrow-icon {
+  color: var(--text-200);
+  z-index: 2;
+  transition: color 0.3s ease;
+}
+
+.primary-button {
+  background-color: var(--primary-50);
+}
+
+.primary-button .bg-circle {
+  background-color: var(--primary-900);
+}
+
+.primary-button .arrow-icon-container {
+  background-color: var(--primary-900);
+}
+
+.primary-button:hover {
+  background-color: var(--primary-900);
+}
+
+.primary-button:hover .button-text {
+  color: var(--text-200);
+}
+
+.primary-button:hover .arrow-icon-container {
+  background-color: var(--primary-900);
+}
+
+.primary-button:hover .bg-circle {
+  transform: translate(-50%, -50%) scale(40);
+}
+
+.secondary-button {
+  background-color: var(--secondary-200);
+}
+
+.secondary-button .bg-circle {
+  background-color: var(--secondary-900);
+}
+
+.secondary-button .arrow-icon-container {
+  background-color: var(--secondary-900);
+}
+
+.secondary-button:hover {
+  background-color: var(--secondary-900);
+}
+
+.secondary-button:hover .button-text {
+  color: var(--text-200);
+}
+
+.secondary-button:hover .arrow-icon-container {
+  background-color: var(--secondary-900);
+}
+
+.secondary-button:hover .bg-circle {
+  transform: translate(-50%, -50%) scale(40);
+}
+
+.accent-button {
+  background-color: var(--accent-200);
+}
+
+.accent-button .bg-circle {
+  background-color: var(--accent-900);
+}
+
+.accent-button .arrow-icon-container {
+  background-color: var(--accent-900);
+}
+
+.accent-button:hover {
+  background-color: var(--accent-900);
+}
+
+.accent-button:hover .button-text {
+  color: var(--text-200);
+}
+
+.accent-button:hover .arrow-icon-container {
+  background-color: var(--accent-900);
+}
+
+.accent-button:hover .bg-circle {
+  transform: translate(-50%, -50%) scale(40);
+}
+
+.white-button {
+  background-color: transparent;
+  color: red !important; 
+}
+
+.white-button .bg-circle {
+  background-color: transparent;
+}
+
+.white-button .arrow-icon-container {
+  background-color: transparent;
+}
+
+.white-button:hover {
+  background-color: transparent;
+}
+
+.white-button:hover .button-text {
+  color: var(--text-200);
+}
+
+.white-button:hover .arrow-icon-container {
+  background-color: transparent;
+}
+
+.white-button:hover .bg-circle {
+  transform: translate(-50%, -50%) scale(40);
+}
+
+
+/*Button Link styles*/
+
+.button-link-link {
+  position: relative;
+  height: 24px;
+  display: flex;
+  gap: 32px;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 20px;
+  overflow: hidden;
+  cursor: pointer;
+  color: var(--text-200);
+}
+
+.button-link-text {
+  position: relative;
+  padding-bottom: 2px;
+  text-decoration: none;
+  color: var(--text-200);
+}
+
+.button-link-text::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: var(--text-200);
+  bottom: 0;
+  left: 0;
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
+  transform-origin: bottom right;
+}
+
+.button-link-link:hover .button-link-text::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
 }

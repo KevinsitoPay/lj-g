@@ -1,6 +1,6 @@
 "use client"; /* componente del lado del cliente */
 import './Footer.scss';
-import Button from '../Buttons/Button';
+import Button from '../Buttons/ButtonCTA';
 import Calendario from './Calendario';
 import Link from 'next/link';
 
