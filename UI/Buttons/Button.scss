@@ -13,7 +13,7 @@
   align-items: center;
   justify-content: space-between;
   border-radius: 32px;
-  min-width: 240px;
+  min-width: 220px;
   padding: 16px 20px;
   overflow: hidden;
   cursor: pointer;
@@ -70,6 +70,9 @@
   transition: color 0.3s ease;
 }
 
+/*Primary button section */
+
+/*Main Primary*/
 .primary-button {
   background-color: var(--primary-50);
 }
@@ -98,6 +101,40 @@
   transform: translate(-50%, -50%) scale(40);
 }
 
+/*Low Fi Primary*/
+
+.primary-button-lofi {
+  background-color: var(--primary-300);
+}
+
+.primary-button-lofi .bg-circle {
+  background-color: var(--primary-900);
+}
+
+.primary-button-lofi .arrow-icon-container {
+  background-color: var(--primary-900);
+}
+
+.primary-button-lofi:hover {
+  background-color: var(--primary-900);
+}
+
+.primary-button-lofi:hover .button-text {
+  color: var(--text-200);
+}
+
+.primary-button-lofi:hover .arrow-icon-container {
+  background-color: var(--primary-900);
+}
+
+.primary-button-lofi:hover .bg-circle {
+  transform: translate(-50%, -50%) scale(40);
+}
+
+
+/*Secondary Buttons section*/
+
+/*Main Secondary*/
 .secondary-button {
   background-color: var(--secondary-200);
 }
@@ -125,6 +162,20 @@
 .secondary-button:hover .bg-circle {
   transform: translate(-50%, -50%) scale(40);
 }
+
+
+
+
+
+
+
+
+
+
+
+/* Accent Buttons section*/
+
+/*Main Accent*/
 
 .accent-button {
   background-color: var(--accent-200);
@@ -154,9 +205,46 @@
   transform: translate(-50%, -50%) scale(40);
 }
 
+/*Accent Button lofi*/
+.accent-button-lofi {
+  background-color: var(--accent-300);
+}
+
+.accent-button-lofi .bg-circle {
+  background-color: var(--accent-900);
+}
+
+.accent-button-lofi .arrow-icon-container {
+  background-color: var(--accent-900);
+}
+
+.accent-button-lofi:hover {
+  background-color: var(--accent-900);
+}
+
+.accent-button-lofi:hover .button-text {
+  color: var(--text-200);
+}
+
+.accent-button-lofi:hover .arrow-icon-container {
+  background-color: var(--accent-900);
+}
+
+.accent-button-lofi:hover .bg-circle {
+  transform: translate(-50%, -50%) scale(40);
+}
+
+
+
+
+
+
+
+
+/*Extra buttons*/
+
 .white-button {
   background-color: transparent;
-  color: red !important; 
 }
 
 .white-button .bg-circle {

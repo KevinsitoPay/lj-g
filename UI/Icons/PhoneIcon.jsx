@@ -2,8 +2,9 @@ const ICON_SIZES = {
   sm: 16,
   m: 24,
   lg: 32,
+  xlg: 48,
 };
-const Phone = ({ size = "m", className = "", ...props }) => {
+const PhoneIcon = ({ size = "m", className = "", ...props }) => {
   const dimension = ICON_SIZES[size] || ICON_SIZES.m;
 
   return (
@@ -24,4 +25,4 @@ const Phone = ({ size = "m", className = "", ...props }) => {
   );
 };
 
-export default Phone;
+export default PhoneIcon;
