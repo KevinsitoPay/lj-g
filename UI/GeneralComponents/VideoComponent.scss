@@ -11,6 +11,7 @@ height: auto;
     gap: 0px 40px;
 
     .video-box-content-title {
+      max-width: 600px;
       h2{
         color: var(--text-900);
       }
@@ -20,6 +21,7 @@ height: auto;
     }
     .video-box-content-description {
         padding-top: 8px;
+        max-width: 600px;
       .video-box-content-description-button {
         text-align: right;
       }

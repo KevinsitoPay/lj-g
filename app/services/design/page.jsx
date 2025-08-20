@@ -2,7 +2,8 @@
   import Faq from "@/UI/GeneralComponents/Faq";
   import VideoComponent from "@/UI/GeneralComponents/VideoComponent";
   import GoogleReviews from "@/UI/GeneralComponents/GoogleReviews";
-  import Button from "@/UI/Buttons/Button";
+  import ButtonLink from "@/UI/Buttons/ButtonLink";
+  import ButtonCTA from "@/UI/Buttons/ButtonCTA";
   import Leaf from "@/UI/Icons/Leaf";
   import Schovel from "@/UI/Icons/Shovel";
   import Lotus  from "@/UI/Icons/Lotus";
@@ -31,8 +32,11 @@
           <div className="hero-content">
           <h1>Tittle where we adress the <span className="highlight"> main pain point</span></h1>
           <p>Description where we adress how we can resolve the main pain point main pain point that the client might have. Proving our value and being apart of our competitors.</p>
-          <Button text="Adress pain point" size="medium" link="/" variant="filled" textColor="#28282A" backgroundColor="#FCFAF8" iconColor="#F1572D" />
-          <Button text="Check our projects" size="medium" link="/" variant="minimal" textColor="#FCFAF8" backgroundColor="transparent" />
+          <div className="button-container">
+           <ButtonCTA extraClasses={"primary-button"}>  Book a free visit today </ButtonCTA>
+           <ButtonLink>Check our projects</ButtonLink>
+          </div>
+
         </div>
         </div>
 
@@ -40,7 +44,12 @@
       <GoogleReviews />
 
       {/* Seccion de video */}
-      <VideoComponent />
+      <VideoComponent 
+        imageSrc="/images/white-house.jpg"
+        title="Lorem impsun in dolore"
+        highlight="pastrun getlufa"
+        paragraph="Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet. Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in hendrerit urna."
+      />
 
       {/* Seccion de beneficios */} 
 
@@ -140,6 +149,7 @@
 
       {/* Seccion de galeria */}
           <GalleryService
+            icon={<Grading size="lg" />}
              title="Lorem ipsum"
              highlight="dolor sit amet"
              paragraph="Lorem ipsum dolor sit amet consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices."
@@ -159,7 +169,30 @@
       <CtaSection title="Lorem ipsum dolor sit amet consectetur adipiscing elit." description="Hola. Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices." />
       
       {/* Seccion de FAQ */}
-      <Faq />
+    <Faq
+      title= "This is where we show you the frequently asked"
+      highlight="questions."
+    >
+      {[
+        {
+          question: "Question 1: Lorem ipsum dolor sit amet consectetur?",
+          answer: "Answer 1: Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi."
+        },
+        {
+          question: "Question 2: Lorem ipsum dolor sit amet consectetur?",
+          answer: "Answer 2: Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi."
+        },
+         {
+          question: "Question 3: Lorem ipsum dolor sit amet consectetur?",
+          answer: "Answer 3: Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi."
+        },
+        {
+          question: "Question 4: Lorem ipsum dolor sit amet consectetur?",
+          answer: "Answer 4: Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi."
+        },
+      ]}
+    </Faq>
+      
 
       </div>
     )

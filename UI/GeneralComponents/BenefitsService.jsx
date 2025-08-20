@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useState } from 'react';
-import Button from '@/UI/Buttons/Button';
+import ButtonCTA from "@/UI/Buttons/ButtonCTA";
 import ArrowRight from '../Icons/ArrowRight';
 import ArrowLeft from '../Icons/ArrowLeft';
 import './BenefitsService.scss';
@@ -47,7 +47,7 @@ function BenefitsService({ testimonials, benefits }) {
           <button className="prev-btn" onClick={handlePrevClick}> <ArrowLeft/> </button>
           <button className="next-btn" onClick={handleNextClick}> <ArrowRight/> </button>
         </div>
-        <Button text="Book a visit today" size="medium" link="/" variant="filled" textColor="#28282A" backgroundColor="#DBE0D3" iconColor="#6C7A52" />
+        <ButtonCTA extraClasses={"secondary-button"}> Book a visit today </ButtonCTA>
       </div>
     </div>
   );

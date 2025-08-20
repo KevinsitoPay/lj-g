@@ -2,10 +2,10 @@
 
 import React, { useEffect } from "react";
 import Grading from "@/UI/Icons/Grading";
-import Button from "@/UI/Buttons/Button";
+import ButtonCTA from "@/UI/Buttons/ButtonCTA";
 import "./GalleryService.scss";
 
-function GalleryService({ title, highlight, paragraph, images }) {
+function GalleryService({ title, highlight, paragraph, images, icon }) {
   useEffect(() => {
     const carousel = document.querySelector('.carousel');
     let isDragging = false;
@@ -53,7 +53,7 @@ function GalleryService({ title, highlight, paragraph, images }) {
   return (
     <div className="section-3-container">
       <div className="section-3-box-content">
-        <Grading size="lg" />
+       {icon}
         <h2>
           {title} <span className="highlight">{highlight}</span>
         </h2>
@@ -69,15 +69,7 @@ function GalleryService({ title, highlight, paragraph, images }) {
         </div>
       </div>
       <div className="section-3-box-button">
-        <Button
-          text="Check our projects"
-          size="medium"
-          link="/"
-          variant="filled"
-          textColor="#28282A"
-          backgroundColor="#FDE1D9"
-          iconColor="#F1572D"
-        />
+      <ButtonCTA extraClasses={"primary-button"}>  Book a free visit today </ButtonCTA> 
       </div>
     </div>
   );

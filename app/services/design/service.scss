@@ -2,14 +2,17 @@
     background: url('/Images/desing-hero.webp');
     background-size: cover;
     background-position: center;
-    height: 50vh;
+    height: 70vh;
     padding: 104px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
     text-align: left;
-
+    .button-container {
+      display: flex;
+      gap: 16px;
+    }
     .hero-content {
       max-width: 650px;
       margin: 0;
