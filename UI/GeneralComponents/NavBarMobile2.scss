@@ -1,0 +1,20 @@
+.mobile-overlay {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: var(--bkg-2);
+  z-index: 999999; /* extremely high to ensure it's on top */
+  height: 100vh;
+  width: 100vw;
+  box-sizing: border-box;
+  overflow-y: auto; /* allow vertical scroll */
+padding: 32px 5% 52px 5%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  color: black;
+  font-size: 2rem;
+}
+

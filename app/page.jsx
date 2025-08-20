@@ -20,7 +20,9 @@ function Home() {
   return (
     <div>
       <div className="hero-container">
-        <Navbar />
+        <Navbar type="main" />
+        <Navbar type="alt" />
+        <Navbar type="alt-colors" />
 
         <div className="hero-content">
           <div className="hero-content-text">
