@@ -21,8 +21,6 @@ function Home() {
     <div>
       <div className="hero-container">
         <Navbar type="main" />
-        <Navbar type="alt" />
-        <Navbar type="alt-colors" />
 
         <div className="hero-content">
           <div className="hero-content-text">
