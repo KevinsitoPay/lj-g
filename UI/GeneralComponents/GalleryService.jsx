@@ -69,7 +69,7 @@ function GalleryService({ title, highlight, paragraph, images, icon }) {
         </div>
       </div>
       <div className="section-3-box-button">
-      <ButtonCTA extraClasses={"primary-button"}>  Book a free visit today </ButtonCTA> 
+      <ButtonCTA extraClasses={"primary-button-lofi"}>  Book a free visit today </ButtonCTA> 
       </div>
     </div>
   );

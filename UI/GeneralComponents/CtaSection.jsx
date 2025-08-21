@@ -1,4 +1,5 @@
 import Button from "../Buttons/ButtonCTA";
+import ButtonCTA from "../Buttons/ButtonCTA";
 import "./CtaSection.scss";
 function CtaSection({ title, description }) {
 
@@ -7,7 +8,9 @@ function CtaSection({ title, description }) {
             <h3>{title}</h3>
             <p>{description}</p>
             <div className="cta-section-button">
-            <Button text="Adress pain point" size="medium" link="/" variant="filled" textColor="#28282A" backgroundColor="#FCFAF8" iconColor="#F1572D" />
+            <div className="button-container">
+                <ButtonCTA extraClasses={"primary-button"}>Book a free visit today</ButtonCTA>
+            </div>
             </div>
         </div>
     );

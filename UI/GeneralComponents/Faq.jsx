@@ -19,8 +19,8 @@ function Faq({ title, highlight, children }) {
       <div className="faq-box-left">
         <h3>{title} <span className="highlight">{highlight}</span></h3>
         <div className="button-container">
-          <ButtonCTA extraClasses={"primary-button"}>Book a free visit today</ButtonCTA>
-          <ButtonLink>Check our projects</ButtonLink>
+          <ButtonCTA extraClasses={"primary-button-lofi"}>Book a free visit today</ButtonCTA>
+          <ButtonLink extraClasses={"secondary-button-lofi"} link="/services">Explore Services</ButtonLink>
         </div>
         <div className="dropdown">
           {children.map((item, index) => (
