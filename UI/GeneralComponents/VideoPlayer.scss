@@ -1,0 +1,23 @@
+.plyr--video:not(.plyr--loading) .plyr__controls {
+  display: flex;
+  font-family: "Outfit", sans-serif;
+}
+
+.plyr--video:not(.plyr--loading)
+  .plyr__controls
+  button.plyr__control--overlaid {
+  display: none;
+}
+
+.plyr--video.plyr--paused .plyr__controls button.plyr__control--overlaid {
+  display: flex;
+}
+
+.plyr {
+  --plyr-color-main: var(--primary-900) !important;
+  border-radius: 16px;
+}
+
+.plyr__controls {
+  background-color: var(--bkg-1);
+}

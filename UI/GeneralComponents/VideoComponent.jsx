@@ -1,5 +1,6 @@
 import Button from "../Buttons/ButtonCTA";
 import "./VideoComponent.scss";
+import VideoPlayer from "./VideoPlayer";
 
 function VideoComponent({ imageSrc, title, highlight, paragraph }) {
   return (
@@ -24,7 +25,11 @@ function VideoComponent({ imageSrc, title, highlight, paragraph }) {
         </div>
       </div>
       <div className="video-box-video">
-        <img src={imageSrc} alt="Video" />
+        <VideoPlayer src="/videos/VideoDemo.mp4" poster="/videos/design-hero.jpg" />
+
+
+        
+        <img src="/images/design-hero.jpg" alt="" />
       </div>
       <div className="video-box-cta">
         <div>

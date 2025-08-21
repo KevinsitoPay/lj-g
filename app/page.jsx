@@ -19,7 +19,7 @@ export const metadata = {
 function Home() {
   return (
     <div>
-      <div className="hero-container">
+      <div className="hero-container" id="home-bg">
         <Navbar type="main" />
 
         <div className="hero-content">
