@@ -500,6 +500,21 @@ i {
   }
 }
 
+/*Normal Sections width settings*/
+
+.section {
+  max-width: 1360px;
+  margin: 0 auto; 
+
+  @media (max-width: 1400px) {
+    padding-right: 5%;
+    padding-left: 5%;
+  }
+
+}
+
+
+
 #services-layout {
   
   background-size: cover;
@@ -540,6 +555,10 @@ i {
   }
 }
 
+
+
+/*Backgrounds of hero sections services*/
 .landleveling-bg {
   background: url("/Images/desing-hero.webp");  
 }
+

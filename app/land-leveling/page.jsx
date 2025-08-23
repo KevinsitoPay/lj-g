@@ -1,6 +1,6 @@
   import CtaSection from "@/UI/GeneralComponents/CtaSection";
   import Faq from "@/UI/GeneralComponents/Faq";
-  import VideoComponent from "@/UI/GeneralComponents/VideoComponent";
+  import VideoComponent from "@/UI/GeneralComponents/VideoSection";
   import GoogleReviews from "@/UI/GeneralComponents/GoogleReviews";
   import Leaf from "@/UI/Icons/Leaf";
   import Schovel from "@/UI/Icons/Shovel";
@@ -30,6 +30,7 @@
         Title={"This is the text "}
         Highlight={"and this is the highlight."} 
         Background={"landleveling-bg"}
+
         />
     
       {/* Seccion de reviews */}
@@ -41,11 +42,15 @@
         title="Lorem impsun in dolore"
         highlight="pastrun getlufa"
         paragraph="Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet. Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in hendrerit urna."
+        videoSrc="/videos/videoDemo.mp4"
+        videoPoster="/videos/design-hero.jpg"
       />
-
+      
       {/* Seccion de beneficios */} 
 
        <BenefitsService
+
+       
       testimonials={[
         {
           quote: "“Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in...”",

@@ -2,10 +2,14 @@ import React from "react";
 import Navbar from "./Navbar";
 import ButtonCTA from "../Buttons/ButtonCTA";
 import ButtonLink from "../Buttons/ButtonLink";
+import ArrowIcon from "../Icons/ArrowIcon";
 
 const ServicesHeroSection = ({ Title, Highlight, Description, Background }) => {
   return (
     <>
+
+
+
    
         <div className={`hero-container ${Background}`} id="services-layout">
         <Navbar type="alt" />
@@ -24,7 +28,7 @@ const ServicesHeroSection = ({ Title, Highlight, Description, Background }) => {
             <ButtonCTA extraClasses={"primary-button"}>
               Book a free visit today
             </ButtonCTA>
-            <ButtonLink>Check our projects</ButtonLink>
+            <ButtonLink altArrowColor="arrow-white">Check our projects</ButtonLink>
           </div>
         </div>
       </div>
