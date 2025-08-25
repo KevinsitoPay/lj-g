@@ -49,7 +49,8 @@
       {/* Seccion de beneficios */} 
 
        <BenefitsService
-
+title={"This is the heading"} 
+highlight={"and this is the highlight."}
        
       testimonials={[
         {
