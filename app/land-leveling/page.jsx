@@ -1,9 +1,7 @@
   import CtaSection from "@/UI/GeneralComponents/CtaSection";
   import Faq from "@/UI/GeneralComponents/Faq";
-  import VideoComponent from "@/UI/GeneralComponents/VideoComponent";
+  import VideoComponent from "@/UI/GeneralComponents/VideoSection";
   import GoogleReviews from "@/UI/GeneralComponents/GoogleReviews";
-  import ButtonLink from "@/UI/Buttons/ButtonLink";
-  import ButtonCTA from "@/UI/Buttons/ButtonCTA";
   import Leaf from "@/UI/Icons/Leaf";
   import Schovel from "@/UI/Icons/Shovel";
   import Lotus  from "@/UI/Icons/Lotus";
@@ -12,7 +10,7 @@
   import "./service.scss";
   import GalleryService from "@/UI/GeneralComponents/GalleryService";
   import BenefitsService from "@/UI/GeneralComponents/BenefitsService";
-  
+  import ServicesHeroSection from "@/UI/GeneralComponents/ServicesHeroSection";
   
 
   export const metadata = {
@@ -24,22 +22,17 @@
   function Desing() {
     
     return (
-      <div>
-
+      <>
 
         {/* Hero Section */}
-      <div className="design-container"> 
-          <div className="hero-content">
-          <h1>Tittle where we adress the <span className="highlight"> main pain point</span></h1>
-          <p>Description where we adress how we can resolve the main pain point main pain point that the client might have. Proving our value and being apart of our competitors.</p>
-          <div className="button-container">
-           <ButtonCTA extraClasses={"primary-button"}>  Book a free visit today </ButtonCTA>
-           <ButtonLink>Check our projects</ButtonLink>
-          </div>
+        <ServicesHeroSection 
+        Description={"Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet."}
+        Title={"This is the text "}
+        Highlight={"and this is the highlight."} 
+        Background={"landleveling-bg"}
 
-        </div>
-        </div>
-
+        />
+    
       {/* Seccion de reviews */}
       <GoogleReviews />
 
@@ -49,11 +42,15 @@
         title="Lorem impsun in dolore"
         highlight="pastrun getlufa"
         paragraph="Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet. Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in hendrerit urna."
+        videoSrc="/videos/videoDemo.mp4"
+        videoPoster="/videos/design-hero.jpg"
       />
-
+      
       {/* Seccion de beneficios */} 
 
        <BenefitsService
+
+       
       testimonials={[
         {
           quote: "“Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in...”",
@@ -96,7 +93,6 @@
         }
       ]}
     />
-
          {/* Seccion 2 */}
         <div className="section-2-container">
           <div className="section-2-box-text">
@@ -169,7 +165,7 @@
       <CtaSection title="Lorem ipsum dolor sit amet consectetur adipiscing elit." description="Hola. Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices." />
       
       {/* Seccion de FAQ */}
-    <Faq
+    {/* <Faq
       title= "This is where we show you the frequently asked"
       highlight="questions."
     >
@@ -191,10 +187,9 @@
           answer: "Answer 4: Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi."
         },
       ]}
-    </Faq>
+    </Faq> */}
       
-
-      </div>
+      </>
     )
   }
 

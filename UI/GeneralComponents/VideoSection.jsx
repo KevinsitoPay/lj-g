@@ -1,9 +1,11 @@
 import Button from "../Buttons/ButtonCTA";
-import "./VideoComponent.scss";
+import "./VideoSection.scss";
+import VideoPlayer from "./VideoPlayer";
+import ButtonLink from "../Buttons/ButtonLink";
 
-function VideoComponent({ imageSrc, title, highlight, paragraph }) {
+function VideoComponent({ title, highlight, paragraph, videoSrc, videoPoster }) {
   return (
-    <div className="video-container">
+    <div className="video-container section">
       <div className="video-box-content">
         <div className="video-box-content-title">
           <h2>{title} <span className="highlight">{highlight}</span></h2>
@@ -11,20 +13,12 @@ function VideoComponent({ imageSrc, title, highlight, paragraph }) {
         <div className="video-box-content-description">
           <p>{paragraph}</p>
           <div className="video-box-content-description-button">
-            <Button 
-              text="About Us" 
-              size="medium" 
-              link="/" 
-              variant="minimal" 
-              textColor="#28282A" 
-              backgroundColor="transparent" 
-              iconSvgColor="#28282A" 
-            />
+            <ButtonLink altArrowColor={"arrow-black"} extraClasses={"link-black"} href={"/how-it-works"}>Check how it works</ButtonLink>
           </div>
         </div>
       </div>
       <div className="video-box-video">
-        <img src={imageSrc} alt="Video" />
+        <VideoPlayer src={videoSrc} poster={videoPoster} />
       </div>
       <div className="video-box-cta">
         <div>

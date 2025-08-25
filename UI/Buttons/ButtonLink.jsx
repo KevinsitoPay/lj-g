@@ -3,7 +3,7 @@ import './Button.scss';
 import Link from 'next/link';
 import ArrowIcon from '../Icons/ArrowIcon';
 
-const ButtonLink = ({ children, variantClass, extraClasses, href: hrefProp }) => {
+const ButtonLink = ({ children, variantClass, extraClasses, href: hrefProp, altArrowColor="arrow-white" }) => {
   const href = hrefProp || '';
 
   return (
@@ -11,7 +11,7 @@ const ButtonLink = ({ children, variantClass, extraClasses, href: hrefProp }) =>
       <span className="bg-circle"></span>
       <span className="button-link-text">{children}</span>
       <div className="arrow-icon-container">
-        <ArrowIcon className="arrow-icon" alt="icon of arrow" size="sm" />
+        <ArrowIcon className={`arrow-icon ${altArrowColor}`} alt="icon of arrow" size="sm"/>
       </div>
     </Link>
   );

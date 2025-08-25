@@ -1,11 +1,3 @@
-
-.arrow-icon {
-  color: var(--text-200);
-}
-
-
-
-
 .button-link {
   position: relative;
   height: 24px;
@@ -20,8 +12,6 @@
   color: var(--text-900);
   transition: background-color 0.3s ease, color 0.3s ease;
 }
-
-
 
 .bg-circle {
   position: absolute;
@@ -48,9 +38,6 @@
   transition: color 0.3s ease;
 }
 
-
-
-
 .arrow-icon-container {
   position: relative;
   z-index: 1;
@@ -65,9 +52,16 @@
 }
 
 .arrow-icon {
-  color: var(--text-200);
   z-index: 2;
   transition: color 0.3s ease;
+}
+
+.arrow-white {
+  color: var(--text-200);
+}
+
+.arrow-black {
+  color: var(--text-900);
 }
 
 /*Primary button section */
@@ -131,7 +125,6 @@
   transform: translate(-50%, -50%) scale(40);
 }
 
-
 /*Secondary Buttons section*/
 
 /*Main Secondary*/
@@ -162,16 +155,6 @@
 .secondary-button:hover .bg-circle {
   transform: translate(-50%, -50%) scale(40);
 }
-
-
-
-
-
-
-
-
-
-
 
 /* Accent Buttons section*/
 
@@ -234,13 +217,6 @@
   transform: translate(-50%, -50%) scale(40);
 }
 
-
-
-
-
-
-
-
 /*Extra buttons*/
 
 .white-button {
@@ -271,35 +247,32 @@
   transform: translate(-50%, -50%) scale(40);
 }
 
-
 /*Button Link styles*/
 
 .button-link-link {
   position: relative;
   height: 24px;
   display: flex;
-  gap: 32px;
+  gap: 16px;
   align-items: center;
   justify-content: space-between;
   padding: 16px 20px;
   overflow: hidden;
   cursor: pointer;
-  color: var(--text-200);
 }
 
 .button-link-text {
   position: relative;
   padding-bottom: 2px;
   text-decoration: none;
-  color: var(--text-200);
 }
 
 .button-link-text::after {
-  content: '';
+  content: "";
   position: absolute;
   width: 100%;
   height: 2px;
-  background-color: var(--text-200);
+  
   bottom: 0;
   left: 0;
   transform: scaleX(0);

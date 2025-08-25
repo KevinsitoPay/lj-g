@@ -25,8 +25,8 @@
 .menu-container {
   display: flex;
   width: 100%;
-  max-width: 1100px;
-  padding: 20px; /* horizontal padding = 20px */
+  max-width: 1360px;
+  padding: 0 20px;
   margin: 0 auto;
   height: 100px;
   position: relative; /* <-- containing block for .megamenu */
@@ -34,6 +34,7 @@
   border-radius: 16px 16px 0 0;
   .menu-link,
   .services-link {
+    cursor: pointer;
     font-weight: 600;
     color: var(--accent-900);
     position: relative;

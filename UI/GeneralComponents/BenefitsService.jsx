@@ -6,7 +6,7 @@ import ArrowRight from '../Icons/ArrowRight';
 import ArrowLeft from '../Icons/ArrowLeft';
 import './BenefitsService.scss';
 
-function BenefitsService({ testimonials, benefits }) {
+function BenefitsService({ testimonials, benefits,title, highlight  }) {
   const [currentTestimonial, setCurrentTestimonial] = useState(0);
 
   const handlePrevClick = () => {
@@ -22,8 +22,8 @@ function BenefitsService({ testimonials, benefits }) {
   };
 
   return (
-    <div className="why-service-container">
-      <h2>Why name <span className="highlight">service?</span></h2>
+    <div className="why-service-container section">
+      <h2>{title} <span className="highlight">{highlight}</span></h2>
       
       <div className="why-service-content">
         <div className="why-service-quote">
@@ -35,7 +35,7 @@ function BenefitsService({ testimonials, benefits }) {
           {benefits.map((benefit, index) => (
             <div key={index} className="benefit-card">
               <img src={benefit.image} alt={`Benefit ${index + 1}`} />
-              <h5>{benefit.icon} {benefit.title} <span className="highlight">{benefit.highlight}</span></h5>
+              <h5 className="heading-icon">{benefit.icon} {benefit.title} <span className="highlight">{benefit.highlight}</span></h5>
               <p>{benefit.text}</p>
             </div>
           ))}

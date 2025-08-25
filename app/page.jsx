@@ -1,7 +1,7 @@
 import Button from "@/UI/Buttons/ButtonCTA";
 import "./Home.scss";
 import GoogleReviews from "@/UI/GeneralComponents/GoogleReviews";
-import VideoComponent from "@/UI/GeneralComponents/VideoComponent";
+import VideoComponent from "@/UI/GeneralComponents/VideoSection";
 import CtaSection from "@/UI/GeneralComponents/CtaSection";
 import List from "@/UI/Icons/List";
 import GallerySection from "@/UI/GeneralComponents/GallerySection";
@@ -19,7 +19,7 @@ export const metadata = {
 function Home() {
   return (
     <div>
-      <div className="hero-container">
+      <div className="hero-container" id="home-bg">
         <Navbar type="main" />
 
         <div className="hero-content">
