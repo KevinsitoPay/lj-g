@@ -18,7 +18,6 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <head></head>
       <body>
-        {withNavbar && <Navbar />}
         {children}
         <footer>
           <Footer />
