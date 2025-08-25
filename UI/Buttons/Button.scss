@@ -283,32 +283,3 @@
   transform: scaleX(1);
   transform-origin: bottom left;
 }
-
-.link-white {
-  color: var(--text-200);
-  .button-link-text {
-    color: var(--text-200);
-  }
-  .button-link-text::after {
-    background-color: var(--text-200);
-  }
-  .arrow-icon-container .arrow-icon {
-    color: var(--text-200);
-  }
-}
-
-.link-black {
-  color: var(--text-900);
-
-  .button-link-text {
-    color: var(--text-900);
-  }
-
-    .button-link-text::after {
-    background-color: var(--text-900);
-  }
-
-  .button-link-text::after {
-    background-color: var(--text-900);
-  }
-}

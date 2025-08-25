@@ -3,14 +3,25 @@
     "userId": 1,
     "id": 1,
     "category": "About LJ&G",
+    "slug": "what-services-does-lj-gonzalez",
     "image": "/images/service-ai-6.webp",
-    "highlight": "Lorem",
-    "title": "sunt aut facere repellat provident occaecati excepturi optio reprehenderit",
-    "body": "quia et suscipit\nsuscipit recusandae consequuntur expedita et cum\nreprehenderit molestiae ut ut quas totam\nnostrum rerum est autem sunt rem eveniet architecto"
+    "title": "What services does LJ & Gonzalez",
+    "highlight": "Landscaping offer?",
+    "abstract": "Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet.",
+    "body": [
+    { "type": "text", "content": "<p>At LJ & Gonzalez Landscaping, we provide a comprehensive range of landscaping services tailored to both residential and commercial properties. Our goal is to transform outdoor spaces into beautiful, functional environments that meet our clients' unique tastes and needs. Whether you're looking for a simple lawn refresh or a complete landscape redesign, we bring creativity, craftsmanship, and professionalism to every project.</p>" },
+    { "type": "text", "content": "<h3>Lawn Care, Design & Hardscaping</h3>" },
+    { "type": "text", "content": "<p>Our core services include lawn care and maintenance, garden and flower bed design, tree trimming and removal, and seasonal cleanups. We also specialize in irrigation system installation and repair, ensuring your landscape remains healthy and vibrant all year round. For clients looking to enhance the visual appeal and usability of their property, we offer hardscaping services such as patios, walkways, retaining walls, and outdoor lighting.</p>" },
+    { "type": "text", "content": "<h3>Custom Projects & Sustainable Designs</h3>" },
+    { "type": "text", "content": "<p>In addition to our standard services, we undertake custom landscaping projects that may include water features, outdoor kitchens, and fire pits. We are committed to sustainable landscaping practices, utilizing native plants and eco-friendly materials whenever possible. Our team works closely with clients from the initial consultation through to project completion, ensuring that every detail aligns with their vision and budget.</p>" },
+    { "type": "text", "content": "<h3>A Commitment to Quality & Care</h3>" },
+    { "type": "text", "content": "<p>LJ & Gonzalez is committed to customer satisfaction, attention to detail, and high-quality service. We handle every project—big or small—with care, integrity, and a dedication to making outdoor spaces thrive. Let us help you create an outdoor environment you will love coming home to.</p>" }
+  ]
   },
   {
     "userId": 1,
     "id": 2,
+    "slug": "cunt-aut-facere-repellat",
     "category": "About LJ&G",
     "image": "/images/service-ai-7.webp",
     "highlight": "Lorem",
@@ -20,6 +31,7 @@
   {
     "userId": 1,
     "id": 3,
+    "slug": "xunt-aut-facere-repellat",
     "category": "About LJ&G",
     "image": "/images/service-ai-5.webp",
     "highlight": "Lorem",
@@ -29,6 +41,7 @@
   {
     "userId": 1,
     "id": 4,
+    "slug": "uunt-aut-facere-repellat",
     "category": "About LJ&G",
     "image": "/images/service-ai-3.webp",
     "highlight": "Lorem",
@@ -38,6 +51,7 @@
     {
         "userId": 1,
         "id": 5,
+        "slug": "8unt-aut-facere-repellat",
         "category": "About LJ&G",
         "image": "/images/service-ai-4.webp",
         "highlight": "Lorem",
@@ -47,6 +61,7 @@
     {
         "userId": 1,
         "id": 6,
+        "slug": "6unt-aut-facere-repellat",
         "category": "About LJ&G",
         "image": "/images/service-ai-2.webp",
         "highlight": "Lorem",
@@ -56,6 +71,7 @@
     {
         "userId": 1,
         "id": 7,
+        "slug": "7unt-aut-facere-repellat",
         "category": "Our Services",
         "image": "/images/service-ai-1.webp",
         "highlight": "Lorem",
@@ -65,6 +81,7 @@
     {
         "userId": 1,
         "id": 8,
+        "slug": "8unt-aut-facere-repellat",
         "category": "Our Services",
         "image": "/images/service-ai-5.webp",
         "highlight": "Lorem",
@@ -74,6 +91,7 @@
     {
         "userId": 1,
         "id": 9,
+        "slug": "9unt-aut-facere-repellat",
         "category": "Our Services",
         "image": "/images/service-ai-6.webp",
         "highlight": "Lorem",
@@ -83,6 +101,7 @@
     {
         "userId": 1,
         "id": 10,
+        "slug": "10unt-aut-facere-repellat",
         "category": "Our Services",
         "image": "/images/service-ai-7.webp",
         "highlight": "Lorem",

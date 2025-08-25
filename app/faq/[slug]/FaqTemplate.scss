@@ -1,0 +1,141 @@
+.Faqtemplate-container {
+  padding: 40px 104px;  
+  display: flex;
+  gap: 120px;
+  justify-content: space-between;
+  
+  .content-faq {
+    max-width: 80%;
+
+    .breadcrumb {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+
+      a {
+        color: var(--text-900);
+        text-decoration: none;
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+
+    .faq-body {
+      h3 {
+        padding-bottom: 8px;
+        color: var(--text-900);
+      }
+      p {
+        padding-bottom: 24px;
+        color: var(--text-900);
+      }
+    }
+
+    h1 {
+      padding-top: 64px;
+      padding-bottom: 16px;
+      color: var(--text-900); 
+    }
+
+    .highlight {
+      color: var(--primary-900);
+    }
+        
+    img {
+      margin-top: 48px;
+      margin-bottom: 64px;
+      width: 100%;
+      height: 500px;
+      object-fit: cover;
+      border-radius: 16px;
+    }
+  }
+
+  .sidebar-faq {
+    max-width: 20%;
+    margin-top: 64px;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 16px;
+    height: fit-content;
+
+    .sidebar-about, .sidebar-services {
+      background-color: var(--primary-600);
+      border: 2px solid var(--primary-900);
+      border-radius: 16px;
+      padding: 16px;
+      margin-bottom: 32px;
+
+      .highlight {
+        color: var(--primary-900);
+      }
+      
+      h6 {
+        color: var(--text-900);
+        display: flex;
+        align-items: center;
+        padding-bottom: 8px;
+        gap: 8px;
+      }
+      
+      p {
+        color: var(--text-900);
+      }
+    }
+
+    .sidebar-services {
+      background-color: var(--secondary-600);
+      border-color: var(--secondary-900);
+
+      h6 {
+        color: var(--text-900);
+      }
+      
+      .highlight {
+        color: var(--secondary-900);
+      }
+      
+      h6 {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+      }
+      
+      p {
+        padding-bottom: 8px;
+      }
+    }
+  }
+
+  // Responsive para tablet
+  @media (max-width: 1024px) {
+    flex-direction: column;
+    padding: 50px;
+    gap: 32px;
+
+    .content-faq {
+      max-width: 100%;
+    }
+
+    .sidebar-faq {
+      max-width: 100%;
+    }
+  }
+
+  // Responsive para móvil
+  @media (max-width: 480px) {
+    padding: 30px;
+    gap: 16px;
+
+    .breadcrumb {
+      flex-direction: column;
+      gap: 4px;
+    }
+
+    .content-faq, .sidebar-faq {
+      max-width: 100%;
+    }
+  }
+}
