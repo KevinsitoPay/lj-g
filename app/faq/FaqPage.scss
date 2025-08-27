@@ -89,14 +89,16 @@
 
 /* CTA section Styles */
 .cta-section {
-  padding: 160px 104px 64px;
-  height: auto;
+  padding-top: 160px;
+  padding-bottom: 32px;
   display: flex;
   justify-content: space-between;
   gap: 64px;
-  align-items: center;
+  align-items: flex-start;
 
   .cta-content-left {
+    display: flex;
+    flex-direction: column;
     max-width: 540px;
     
     h2 {
@@ -165,10 +167,11 @@
 
   // Responsive para tablet
   @media (max-width: 1024px) {
-    padding: 80px 52px 64px;
+    padding-top: 160px;
+    padding-bottom: 24px;
     flex-direction: column;
     align-items: center;
-
+    gap: 16px;
     h2{
         font-size: 28px;
         line-height: 28px;

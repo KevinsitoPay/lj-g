@@ -351,8 +351,8 @@ h6,
 }
 
 p,
-.plain-text,
-body {
+.plain-text, ul, li
+body, div {
   @include paragraph-default;
 }
 
@@ -505,6 +505,7 @@ i {
 .section {
   max-width: 1360px;
   margin: 0 auto; 
+  
 
   @media (max-width: 1400px) {
     padding-right: 5%;
@@ -562,3 +563,62 @@ i {
   background: url("/Images/desing-hero.webp");  
 }
 
+.faq-bg {
+  background: url("/Images/garage.webp");  
+}
+
+
+/*Animation classes*/
+.reveal {
+  opacity: 0;
+  transform: translateY(100px); // start slightly below
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.reveal.in-view {
+  opacity: 1;
+  transform: translateY(0); // fade in and move up
+}
+
+
+.reveal-left {
+  opacity: 0;
+  transform: translateX(-100px); // start slightly off left
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.reveal-left.in-view {
+  opacity: 1;
+  transform: translateX(0); // fade in and move right
+}
+
+.reveal-right {
+  opacity: 0;
+  transform: translateX(100px); // start slightly off right
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.reveal-right.in-view {
+  opacity: 1;
+  transform: translateX(0); // fade in and move left
+}
+
+.reveal-fade {
+  opacity: 0;
+  transition: opacity 0.6s ease-out;
+}
+
+.reveal-fade.in-view {
+  opacity: 1;
+}
+
+
+/* globals.scss or global CSS */
+.page-fade {
+  opacity: 0;
+  transition: opacity 0.8s ease-in-out;
+}
+
+.page-fade.visible {
+  opacity: 1;
+}

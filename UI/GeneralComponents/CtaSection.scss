@@ -16,6 +16,10 @@
         line-height: 48px;
         letter-spacing: -0.78px;
         color: var(--bkg-3);
+
+        .highlight {
+            color: var(--accent-900);
+        }
     }
 
     p {

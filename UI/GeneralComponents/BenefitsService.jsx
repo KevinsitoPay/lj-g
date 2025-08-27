@@ -23,11 +23,11 @@ function BenefitsService({ testimonials, benefits,title, highlight  }) {
 
   return (
     <div className="why-service-container section">
-      <h2>{title} <span className="highlight">{highlight}</span></h2>
+      <h2 className="reveal-left">{title} <span className="highlight">{highlight}</span></h2>
       
       <div className="why-service-content">
         
-        <div className="why-service-col1">
+        <div className="why-service-col1 reveal-left">
 
         <div className="why-service-quote">
           <p>{testimonials[currentTestimonial].quote}</p>
@@ -41,7 +41,7 @@ function BenefitsService({ testimonials, benefits,title, highlight  }) {
         
         </div>
 
-        <div className="why-service-col2">
+        <div className="why-service-col2 reveal">
           {benefits.map((benefit, index) => (
             <div key={index} className="benefit-card">
               <img src={benefit.image} alt={`Benefit ${index + 1}`} />

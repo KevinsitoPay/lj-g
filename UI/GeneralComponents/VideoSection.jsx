@@ -5,7 +5,7 @@ import ButtonLink from "../Buttons/ButtonLink";
 
 function VideoComponent({ title, highlight, paragraph, videoSrc, videoPoster }) {
   return (
-    <div className="video-container section">
+    <div className="video-container section reveal">
       <div className="video-box-content">
         <div className="video-box-content-title">
           <h2>{title} <span className="highlight">{highlight}</span></h2>

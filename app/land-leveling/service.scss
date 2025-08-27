@@ -87,15 +87,14 @@
   // Section 2 styles
 
   .section-2-container {
-    padding: 80px 104px;
-    height: auto;
-
+    padding-top: 80px;
+    padding-bottom: 80px;
     .section-2-box-text {
-      max-width: 1000px;
+      max-width: 1100px;
       margin: 0 auto;
       text-align: center;
       color: var(--text-900);
-      padding-bottom: 69px;
+      padding-bottom: 64px;
     }
 
     .section-2-box-main {
@@ -123,8 +122,10 @@
           align-items: center;
           gap: 16px;
           transition: background-color 0.6s, color 0.6s;
+          
+          }
 
-          &:hover {
+            .section-2-box-icon-active {
             background: url(/Images/orange-bkg.png) no-repeat center center / cover;
             p{
               color: var(--bkg-1);
@@ -141,6 +142,8 @@
               }
             }
           }
+
+          
 
           .icon-container {
             width: 20%;
@@ -172,7 +175,7 @@
         }
       }
     }
-  }
+  
 
   @media (max-width: 1024px) {
     .section-2-container {
@@ -214,7 +217,7 @@
   }
 
   /* Mobile */
-  @media (max-width: 480px) {
+  @media (max-width: 560px) {
     .section-2-container {
       padding: 30px;
     .section-2-box-text {

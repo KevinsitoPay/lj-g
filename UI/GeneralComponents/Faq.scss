@@ -1,5 +1,6 @@
 .faq-container {
-  padding: 80px 104px 240px 104px;
+  padding-top: 80px;
+  padding-bottom:160px;
   height: auto;
   display: flex;
   justify-content: space-between;
@@ -84,7 +85,7 @@
   }
 
   @media (max-width: 1024px) {
-    padding: 40px;
+
 
         h3 {
       font-size: 28px;
@@ -102,10 +103,13 @@
     }
   }
 
-  @media (max-width: 480px) {
+
+
+  @media (max-width: 870px) {
+
     flex-direction: column;
     text-align: center;
-    padding: 30px;
+
     
     h3 {
       font-size: 28px;
@@ -119,10 +123,10 @@
 
     .faq-box-left,
     .faq-box-right {
+      text-align: start;
       width: 100%;
-      padding: 0 16px; // Añade padding lateral para evitar pegarse al borde
-      box-sizing: border-box; // Asegura que el padding no rompa el diseño
-      img{
+      max-width: 100%;  
+    img{
         padding-top: 24px;
       }
       a{
@@ -132,6 +136,11 @@
 
     .faq-box-right {
       margin-top: 20px;
+    }
+
+    .faq-box-left .button-container {
+     flex-direction: column;
+     gap: 0;
     }
   }
 }

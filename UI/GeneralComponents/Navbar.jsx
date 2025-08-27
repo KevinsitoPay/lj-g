@@ -174,7 +174,7 @@ function Navbar({ type = "main" }) {
     <>
       {/* Main Header */}
 
-      <div className="header-wrapper desktop-header">
+      <div className="header-wrapper desktop-header reveal-fade">
         <div
           className={`overlay ${showServices ? "active" : ""}`}
           onClick={() => setShowServices(false)}
@@ -246,7 +246,7 @@ function Navbar({ type = "main" }) {
     <>
       {/* Alt Header */}
 
-      <div className="header-wrapper desktop-header" id="alt-header">
+      <div className="header-wrapper desktop-header reveal-fade" id="alt-header">
         <div
           className={`overlay ${showServices ? "active" : ""}`}
           onClick={() => setShowServices(false)}
@@ -312,7 +312,7 @@ function Navbar({ type = "main" }) {
     <>
       {/* Alt Colors Header */}
 
-      <div className="header-wrapper desktop-header" id="alt-colors-header">
+      <div className="header-wrapper desktop-header reveal-fade" id="alt-colors-header">
         <div
           className={`overlay ${showServices ? "active" : ""}`}
           onClick={() => setShowServices(false)}

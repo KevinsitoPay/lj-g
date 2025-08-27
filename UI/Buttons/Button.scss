@@ -276,10 +276,12 @@
   left: 0;
   transform: scaleX(0);
   transition: transform 0.3s ease;
+  background-color: currentColor;
   transform-origin: bottom right;
 }
 
 .button-link-link:hover .button-link-text::after {
   transform: scaleX(1);
   transform-origin: bottom left;
+  
 }

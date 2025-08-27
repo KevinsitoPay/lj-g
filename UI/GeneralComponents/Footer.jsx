@@ -3,18 +3,22 @@ import './Footer.scss';
 import Button from '../Buttons/ButtonCTA';
 import Calendario from './Calendario';
 import Link from 'next/link';
+import ButtonLink from '../Buttons/ButtonLink'; 
 
 function Footer() {
 
   return (
-    <div className="footer-container"> 
+    <div className="footer-container">
+
+ <div className="section">  
     <div className="footer-box-calendar"> 
         <div className="footer-box-calendar-cta">
             <img src="/Images/house-footer.jpg" alt="House Footer" />
             <h2> See if & Gonzalez is the right <span className="highlight">fit for your proyect.</span></h2>
             <p> Book your first visit today. Our consultation is totally free and our promise is that after our visit You will have a clearer plan for Your garden.</p>
-            <Button text="Adress pain point" size="medium" link="/" variant="filled" textColor="#28282A" backgroundColor="#FCFAF8" iconColor="#F1572D" />
-         </div>
+            <ButtonLink extraClasses={""}>Book a free consultation</ButtonLink>
+    
+        </div>
         <div className="footer-box-calendar-schedule"> <Calendario /> </div>
     </div>
     <div className="footer-box-navegation">
@@ -62,6 +66,9 @@ function Footer() {
             </form>
          </div>
      </div>
+     </div>
+
+
     </div>
   )
 }

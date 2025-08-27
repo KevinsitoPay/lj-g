@@ -9,14 +9,14 @@
     "highlight": "Landscaping offer?",
     "abstract": "Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet.",
     "body": [
-    { "type": "text", "content": "<p>At LJ & Gonzalez Landscaping, we provide a comprehensive range of landscaping services tailored to both residential and commercial properties. Our goal is to transform outdoor spaces into beautiful, functional environments that meet our clients' unique tastes and needs. Whether you're looking for a simple lawn refresh or a complete landscape redesign, we bring creativity, craftsmanship, and professionalism to every project.</p>" },
-    { "type": "text", "content": "<h3>Lawn Care, Design & Hardscaping</h3>" },
-    { "type": "text", "content": "<p>Our core services include lawn care and maintenance, garden and flower bed design, tree trimming and removal, and seasonal cleanups. We also specialize in irrigation system installation and repair, ensuring your landscape remains healthy and vibrant all year round. For clients looking to enhance the visual appeal and usability of their property, we offer hardscaping services such as patios, walkways, retaining walls, and outdoor lighting.</p>" },
-    { "type": "text", "content": "<h3>Custom Projects & Sustainable Designs</h3>" },
-    { "type": "text", "content": "<p>In addition to our standard services, we undertake custom landscaping projects that may include water features, outdoor kitchens, and fire pits. We are committed to sustainable landscaping practices, utilizing native plants and eco-friendly materials whenever possible. Our team works closely with clients from the initial consultation through to project completion, ensuring that every detail aligns with their vision and budget.</p>" },
-    { "type": "text", "content": "<h3>A Commitment to Quality & Care</h3>" },
-    { "type": "text", "content": "<p>LJ & Gonzalez is committed to customer satisfaction, attention to detail, and high-quality service. We handle every project—big or small—with care, integrity, and a dedication to making outdoor spaces thrive. Let us help you create an outdoor environment you will love coming home to.</p>" }
-  ]
+      { "type": "text", "content": "<p>At LJ & Gonzalez Landscaping, we provide a comprehensive range of landscaping services tailored to both residential and commercial properties. Our goal is to transform outdoor spaces into beautiful, functional environments that meet our clients' unique tastes and needs. Whether you're looking for a simple lawn refresh or a complete landscape redesign, we bring creativity, craftsmanship, and professionalism to every project.</p>" },
+      { "type": "text", "content": "<h3>Lawn Care, Design & Hardscaping</h3>" },
+      { "type": "text", "content": "<p>Our core services include lawn care and maintenance, garden and flower bed design, tree trimming and removal, and seasonal cleanups. We also specialize in irrigation system installation and repair, ensuring your landscape remains healthy and vibrant all year round. For clients looking to enhance the visual appeal and usability of their property, we offer hardscaping services such as patios, walkways, retaining walls, and outdoor lighting.</p>" },
+      { "type": "text", "content": "<h3>Custom Projects & Sustainable Designs</h3>" },
+      { "type": "text", "content": "<p>In addition to our standard services, we undertake custom landscaping projects that may include water features, outdoor kitchens, and fire pits. We are committed to sustainable landscaping practices, utilizing native plants and eco-friendly materials whenever possible. Our team works closely with clients from the initial consultation through to project completion, ensuring that every detail aligns with their vision and budget.</p>" },
+      { "type": "text", "content": "<h3>A Commitment to Quality & Care</h3>" },
+      { "type": "text", "content": "<p>LJ & Gonzalez is committed to customer satisfaction, attention to detail, and high-quality service. We handle every project—big or small—with care, integrity, and a dedication to making outdoor spaces thrive. Let us help you create an outdoor environment you will love coming home to.</p>" }
+    ]
   },
   {
     "userId": 1,
@@ -26,7 +26,12 @@
     "image": "/images/service-ai-7.webp",
     "highlight": "Lorem",
     "title": "qui est esse",
-    "body": "est rerum tempore vitae\nsequi sint nihil reprehenderit dolor beatae ea dolores neque\nfugiat blanditiis voluptate porro vel nihil molestiae ut reiciendis\nqui aperiam non debitis possimus qui neque nisi nulla"
+    "body": [
+      { "type": "text", "content": "<p>est rerum tempore vitae</p>" },
+      { "type": "text", "content": "<p>sequi sint nihil reprehenderit dolor beatae ea dolores neque</p>" },
+      { "type": "text", "content": "<p>fugiat blanditiis voluptate porro vel nihil molestiae ut reiciendis</p>" },
+      { "type": "text", "content": "<p>qui aperiam non debitis possimus qui neque nisi nulla</p>" }
+    ]
   },
   {
     "userId": 1,
@@ -36,7 +41,12 @@
     "image": "/images/service-ai-5.webp",
     "highlight": "Lorem",
     "title": "ea molestias quasi exercitationem repellat qui ipsa sit aut",
-    "body": "et iusto sed quo iure\nvoluptatem occaecati omnis eligendi aut ad\nvoluptatem doloribus vel accusantium quis pariatur\nmolestiae porro eius odio et labore et velit aut"
+    "body": [
+      { "type": "text", "content": "<p>et iusto sed quo iure</p>" },
+      { "type": "text", "content": "<p>voluptatem occaecati omnis eligendi aut ad</p>" },
+      { "type": "text", "content": "<p>voluptatem doloribus vel accusantium quis pariatur</p>" },
+      { "type": "text", "content": "<p>molestiae porro eius odio et labore et velit aut</p>" }
+    ]
   },
   {
     "userId": 1,
@@ -46,66 +56,101 @@
     "image": "/images/service-ai-3.webp",
     "highlight": "Lorem",
     "title": "eum et est occaecati",
-    "body": "ullam et saepe reiciendis voluptatem adipisci\nsit amet autem assumenda provident rerum culpa\nquis hic commodi nesciunt rem tenetur doloremque ipsam iure\nquis sunt voluptatem rerum illo velit"
+    "body": [
+      { "type": "text", "content": "<p>ullam et saepe reiciendis voluptatem adipisci</p>" },
+      { "type": "text", "content": "<p>sit amet autem assumenda provident rerum culpa</p>" },
+      { "type": "text", "content": "<p>quis hic commodi nesciunt rem tenetur doloremque ipsam iure</p>" },
+      { "type": "text", "content": "<p>quis sunt voluptatem rerum illo velit</p>" }
+    ]
   },
-    {
-        "userId": 1,
-        "id": 5,
-        "slug": "8unt-aut-facere-repellat",
-        "category": "About LJ&G",
-        "image": "/images/service-ai-4.webp",
-        "highlight": "Lorem",
-        "title": "nesciunt quas odio",
-        "body": "repudiandae veniam quaerat sunt sed\nalias aut fugiat sit autem sed est voluptatem\ndolor enim et quam molestiae\nquisquam eum fugiat quo a"
-    },
-    {
-        "userId": 1,
-        "id": 6,
-        "slug": "6unt-aut-facere-repellat",
-        "category": "About LJ&G",
-        "image": "/images/service-ai-2.webp",
-        "highlight": "Lorem",
-        "title": "dolorem eum magni eos aperiam quia",
-        "body": "ut aspernatur corporis harum nihil quis provident sequi\nmollitia nobis aliquid molestiae\nperspiciatis et ea nemo ab reprehenderit accusantium quas\nvoluptate dolores velit et doloremque molestiae"
-    },
-    {
-        "userId": 1,
-        "id": 7,
-        "slug": "7unt-aut-facere-repellat",
-        "category": "Our Services",
-        "image": "/images/service-ai-1.webp",
-        "highlight": "Lorem",
-        "title": "magnam facilis autem",
-        "body": "dolore placeat quibusdam ea quo vitae\nmagni quis enim qui quis quo nemo aut saepe\nvoluptas blanditiis repellendus animi ducimus error sapiente et\nvoluptatem omnis possimus esse voluptatibus quis"
-    },
-    {
-        "userId": 1,
-        "id": 8,
-        "slug": "8unt-aut-facere-repellat",
-        "category": "Our Services",
-        "image": "/images/service-ai-5.webp",
-        "highlight": "Lorem",
-        "title": "dolorem dolore est ipsam",
-        "body": "dignissimos aperiam dolorem qui eum\nfacilis quibusdam molestiae enim quasi accusantium\nvoluptas consequatur qui aut suscipit aut cum est\nquisquam fugit doloribus possimus qui neque nisi nulla"
-    },
-    {
-        "userId": 1,
-        "id": 9,
-        "slug": "9unt-aut-facere-repellat",
-        "category": "Our Services",
-        "image": "/images/service-ai-6.webp",
-        "highlight": "Lorem",
-        "title": "nesciunt iure omnis dolorem tempora et accusantium",
-        "body": "consectetur animi nesciunt iure dolore\nreprehenderit qui ratione voluptatem sequi nesciunt\nvoluptatem quia voluptas sit aspernatur aut odit aut fugit\nsed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt"
-    },
-    {
-        "userId": 1,
-        "id": 10,
-        "slug": "10unt-aut-facere-repellat",
-        "category": "Our Services",
-        "image": "/images/service-ai-7.webp",
-        "highlight": "Lorem",
-        "title": "optio molestias id quia eum",
-        "body": "quo et expedita modi cum officia vel magni\ndoloribus qui repudiandae\nvero nisi sit\nquos veniam quod sed accusamus veritatis error"
-    }
+  {
+    "userId": 1,
+    "id": 5,
+    "slug": "8unt-aut-facere-repellat",
+    "category": "About LJ&G",
+    "image": "/images/service-ai-4.webp",
+    "highlight": "Lorem",
+    "title": "nesciunt quas odio",
+    "body": [
+      { "type": "text", "content": "<p>repudiandae veniam quaerat sunt sed</p>" },
+      { "type": "text", "content": "<p>alias aut fugiat sit autem sed est voluptatem</p>" },
+      { "type": "text", "content": "<p>dolor enim et quam molestiae</p>" },
+      { "type": "text", "content": "<p>quisquam eum fugiat quo a</p>" }
+    ]
+  },
+  {
+    "userId": 1,
+    "id": 6,
+    "slug": "6unt-aut-facere-repellat",
+    "category": "About LJ&G",
+    "image": "/images/service-ai-2.webp",
+    "highlight": "Lorem",
+    "title": "dolorem eum magni eos aperiam quia",
+    "body": [
+      { "type": "text", "content": "<p>ut aspernatur corporis harum nihil quis provident sequi</p>" },
+      { "type": "text", "content": "<p>mollitia nobis aliquid molestiae</p>" },
+      { "type": "text", "content": "<p>perspiciatis et ea nemo ab reprehenderit accusantium quas</p>" },
+      { "type": "text", "content": "<p>voluptate dolores velit et doloremque molestiae</p>" }
+    ]
+  },
+  {
+    "userId": 1,
+    "id": 7,
+    "slug": "7unt-aut-facere-repellat",
+    "category": "Our Services",
+    "image": "/images/service-ai-1.webp",
+    "highlight": "Lorem",
+    "title": "magnam facilis autem",
+    "body": [
+      { "type": "text", "content": "<p>dolore placeat quibusdam ea quo vitae</p>" },
+      { "type": "text", "content": "<p>magni quis enim qui quis quo nemo aut saepe</p>" },
+      { "type": "text", "content": "<p>voluptas blanditiis repellendus animi ducimus error sapiente et</p>" },
+      { "type": "text", "content": "<p>voluptatem omnis possimus esse voluptatibus quis</p>" }
+    ]
+  },
+  {
+    "userId": 1,
+    "id": 8,
+    "slug": "8unt-aut-facere-repellat",
+    "category": "Our Services",
+    "image": "/images/service-ai-5.webp",
+    "highlight": "Lorem",
+    "title": "dolorem dolore est ipsam",
+    "body": [
+      { "type": "text", "content": "<p>dignissimos aperiam dolorem qui eum</p>" },
+      { "type": "text", "content": "<p>facilis quibusdam molestiae enim quasi accusantium</p>" },
+      { "type": "text", "content": "<p>voluptas consequatur qui aut suscipit aut cum est</p>" },
+      { "type": "text", "content": "<p>quisquam fugit doloribus possimus qui neque nisi nulla</p>" }
+    ]
+  },
+  {
+    "userId": 1,
+    "id": 9,
+    "slug": "9unt-aut-facere-repellat",
+    "category": "Our Services",
+    "image": "/images/service-ai-6.webp",
+    "highlight": "Lorem",
+    "title": "nesciunt iure omnis dolorem tempora et accusantium",
+    "body": [
+      { "type": "text", "content": "<p>consectetur animi nesciunt iure dolore</p>" },
+      { "type": "text", "content": "<p>reprehenderit qui ratione voluptatem sequi nesciunt</p>" },
+      { "type": "text", "content": "<p>voluptatem quia voluptas sit aspernatur aut odit aut fugit</p>" },
+      { "type": "text", "content": "<p>sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt</p>" }
+    ]
+  },
+  {
+    "userId": 1,
+    "id": 10,
+    "slug": "10unt-aut-facere-repellat",
+    "category": "Our Services",
+    "image": "/images/service-ai-7.webp",
+    "highlight": "Lorem",
+    "title": "optio molestias id quia eum",
+    "body": [
+      { "type": "text", "content": "<p>quo et expedita modi cum officia vel magni</p>" },
+      { "type": "text", "content": "<p>doloribus qui repudiandae</p>" },
+      { "type": "text", "content": "<p>vero nisi sit</p>" },
+      { "type": "text", "content": "<p>quos veniam quod sed accusamus veritatis error</p>" }
+    ]
+  }
 ]

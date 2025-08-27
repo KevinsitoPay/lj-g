@@ -330,9 +330,10 @@
 }
 
 #alt-colors-header {
+  padding-top: 64px;
   .menu-link,
   .services-link {
-    color: var(--text-900);
+    color: var(--primary-900);
   }
 
   .hamburger {
@@ -351,4 +352,11 @@
       fill: var(--text-900);
     }
   }
+
+  @media (max-width: 1400px) {
+  
+    padding: 64px 5% 0 5%;
+  
+  }
+  
 }
