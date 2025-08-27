@@ -1,18 +1,18 @@
-'use client';
-import ArrowRight from '../Icons/ArrowRight';
-import React, { useState } from 'react';
-import dynamic from 'next/dynamic';
-import './Calendario.scss';
-import 'react-calendar/dist/Calendar.css';
-import 'react-time-picker/dist/TimePicker.css';
-import Schedule from '../Icons/Schedule';
+"use client";
+import ArrowRight from "../Icons/ArrowRight";
+import React, { useState } from "react";
+import dynamic from "next/dynamic";
+import "./Calendario.scss";
+import "react-calendar/dist/Calendar.css";
+import "react-time-picker/dist/TimePicker.css";
+import Schedule from "../Icons/Schedule";
 
-const Calendar = dynamic(() => import('react-calendar'), { ssr: false });
-const TimePicker = dynamic(() => import('react-time-picker'), { ssr: false });
+const Calendar = dynamic(() => import("react-calendar"), { ssr: false });
+const TimePicker = dynamic(() => import("react-time-picker"), { ssr: false });
 
 const Calendario = () => {
   const [date, setDate] = useState(new Date());
-  const [time, setTime] = useState('10:30 AM');
+  const [time, setTime] = useState("10:30 AM");
   const [submittedData, setSubmittedData] = useState(null);
 
   const handleDateChange = (newDate) => {
@@ -27,13 +27,17 @@ const Calendario = () => {
     event.preventDefault();
     const formData = { date, time };
     setSubmittedData(formData);
-    console.log('Form submitted:', formData);
+    console.log("Form submitted:", formData);
   };
 
   return (
     <div className="container">
       <div className="text-top">
-       <span><Schedule size="m" /></span> <p>After submitting your appointment, we will contact you to confirm it or future dates based on our schedule. </p>
+        <p>
+          {" "}
+          After submitting your appointment, we will contact you to confirm it
+          or future dates based on our schedule.{" "}
+        </p>
       </div>
       <form onSubmit={handleSubmit}>
         <Calendar
@@ -58,7 +62,8 @@ const Calendario = () => {
       </form>
       {submittedData && (
         <div className="selected">
-          Appointment confirmed for: {submittedData.date.toDateString()} at {submittedData.time}
+          Appointment confirmed for: {submittedData.date.toDateString()} at{" "}
+          {submittedData.time}
         </div>
       )}
     </div>
