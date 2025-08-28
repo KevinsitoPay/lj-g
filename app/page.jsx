@@ -11,7 +11,7 @@ import ButtonCTA from "@/UI/Buttons/ButtonCTA";
 import ButtonLink from "@/UI/Buttons/ButtonLink";
 
 export const metadata = {
-  title: "Home page Landscaping title",
+  title: "LJ & Gonzalez Landscaping Services",
   description: "Home page Landscaping description",
   keywords: "landscaping, gardening",
 };
@@ -35,7 +35,7 @@ function Home() {
               being apart of our competitors.
             </p>
           </div>
-          <div className="button-container">
+          <div className="button-container reveal-fade">
             <ButtonCTA extraClasses={"primary-button"}>
               Book a free visit today
             </ButtonCTA>

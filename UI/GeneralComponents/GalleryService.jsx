@@ -1,75 +1,102 @@
 "use client";
 
-import React, { useEffect } from "react";
-import Grading from "@/UI/Icons/Grading";
+import React, { useRef, useEffect, useState } from "react";
 import ButtonCTA from "@/UI/Buttons/ButtonCTA";
 import "./GalleryService.scss";
 
 function GalleryService({ title, highlight, paragraph, images, icon }) {
+  const carouselRef = useRef(null);
+  const [isDragging, setIsDragging] = useState(false);
+  const [isHovered, setIsHovered] = useState(false);
+  const startXRef = useRef(0);
+  const scrollLeftRef = useRef(0);
+  const animationRef = useRef(null);
+
+  const speed = 1; // px por frame
+
   useEffect(() => {
-    const carousel = document.querySelector('.carousel');
-    let isDragging = false;
-    let startX;
-    let scrollLeft;
+    const carousel = carouselRef.current;
+    if (!carousel) return;
 
-    const handleMouseDown = (e) => {
-      isDragging = true;
-      carousel.classList.add('active');
-      startX = e.pageX - carousel.offsetLeft;
-      scrollLeft = carousel.scrollLeft;
+    const totalScroll = carousel.scrollWidth / 2;
+
+    const animate = () => {
+      if (!isDragging && !isHovered) {
+        if (carousel.scrollLeft >= totalScroll) {
+          carousel.scrollLeft = 0;
+        } else {
+          carousel.scrollLeft += speed;
+        }
+      }
+      animationRef.current = requestAnimationFrame(animate);
     };
 
-    const handleMouseLeave = () => {
-      isDragging = false;
-      carousel.classList.remove('active');
-    };
+    animationRef.current = requestAnimationFrame(animate);
+    return () => cancelAnimationFrame(animationRef.current);
+  }, [isDragging, isHovered]);
 
-    const handleMouseUp = () => {
-      isDragging = false;
-      carousel.classList.remove('active');
-    };
+  // Drag
+  const handleMouseDown = (e) => {
+    setIsDragging(true);
+    startXRef.current = e.pageX - carouselRef.current.offsetLeft;
+    scrollLeftRef.current = carouselRef.current.scrollLeft;
+  };
 
-    const handleMouseMove = (e) => {
-      if (!isDragging) return;
-      e.preventDefault();
-      const x = e.pageX - carousel.offsetLeft;
-      const walk = (x - startX) * 1.5;
-      carousel.scrollLeft = scrollLeft - walk;
-    };
+  const handleMouseMove = (e) => {
+    if (!isDragging) return;
+    e.preventDefault();
+    const x = e.pageX - carouselRef.current.offsetLeft;
+    const walk = (x - startXRef.current) * 1.5;
+    carouselRef.current.scrollLeft = scrollLeftRef.current - walk;
+  };
 
-    carousel.addEventListener('mousedown', handleMouseDown);
-    carousel.addEventListener('mouseleave', handleMouseLeave);
-    carousel.addEventListener('mouseup', handleMouseUp);
-    carousel.addEventListener('mousemove', handleMouseMove);
+  const handleMouseUp = () => setIsDragging(false);
+  const handleMouseLeave = () => setIsDragging(false);
 
-    return () => {
-      carousel.removeEventListener('mousedown', handleMouseDown);
-      carousel.removeEventListener('mouseleave', handleMouseLeave);
-      carousel.removeEventListener('mouseup', handleMouseUp);
-      carousel.removeEventListener('mousemove', handleMouseMove);
-    };
-  }, []);
+  // Hover
+  const handleMouseEnter = () => setIsHovered(true);
+  const handleMouseExit = () => setIsHovered(false);
 
   return (
-    <div className="section-3-container">
+    <div className="section-3-container reveal-fade">
       <div className="section-3-box-content">
-       {icon}
+        {icon}
         <h2>
           {title} <span className="highlight">{highlight}</span>
         </h2>
         <p>{paragraph}</p>
       </div>
+
       <div className="section-3-box-gallery">
-        <div className="carousel">
+        <div
+          className="carousel"
+          ref={carouselRef}
+          onMouseDown={handleMouseDown}
+          onMouseMove={handleMouseMove}
+          onMouseUp={handleMouseUp}
+          onMouseLeave={() => {
+            handleMouseLeave();
+            handleMouseExit();
+          }}
+          onMouseEnter={handleMouseEnter}
+        >
           <div className="carousel-track">
-            {images.map((src, index) => (
-              <img key={index} src={src} alt={`Gallery item ${index + 1}`} />
+            {[...images, ...images].map((src, index) => (
+              <img
+                key={index}
+                src={src}
+                alt={`Gallery item ${index + 1}`}
+                draggable={false} // importante para drag normal
+              />
             ))}
           </div>
         </div>
       </div>
+
       <div className="section-3-box-button">
-      <ButtonCTA extraClasses={"primary-button-lofi"}>  Book a free visit today </ButtonCTA> 
+        <ButtonCTA extraClasses={"primary-button-lofi"}>
+          Book a free visit today
+        </ButtonCTA>
       </div>
     </div>
   );

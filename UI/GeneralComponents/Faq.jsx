@@ -15,7 +15,7 @@ function Faq({ title, highlight, children }) {
   };
 
   return (
-    <div className="faq-container">
+    <div className="faq-container section reveal-right">
       <div className="faq-box-left">
         <h3>{title} <span className="highlight">{highlight}</span></h3>
         <div className="button-container">

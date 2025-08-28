@@ -1,6 +1,7 @@
 
 .Faqtemplate-container {
-  padding: 40px 104px;  
+  padding-top: 104px;  
+  padding-bottom: 104px;  
   display: flex;
   gap: 120px;
   justify-content: space-between;
@@ -24,9 +25,15 @@
     }
 
     .faq-body {
+      max-width: 750px;
+
+      h2 {
+        padding-bottom: 8px;
+        color: var(--primary-900);
+      }
       h3 {
         padding-bottom: 8px;
-        color: var(--text-900);
+        color: var(--secondary-900);
       }
       p {
         padding-bottom: 24px;
@@ -38,6 +45,10 @@
       padding-top: 64px;
       padding-bottom: 16px;
       color: var(--text-900); 
+
+      @media (max-width: 1400px) {
+        padding-top: 32px;
+      }
     }
 
     .highlight {
@@ -112,9 +123,10 @@
 
   // Responsive para tablet
   @media (max-width: 1024px) {
+    padding-top: 64px;
     flex-direction: column;
-    padding: 50px;
     gap: 32px;
+
 
     .content-faq {
       max-width: 100%;
@@ -123,16 +135,25 @@
     .sidebar-faq {
       max-width: 100%;
     }
+
+      img {
+      height: 320px !important;
+    }
   }
 
   // Responsive para móvil
   @media (max-width: 480px) {
-    padding: 30px;
+    
     gap: 16px;
 
     .breadcrumb {
       flex-direction: column;
       gap: 4px;
+      align-items: flex-start !important;
+
+      svg {
+        display: none;
+      }
     }
 
     .content-faq, .sidebar-faq {

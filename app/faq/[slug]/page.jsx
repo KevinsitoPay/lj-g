@@ -11,74 +11,97 @@ import Irrigation from '@/UI/Icons/Irrigation';
 import Link from 'next/link';
 import Lotus from '@/UI/Icons/Lotus';
 import Schovel from '@/UI/Icons/Shovel';
+import Navbar from '@/UI/GeneralComponents/Navbar';
 
-export const metadata = {
-  title: 'Faq',
-  description: 'This page provides information about frequently asked questions',
-  keywords: 'Faq, frequently asked questions, help',
-};
+// Dynamic metadata
+export async function generateMetadata({ params }) {
+  const { slug } = await params; // Await params here
+  const faqItem = faq.find(item => item.slug === slug);
 
-function Faqtemplate({ params }) {
-  const faqItem = faq.find(item => item.slug === params.slug);
+  if (!faqItem) {
+    return {
+      title: 'FAQ Not Found',
+      description: 'This FAQ does not exist.',
+    };
+  }
+
+  return {
+    title: `${faqItem.title} | LJ&G FAQ`,
+    description: faqItem.abstract,
+    keywords: `FAQ, ${faqItem.title}, ${faqItem.highlight}`,
+  };
+}
+
+// Async component
+async function Faqtemplate({ params }) {
+  const { slug } = await params; // Await params here
+  const faqItem = faq.find(item => item.slug === slug);
 
   if (!faqItem) {
     return <p>FAQ not found.</p>;
   }
 
   return (
-    <div className="Faqtemplate-container">
+<>
+
+    <Navbar type='alt-colors' />
+
+    <div className="Faqtemplate-container section">
       <div className="content-faq">
-      <div className="breadcrumb">
-        <a href="/faq">Frequently Asked Questions</a> 
-        <ArrowRight size="sm" /> 
-        <span>{faqItem.title} <span className="highlight"> {faqItem.highlight} </span> </span>
+        <div className="breadcrumb">
+          <a href="/faq">Frequently Asked Questions</a> 
+          <ArrowRight size="sm" /> 
+          <span>{faqItem.title} <span className="highlight">{faqItem.highlight}</span></span>
+        </div>
+        <h1>{faqItem.title} <span className="highlight">{faqItem.highlight}</span></h1>
+        <p>{faqItem.abstract}</p>
+        <img src={faqItem.image} alt={faqItem.title} />
+        <div className="faq-body">
+          {faqItem.body.map((element, index) => {
+            if (element.type === "image") {
+              return <img key={index} src={element.src} alt={element.alt} />;
+            } else if (element.type === "text") {
+              return <div key={index} dangerouslySetInnerHTML={{ __html: element.content }} />;
+            }
+            return null;
+          })}
+        </div>
       </div>
-      <h1>{faqItem.title} <span className="highlight">{faqItem.highlight}</span></h1>
-      <p>{faqItem.abstract}</p>
-      <img src={faqItem.image} alt={faqItem.title} />
-      <div className="faq-body">
-        {faqItem.body.map((element, index) => {
-          if (element.type === "image") {
-            return <img key={index} src={element.src} alt={element.alt} />;
-          } else if (element.type === "text") {
-            return <div key={index} dangerouslySetInnerHTML={{ __html: element.content }} />;
-          }
-          return null;
-        })}
-      </div>
-      </div>
+
       <div className="sidebar-faq">
         <div className="sidebar-about">
           <h6><Schovel /> About <span className="highlight">LJ&G</span></h6>
-          <p>Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet.</p>
+          <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet.</p>
         </div>
+
         <div className="sidebar-services">
           <h6><Lotus /> Our <span className="highlight">services</span></h6>
           <Link href="/land-leveling" className="service-link">
-             <p><LandLeveling size='sm' /> Land Leveling</p>
+            <p><LandLeveling size='sm' /> Land Leveling</p>
           </Link>
           <Link href="/mulch" className="service-link">
-            <p> <Mulch size='sm' />  Mulch Applications</p>
+            <p><Mulch size='sm' /> Mulch Applications</p>
           </Link>
           <Link href="/functional-plants" className="service-link">
-             <p><Plants size='sm' /> Functional Plants</p>
+            <p><Plants size='sm' /> Functional Plants</p>
           </Link>
           <Link href="/soil-installation" className="service-link">
-             <p><Grass size='sm' /> Soil Installation</p>
+            <p><Grass size='sm' /> Soil Installation</p>
           </Link>
           <Link href="/river-rock" className="service-link">
-             <p><RiverRock size='sm' /> River Rock Installation</p>
+            <p><RiverRock size='sm' /> River Rock Installation</p>
           </Link>
           <Link href="/wall" className="service-link">
-             <p> <Wall size='sm' /> Wall and Retaining installation</p>
+            <p><Wall size='sm' /> Wall and Retaining Installation</p>
           </Link>
           <Link href="/irrigation" className="service-link">
-             <p><Irrigation size='sm' /> Irrigation System Installation</p>
+            <p><Irrigation size='sm' /> Irrigation System Installation</p>
           </Link>
+        </div>
       </div>
-      </div>
-
     </div>
+    </>
+
   );
 }
 

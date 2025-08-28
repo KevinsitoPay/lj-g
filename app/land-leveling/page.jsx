@@ -14,23 +14,23 @@
   
 
   export const metadata = {
-    title: 'Design',
+    title: 'Design | LJ & Gonzalez Landscaping',
     description: 'How the application works and its features',
     keywords: 'how it works, application guide',
   }
+ 
+ const serviceName ="Land Leveling" 
 
-  function Desing() {
+  function Design() {
     
     return (
       <>
-
         {/* Hero Section */}
         <ServicesHeroSection 
         Description={"Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet."}
         Title={"This is the text "}
         Highlight={"and this is the highlight."} 
         Background={"landleveling-bg"}
-
         />
     
       {/* Seccion de reviews */}
@@ -49,7 +49,8 @@
       {/* Seccion de beneficios */} 
 
        <BenefitsService
-
+title={"This is the heading"} 
+highlight={"and this is the highlight."}
        
       testimonials={[
         {
@@ -93,14 +94,18 @@
         }
       ]}
     />
-         {/* Seccion 2 */}
-        <div className="section-2-container">
+
+
+         {/* What to consider? */}
+
+        <div className="section-2-container section reveal">
           <div className="section-2-box-text">
+            
             <h5>Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet. Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet.</h5>
           </div>
           <div className="section-2-box-main">
             <div className="section-2-box-left">
-              <div className="section-2-box-icon">
+              <div className="section-2-box-icon section-2-box-icon-active">
                 <div className="icon-container">
                   <Leaf size="lg" />
                 </div>
@@ -138,7 +143,7 @@
               </div>
             </div>
             <div className="section-2-box-right">
-              <img src="/images/service-ai-6.webp" alt="" />
+              <img src="/images/service-ai-6.webp" alt={`Image of ${serviceName}`} />
             </div>
           </div>
         </div>
@@ -162,10 +167,13 @@
              "/images/service-ai-4.webp",   ]} />
 
       {/* Seccion de CTA */}
-      <CtaSection title="Lorem ipsum dolor sit amet consectetur adipiscing elit." description="Hola. Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices." />
+      <CtaSection title="Lorem ipsum dolor sit" 
+      highlight="lorem ipsum dolor sit amet"
+      
+      description="Hola. Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices." />
       
       {/* Seccion de FAQ */}
-    {/* <Faq
+ <Faq
       title= "This is where we show you the frequently asked"
       highlight="questions."
     >
@@ -187,10 +195,10 @@
           answer: "Answer 4: Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi."
         },
       ]}
-    </Faq> */}
+    </Faq> 
       
       </>
     )
   }
 
-  export default Desing;
+  export default Design;

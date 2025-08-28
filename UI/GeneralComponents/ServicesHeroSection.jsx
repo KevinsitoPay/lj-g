@@ -7,13 +7,9 @@ import ArrowIcon from "../Icons/ArrowIcon";
 const ServicesHeroSection = ({ Title, Highlight, Description, Background }) => {
   return (
     <>
-
-
-
-   
         <div className={`hero-container ${Background}`} id="services-layout">
         <Navbar type="alt" />
-        <div className="hero-content">
+        <div className="hero-content reveal">
           <div className="hero-content-text">
             <h1>
               {Title}
@@ -24,7 +20,7 @@ const ServicesHeroSection = ({ Title, Highlight, Description, Background }) => {
               {Description}
             </p>
           </div>
-          <div className="button-container">
+          <div className="button-container ">
             <ButtonCTA extraClasses={"primary-button"}>
               Book a free visit today
             </ButtonCTA>

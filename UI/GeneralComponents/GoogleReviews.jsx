@@ -82,7 +82,7 @@ function GoogleReviews() {
 
   return (
     <div className="google-reviews">
-      <div className="google-reviews-container">
+      <div className="google-reviews-container reveal">
         <div className="google-reviews-header">
           <p className="google-reviews-logo">Google</p>
           <div className="google-reviews-stars">★★★★★ (4.9)</div>

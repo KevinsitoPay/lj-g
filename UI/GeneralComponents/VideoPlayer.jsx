@@ -1,9 +1,11 @@
 "use client";
 
-
-import Plyr from "plyr-react";
+import dynamic from "next/dynamic";
 import "plyr-react/plyr.css";
 import "./VideoPlayer.scss";
+
+// Importa Plyr dinámicamente sin SSR
+const Plyr = dynamic(() => import("plyr-react"), { ssr: false });
 
 const VideoPlayer = ({ src, poster }) => {
   const videoSource = {
@@ -21,7 +23,7 @@ const VideoPlayer = ({ src, poster }) => {
     controls: [
       "rewind",
       "play-large",
-      "play", 
+      "play",
       "fast-forward",
       "progress",
       "current-time",
@@ -33,11 +35,9 @@ const VideoPlayer = ({ src, poster }) => {
       "fullscreen",
     ],
     autoplay: false,
-
   };
 
   return <Plyr source={videoSource} options={options} />;
 };
 
 export default VideoPlayer;
-
