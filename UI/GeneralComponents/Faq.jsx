@@ -36,7 +36,7 @@ function Faq({ title, highlight, children }) {
       </div>
 
       <div className="faq-box-right">
-        <img src="/Images/big-house.webp" alt="Faq" />
+        <img src="/images/big-house.webp" alt="Faq" />
         <h4>Your dream garden is possible</h4>
         <p>Book your first visit today. Our consultation is totally free and our promise is that after our visit You will have a clearer plan for Your garden.</p>
         <div className="button-container">
