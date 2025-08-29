@@ -150,7 +150,7 @@ const GallerySection = () => {
           >
             {selectedService.images.concat(selectedService.images, selectedService.images).map((image, index) => (
               <div className={styles.imageWrapper} key={index}>
-                <img src={`/Images/${image}`} alt={selectedService.name} />
+                <img src={`/images/${image}`} alt={selectedService.name} />
               </div>
             ))}
           </div>

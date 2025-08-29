@@ -2,8 +2,8 @@
 
 import '../Styles/GlobalStyles.scss'
 import Footer from "@/UI/GeneralComponents/Footer"
-import ScrollAnimations from '../UI/GeneralComponents/ScrollAnimations';
-import PageFade from '@/UI/GeneralComponents/PageFade';
+import ScrollAnimations from "@/UI/GeneralComponents/ScrollAnimations"
+import PageFade from "@/UI/GeneralComponents/PageFade"
 
 
 

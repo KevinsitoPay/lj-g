@@ -12,7 +12,7 @@ function Footer() {
       <div className="section">
         <div className="footer-box-calendar">
           <div className="footer-col1">
-            <img src="/Images/house-footer.jpg" alt="House Footer" />
+            <img src="/images/house-footer.jpg" alt="House Footer" />
             <h2>
               {" "}
               See if & Gonzalez is the right{" "}

@@ -1,7 +1,7 @@
 // // Estilos para la sección de hero
 
 // .hero-container {
-//   background: linear-gradient(to top, rgba(126, 126, 127, 0.3), rgba(40, 40, 42, 0.3)), url('/Images/house-footer.jpg');
+//   background: linear-gradient(to top, rgba(126, 126, 127, 0.3), rgba(40, 40, 42, 0.3)), url('/images/house-footer.jpg');
 //   background-size: cover;
 //   background-position: center;
 //   height: 65vh;
@@ -107,7 +107,7 @@
 //   display: flex;
 //   flex-direction: column;
 //   justify-content: space-between; // Espacia los elementos
-//   background: linear-gradient(to top, rgba(126, 126, 127, 0.3), rgba(40, 40, 42, 0.3)), url('/Images/service-1.png');
+//   background: linear-gradient(to top, rgba(126, 126, 127, 0.3), rgba(40, 40, 42, 0.3)), url('/images/service-1.png');
 //   border-radius: 16px;
 //   background-size: cover;
 //   background-position: center;
@@ -170,13 +170,13 @@
 // }
 
 // .section-2-content-box-2 {
-//   background: url('/Images/Green-bkg.jpg');
+//   background: url('/images/Green-bkg.jpg');
 //   background-size: cover;
 //   background-position: center;
 // }
 
 // .section-2-content-box-3 {
-//   background:linear-gradient(to top, rgba(126, 126, 127, 0.3), rgba(40, 40, 42, 0.3)), url('/Images/house-gray.jpg');
+//   background:linear-gradient(to top, rgba(126, 126, 127, 0.3), rgba(40, 40, 42, 0.3)), url('/images/house-gray.jpg');
 //    background-size: cover;
 //    background-position: center;
 // }
@@ -342,7 +342,7 @@
 //           color: var(--text-900);
 //         }
 //          &:hover {
-//            background-image: url('/Images/Green-bkg.jpg');;
+//            background-image: url('/images/Green-bkg.jpg');;
 //            background-size: cover;
 //            background-position: center;
 //            transition: background-image 0.5s ease-in-out;
@@ -403,6 +403,115 @@
 //     }
 //   }
 // }
+
+
+.stcky-home-contaier {
+  padding: 160px 0;
+  display: flex;
+  justify-content: space-between;
+  position: relative; /* Necesario para posicionar bien la línea y los círculos */
+
+  .stcky-box-home-left {
+    flex: 1;
+    padding-right: 20px;
+
+    h6 {
+      color: #e16555;
+    }
+
+    h4 {
+      color: #333;
+
+      .highlight {
+        color: #ff6347;
+      }
+    }
+
+    p {
+      color: #666;
+      margin-bottom: 8px;
+    }
+  }
+
+  .stcky-box-home-right {
+    flex: 1; /* Reduce el ancho de la sección */
+    position: relative;
+
+    .stcky-box-home-cta {
+      background: url(/images/black-bkg.png) no-repeat center center / cover;
+      border-radius: 16px;
+      padding: 16px;
+      margin-bottom: 190px; /* Espacio entre CTAs */
+      position: relative;
+
+      h5 {
+        color: var(--bkg-3);
+        padding-bottom: 8px;
+
+        .highlight {
+          color: var(--secondary-900);
+        }
+      }
+
+      p {
+        color: var(--bkg-3);
+      }
+
+      .button-container {
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        color: var(--secondary-900);
+        white-space: nowrap;
+
+        svg {
+          color: var(--secondary-900);
+        }
+      }
+
+      img {
+        width: 610px;
+        border-radius: 16px;
+        padding-bottom: 8px;
+      }
+
+      &:before {
+        content: attr(data-number);
+        position: absolute;
+        left: -46px; /* Centrar el círculo en la línea */
+        top: -12px; /* Coloca el círculo encima del CTA */
+        background-color: #5a8c5b;
+        color: white;
+        border-radius: 50%;
+        width: 24px;
+        height: 24px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: bold;
+      }
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+
+    &:before {
+      content: '';
+      position: absolute;
+      left: -34px; /* Asegura que la línea esté alineada con los círculos */
+      top: 12px;
+      width: 4px;
+      height: calc(100% - 190px); /* Línea termina justo en el círculo 3 */
+      background-color: #5a8c5b;
+    }
+  }
+}
+
+
+
+
+
 
 
 
