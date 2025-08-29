@@ -3,7 +3,7 @@ const ICON_SIZES = {
   m: 24,
   lg: 32,
 };
-const Schovel = ({ size = "m", className = "", ...props }) => {
+const Shovel = ({ size = "m", className = "", ...props }) => {
   const dimension = ICON_SIZES[size] || ICON_SIZES.m;
 
   return (
@@ -24,4 +24,4 @@ const Schovel = ({ size = "m", className = "", ...props }) => {
   );
 };
 
-export default Schovel;
+export default Shovel;

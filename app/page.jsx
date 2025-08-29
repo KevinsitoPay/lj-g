@@ -44,8 +44,7 @@ function Home() {
         </div>
       </div>
 
-          <GoogleReviews />
-
+      <GoogleReviews />
     </div>
   );
 }

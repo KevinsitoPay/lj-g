@@ -351,8 +351,10 @@ h6,
 }
 
 p,
-.plain-text, ul, li
-body, div {
+.plain-text,
+ul,
+li body,
+div {
   @include paragraph-default;
 }
 
@@ -420,7 +422,7 @@ i {
   flex-direction: column;
   justify-content: space-between;
   padding: 64px 0 64px 0;
-    max-height: 1080px;
+  max-height: 1080px;
 
   .hero-content {
     .hero-content-text {
@@ -467,7 +469,7 @@ i {
     url("/Images/house-footer.jpg");
   background-size: cover;
   height: 90vh;
-  
+
   min-height: 400px;
 
   .hero-content {
@@ -504,24 +506,18 @@ i {
 
 .section {
   max-width: 1360px;
-  margin: 0 auto; 
-  
+  margin: 0 auto;
 
   @media (max-width: 1400px) {
     padding-right: 5%;
     padding-left: 5%;
   }
-
 }
 
-
-
 #services-layout {
-  
   background-size: cover;
   background-position: center;
   height: 70vh;
-
 
   .hero-content {
     width: 100%;
@@ -529,11 +525,19 @@ i {
     margin: 0 auto;
     align-items: flex-start;
     color: var(--bkg-1);
+    display: flex;
+    flex-direction: column;
+
+    @media (max-width: 620px) {
+      align-items: center !important;
+      text-align: center !important;
+    }
 
     .hero-content-text {
       max-width: 630px;
 
       @media (max-width: 620px) {
+        align-items: center !important;
         text-align: center !important;
       }
     }
@@ -556,17 +560,18 @@ i {
   }
 }
 
-
-
 /*Backgrounds of hero sections services*/
 .landleveling-bg {
-  background: url("/Images/desing-hero.webp");  
+  background: url("/Images/desing-hero.webp");
 }
 
 .faq-bg {
-  background: url("/Images/garage.webp");  
+  background: url("/Images/garage.webp");
 }
 
+.how-it-works-bg {
+  background: url("/Images/garage.webp");
+}
 
 /*Animation classes*/
 .reveal {
@@ -579,7 +584,6 @@ i {
   opacity: 1;
   transform: translateY(0); // fade in and move up
 }
-
 
 .reveal-left {
   opacity: 0;
@@ -612,7 +616,6 @@ i {
   opacity: 1;
 }
 
-
 /* globals.scss or global CSS */
 .page-fade {
   opacity: 0;
@@ -621,4 +624,37 @@ i {
 
 .page-fade.visible {
   opacity: 1;
+}
+
+.serviceName {
+  padding-bottom: 4px;
+}
+
+/*Colors*/
+.highlight-primary {
+  color: var(--primary-900);
+}
+
+/*Paddings*/
+
+.mt-16 {
+  margin-top: 16px;
+}
+
+.mb-4 {
+  margin-bottom: 4px;
+}
+.mb-8 {
+  margin-bottom: 8px;
+}
+.mb-16 {
+  margin-bottom: 16px;
+}
+
+.mb-24 {
+  margin-bottom: 24px;
+}
+
+.mb-32 {
+  margin-bottom: 32px;
 }

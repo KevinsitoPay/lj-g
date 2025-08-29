@@ -1,10 +1,10 @@
 .faq-container {
   padding-top: 80px;
-  padding-bottom:160px;
+  padding-bottom: 160px;
   height: auto;
   display: flex;
   justify-content: space-between;
-  align-items: center; 
+  align-items: center;
   gap: 0px 36px;
 
   .faq-box-left {
@@ -22,7 +22,7 @@
     display: flex;
     gap: 16px;
   }
-  
+
   .dropdown {
     margin-top: 16px;
 
@@ -62,7 +62,7 @@
   }
 
   .faq-box-right {
-    background: url('/Images/orange-bkg.png') no-repeat center center / cover;
+    background: url("/Images/orange-bkg.png") no-repeat center center / cover;
     border-radius: 16px;
     padding: 24px 16px;
     width: 30%;
@@ -85,9 +85,7 @@
   }
 
   @media (max-width: 1024px) {
-
-
-        h3 {
+    h3 {
       font-size: 28px;
       line-height: 28px;
     }
@@ -103,14 +101,10 @@
     }
   }
 
-
-
   @media (max-width: 870px) {
-
     flex-direction: column;
     text-align: center;
 
-    
     h3 {
       font-size: 28px;
       line-height: 28px;
@@ -125,11 +119,11 @@
     .faq-box-right {
       text-align: start;
       width: 100%;
-      max-width: 100%;  
-    img{
+      max-width: 100%;
+      img {
         padding-top: 24px;
       }
-      a{
+      a {
         margin-bottom: 24px !important;
       }
     }
@@ -139,10 +133,48 @@
     }
 
     .faq-box-left .button-container {
-     flex-direction: column;
-     gap: 0;
+      flex-direction: column;
+      gap: 0;
     }
   }
 }
 
+/*FAQ Component Styling*/
 
+.dropdown {
+  margin-top: 16px;
+
+  details {
+    margin-bottom: 8px;
+    background: transparent;
+    border-radius: 16px;
+
+    summary {
+      font-size: 20px;
+      color: var(--text-900);
+      line-height: 24px;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding-top: 16px;
+      font-weight: bold;
+      list-style: none;
+
+      &::marker {
+        content: none;
+      }
+    }
+
+    p {
+      font-size: 16px;
+      color: var(--text-900);
+      line-height: 24px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background: transparent;
+      padding-top: 8px;
+    }
+  }
+}

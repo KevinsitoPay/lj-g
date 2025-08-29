@@ -1,15 +1,34 @@
+import ServicesHeroSection from "@/UI/GeneralComponents/ServicesHeroSection";
+import DesignContent from "./DesignContent";
 
 export const metadata = {
-  title: 'How It Works',
-  description: 'How the application works and its features',
-  keywords: 'how it works, application guide',
-}
+  title: "Design | LJ & Gonzalez Landscaping",
+  description: "How the application works and its features",
+  keywords: "how it works, application guide",
+  openGraph: {
+    title: "Design | LJ & Gonzalez Landscaping",
+    description: "How the application works and its features",
+    url: "https://www.ljandgonzalez.com/design",
+  },
+  canonical: "https://www.ljandgonzalez.com/design",
+  robots: {
+    index: true,
+    follow: true,
+    noimageindex: true,
+    noarchive: true,
+  },
+};
 
-function Howitworks() {
+export default function DesignPage() {
   return (
-    <div className="how-it-works-container">
-      <h1>How It Works</h1>
-    </div>
-  )
+    <>
+      <ServicesHeroSection
+        Background={"how-it-works-bg"}
+        Description="Lorem ipsum et al sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet."
+        Title="This is the text "
+        Highlight="and this is the highlight."
+      />
+      <DesignContent />
+    </>
+  );
 }
-export default Howitworks;
