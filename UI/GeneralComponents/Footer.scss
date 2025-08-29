@@ -1,9 +1,4 @@
 /* Global reset to avoid overflow */
-*,
-*::before,
-*::after {
-  max-width: 100%; // prevents any child from exceeding container
-}
 
 .footer-container {
   background: linear-gradient(
@@ -61,6 +56,7 @@
 
       .button-container {
         width: fit-content;
+        color: var(--text-200);
       }
     }
 

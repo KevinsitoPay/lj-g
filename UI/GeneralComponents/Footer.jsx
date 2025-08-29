@@ -1,6 +1,5 @@
-"use client"; /* componente del lado del cliente */
+"use client";
 import "./Footer.scss";
-import Button from "../Buttons/ButtonCTA";
 import Calendario from "./Calendario";
 import Link from "next/link";
 import ButtonLink from "../Buttons/ButtonLink";
@@ -27,9 +26,7 @@ function Footer() {
             </p>
 
             <div className="button-container">
-              <ButtonLink extraClasses={"arrow-white"}>
-                Book a free consultation
-              </ButtonLink>
+              <ButtonLink>Book a free consultation</ButtonLink>
             </div>
           </div>
           <div className="footer-col2">

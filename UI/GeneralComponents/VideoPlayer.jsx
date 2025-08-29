@@ -4,7 +4,6 @@ import dynamic from "next/dynamic";
 import "plyr-react/plyr.css";
 import "./VideoPlayer.scss";
 
-// Importa Plyr dinámicamente sin SSR
 const Plyr = dynamic(() => import("plyr-react"), { ssr: false });
 
 const VideoPlayer = ({ src, poster }) => {
