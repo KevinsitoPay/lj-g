@@ -54,7 +54,7 @@ function Home() {
 
       {/* Grid reviews section */}
 
-      <div className="reviews-grid-container section">
+      <div className="reviews-grid-container section reveal-left">
         <div className="reviews-grid-title">
           <h6>Welcome to LJ&G </h6>
           <h2>Lorem ipsum dolor sit amet <span className="highlight">consectetur adipiscing elit.</span></h2> 

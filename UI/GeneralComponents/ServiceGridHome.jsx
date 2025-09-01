@@ -50,7 +50,7 @@ const ServiceGridHome = () => {
   };
 
   return (
-    <div className="service-grid-container section">
+    <div className="service-grid-container section reveal-right">
       <div className="service-grid-title">
         <h6>Welcome to LJ&G</h6>
         <h2>Lorem ipsum dolor sit amet <span className="highlight">consectetur adipiscing elit.</span></h2>
