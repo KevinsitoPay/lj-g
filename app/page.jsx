@@ -11,6 +11,8 @@ import ButtonCTA from "@/UI/Buttons/ButtonCTA";
 import ButtonLink from "@/UI/Buttons/ButtonLink";
 import Quotes from "@/UI/Icons/Quotes";
 import ServiceGridHome from "@/UI/GeneralComponents/ServiceGridHome";
+import LandLeveling from "@/UI/Icons/LandLeveling";
+import Grass from "@/UI/Icons/Grass";
 
 export const metadata = {
   title: "LJ & Gonzalez Landscaping Services",
@@ -60,7 +62,7 @@ function Home() {
         </div>
         <div className="reviews-grid">
           <div className="reviews-grid-item-service-orange">
-            <span> Service </span>
+            <span> <LandLeveling size="sm" /> Land Leveling </span>
             <h6> Lorem ipsum dolor sit amet <span className="highlight">consectetur adipiscing elit.</span> </h6>
           </div>
           <div className="reviews-grid-item-image-1">
@@ -72,7 +74,7 @@ function Home() {
             <p> John Roberts - Builder & Co Founder </p>
           </div>
           <div className="reviews-grid-item-service-green">
-            <span> Service </span>
+            <span> <Grass size="sm" /> Sod Installation </span>
             <h6> Lorem ipsum dolor sit amet <span className="highlight">consectetur adipiscing elit.</span> </h6>
           </div>
           <div className="reviews-grid-item-bkg-image">

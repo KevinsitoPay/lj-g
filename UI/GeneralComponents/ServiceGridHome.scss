@@ -190,65 +190,37 @@
     }
   }
 
-  @media (max-width: 1024px) {
-    
-    .service-grid-row {
-      
-      &.top-row {
-        .service-grid-item {
-          border-radius: 16px;
-          transition: all 0.3s ease-in-out;
-          cursor: pointer;
-          overflow: hidden;
-          display: flex;
-          flex-direction: column;
-          justify-content: flex-end;
-          padding: 16px;
-          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-          width: 200px;
+@media (max-width: 1024px) {
+  .service-grid-row {
+    &.top-row, &.bottom-row {
+      .service-grid-item {
+        border-radius: 16px;
+        transition: height 0.5s ease-in-out, flex-grow 0.5s ease-in-out, max-width 0.5s ease-in-out;
+        cursor: pointer;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        padding: 16px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        width: 200px;
+        flex-grow: 1;
+        max-width: 1024px !important;
+        height: unset !important;
+        flex: 1 1 auto !important;
+        
+        &.expanded {
           flex-grow: 1;
-          max-width: 1024px !important;
-          height: unset !important;
-          flex: 1 1 auto !important;
-          &.expanded {
-            flex-grow: 1;
-            width: auto;
-            max-width: 100%;
-            height: 500px !important;
-          }
+          width: auto;
+          max-width: 100%;
+          height: 500px !important;
         }
       }
-          &.bottom-row {
-        .service-grid-item {
-          border-radius: 16px;
-          transition: all 0.3s ease-in-out;
-          cursor: pointer;
-          overflow: hidden;
-          display: flex;
-          flex-direction: column;
-          justify-content: flex-end;
-          padding: 16px;
-          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-          width: 200px;
-          flex-grow: 1;
-          max-width: 800px;
-          height: unset !important;
-          flex: 1 1 auto !important;
-          &.expanded {
-            flex-grow: 1;
-            width: auto;
-            max-width: 100%;
-            height: 500px !important;
-          }
-        }
-      }
-
-
-
-
     }
   }
 }
+}
+
 
 
 
