@@ -9,6 +9,8 @@ import Faq from "@/UI/GeneralComponents/Faq";
 import Navbar from "@/UI/GeneralComponents/Navbar";
 import ButtonCTA from "@/UI/Buttons/ButtonCTA";
 import ButtonLink from "@/UI/Buttons/ButtonLink";
+import Quotes from "@/UI/Icons/Quotes";
+import ServiceGridHome from "@/UI/GeneralComponents/ServiceGridHome";
 
 export const metadata = {
   title: "LJ & Gonzalez Landscaping Services",
@@ -19,6 +21,8 @@ export const metadata = {
 function Home() {
   return (
     <div>
+
+
       <div className="hero-container" id="home-bg">
         <Navbar type="main" />
 
@@ -46,45 +50,55 @@ function Home() {
 
       <GoogleReviews />
 
-          {/* Sticky section */}
+      {/* Grid reviews section */}
 
-        <div className="stcky-home-contaier section">
-          <div className="stcky-box-home-left">
-            <h6>Check our process</h6>
-            <h4>Lorem ipsum dolor sit amet <span className="highlight">consectetur consectetur adipiscing elit.</span></h4>
-            <p>Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet.</p>
-            <p>“Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in...”</p>
-            <p>Nada Quezada ★★★★★</p>
+      <div className="reviews-grid-container section">
+        <div className="reviews-grid-title">
+          <h6>Welcome to LJ&G </h6>
+          <h2>Lorem ipsum dolor sit amet <span className="highlight">consectetur adipiscing elit.</span></h2> 
+          <p> Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet.</p>
+        </div>
+        <div className="reviews-grid">
+          <div className="reviews-grid-item-service-orange">
+            <span> Service </span>
+            <h6> Lorem ipsum dolor sit amet <span className="highlight">consectetur adipiscing elit.</span> </h6>
           </div>
-          <div className="stcky-box-home-right">
-            <div className="stcky-box-home-cta" data-number="1">
-              <img src="/images/service-ai-4.webp" alt="Service 1" />
-              <h5><House /> Book a free visit <span className="highlight">and get a clear quote.</span></h5>
-              <p>Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet.</p>
-              <div className="button-container">
-                <ButtonLink>Book a free visit</ButtonLink>
-              </div>
-            </div>
-
-    <div className="stcky-box-home-cta" data-number="2">
-      <img src="/images/service-ai-7.webp" alt="Service 2" />
-      <h5><House /> Book a free visit <span className="highlight">and get a clear quote.</span></h5>
-      <p>Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet.</p>
-      <div className="button-container">
-        <ButtonLink>Book a free visit</ButtonLink>
+          <div className="reviews-grid-item-image-1">
+            <img src="/images/collage.png" />
+          </div>
+          <div className="reviews-grid-item-black">
+            <Quotes size="lg" />
+            <h6> Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices. </h6>
+            <p> John Roberts - Builder & Co Founder </p>
+          </div>
+          <div className="reviews-grid-item-service-green">
+            <span> Service </span>
+            <h6> Lorem ipsum dolor sit amet <span className="highlight">consectetur adipiscing elit.</span> </h6>
+          </div>
+          <div className="reviews-grid-item-bkg-image">
+            <Quotes size="lg" />
+            <h6> Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices. </h6>
+            <p> John Roberts - Builder & Co Founder </p>
+          </div>
+          <div className="reviews-grid-item-image-2">
+            <img src="/images/service-ai-3.webp" />
+          </div>
+          <div className="reviews-grid-item-yellow">
+            <Quotes size="lg" />
+            <h6> Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices. </h6>
+            <p> John Roberts - Builder & Co Founder </p>
+          </div>
+          <div className="reviews-grid-item-green">
+            <Quotes size="lg" />
+            <h6> Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices. </h6>
+            <p> John Roberts - Builder & Co Founder </p>
+          </div>
+        </div>
       </div>
-    </div>
 
-    <div className="stcky-box-home-cta" data-number="3">
-      <img src="/images/service-ai-6.webp" alt="Service 3" />
-      <h5><House /> Book a free visit <span className="highlight">and get a clear quote.</span></h5>
-      <p>Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet.</p>
-      <div className="button-container">
-        <ButtonLink>Book a free visit</ButtonLink>
-      </div>
-    </div>
-  </div>
-</div>
+      {/* Services grid section */}
+
+      <ServiceGridHome />
 
 
     </div>
