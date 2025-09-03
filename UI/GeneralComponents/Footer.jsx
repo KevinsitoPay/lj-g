@@ -10,7 +10,7 @@ function Footer() {
   return (
     <div className="footer-container fade-reveal">
       <div className="section">
-        <div className="footer-box-calendar">
+        <div className="footer-box-calendar" id="contact">
           <div className="footer-col1">
             <img src="/images/house-footer.jpg" alt="House Footer" />
             <h2>

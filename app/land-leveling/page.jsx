@@ -10,6 +10,7 @@ import Grading from "@/UI/Icons/Grading";
 import GalleryService from "@/UI/GeneralComponents/GalleryService";
 import BenefitsService from "@/UI/GeneralComponents/BenefitsService";
 import ServicesHeroSection from "@/UI/GeneralComponents/ServicesHeroSection";
+import ServicesHeroSectionVideo from "@/UI/GeneralComponents/ServicesHeroSectionVideo";
 import Image from "next/image";
 import "./service.scss";
 import LandLeveling from "@/UI/Icons/LandLeveling";
@@ -131,7 +132,7 @@ const faqItems = [
 function Design() {
   return (
     <>
-      <ServicesHeroSection
+      <ServicesHeroSectionVideo
         ServiceName={
           <span className="flex items-center gap-2">
             <LandLeveling size="sm" /> {serviceName}
@@ -140,7 +141,7 @@ function Design() {
         Description="Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet."
         Title="This is the text "
         Highlight="and this is the highlight."
-        Background="landleveling-bg"
+        Video="/videos/stock-landleveling.webm"
       />
 
       <GoogleReviews />
