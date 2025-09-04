@@ -167,7 +167,44 @@ function Design() {
 
       <GoogleReviews />
 
-      <div className="section"></div>
+      <div className="section-2-container section reveal">
+        <div className="section-2-box-text">
+          <p className="heading-5">
+            Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa
+            mi. Aliquam in hendrerit urna. Pellentesque sit amet. Lorem ipsum
+            dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam
+            in hendrerit urna. Pellentesque sit amet.
+          </p>
+        </div>
+        <div className="section-2-box-main">
+          <div className="section-2-box-left">
+            {considerationItems.map((item, i) => (
+              <div
+                key={i}
+                className={`section-2-box-icon ${
+                  i === 0 ? "section-2-box-icon-active" : ""
+                }`}
+              >
+                <div className="icon-container">
+                  <item.icon size="lg" />
+                </div>
+                <div className="icon-text">
+                  <h5>{item.title}</h5>
+                  <p>{item.text}</p>
+                </div>
+              </div>
+            ))}
+          </div>
+          <div className="section-2-box-right">
+            <Image
+              src="/images/service-ai-6.webp"
+              alt={`Image of ${serviceName}`}
+              width={500}
+              height={400}
+            />
+          </div>
+        </div>
+      </div>
     </>
   );
 }
