@@ -130,7 +130,8 @@
         overflow: hidden;
         cursor: pointer;
         color: var(--text-900);
-        width: fit-content;
+        width: fit-content !important;
+        margin: 0 auto;
       }
 
       .arrow-icon {

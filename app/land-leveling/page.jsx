@@ -9,16 +9,37 @@ import Grass from "@/UI/Icons/Grass";
 import Grading from "@/UI/Icons/Grading";
 import GalleryService from "@/UI/GeneralComponents/GalleryService";
 import BenefitsService from "@/UI/GeneralComponents/BenefitsService";
-import ServicesHeroSection from "@/UI/GeneralComponents/ServicesHeroSection";
 import ServicesHeroSectionVideo from "@/UI/GeneralComponents/ServicesHeroSectionVideo";
 import Image from "next/image";
 import "./service.scss";
 import LandLeveling from "@/UI/Icons/LandLeveling";
 
 export const metadata = {
-  title: "Design | LJ & Gonzalez Landscaping",
-  description: "How the application works and its features",
-  keywords: "how it works, application guide",
+  title: "Land Leveling | LJ & Gonzalez Landscaping",
+  description:
+    "Smooth out your lawn with our land leveling service. Perfect for outdoor activities and entertainment.",
+  keywords: "land leveling, lawn leveling, yard grading, yard leveling",
+  openGraph: {
+    title: "Land Leveling | LJ & Gonzalez Landscaping",
+    description:
+      "Our land leveling service provides homeowners with a smooth and even lawn, perfect for outdoor activities and entertainment. Learn more about our land leveling services and how we can help you achieve your dream lawn.",
+    url: "https://www.ljandgonzalez.com/land-leveling",
+    images: [
+      {
+        url: "/videos/poster/poster-landleveling.webp",
+        width: 800,
+        height: 600,
+        alt: "LJ & Gonzalez",
+      },
+    ],
+  },
+  robots: {
+    index: true,
+    follow: true,
+    noimageindex: true,
+    noarchive: true,
+  },
+  canonical: "https://www.ljandgonzalez.com/land-leveling",
 };
 
 const serviceName = "Land Leveling";
@@ -152,7 +173,7 @@ function Design() {
         highlight="pastrun getlufa"
         paragraph="Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet. Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in hendrerit urna."
         videoSrc="/videos/videoDemo.mp4"
-        videoPoster="/videos/desing-hero.webp"
+        videoPoster="/videos/poster/poster-landleveling.webp"
       />
 
       <BenefitsService
@@ -167,12 +188,12 @@ function Design() {
 
       <div className="section-2-container section reveal">
         <div className="section-2-box-text">
-          <h5>
+          <p className="heading-5">
             Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa
             mi. Aliquam in hendrerit urna. Pellentesque sit amet. Lorem ipsum
             dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam
             in hendrerit urna. Pellentesque sit amet.
-          </h5>
+          </p>
         </div>
         <div className="section-2-box-main">
           <div className="section-2-box-left">

@@ -40,7 +40,7 @@ const ServicesHeroSection = ({
           <ButtonCTA href="#contact" extraClasses={"primary-button"}>
             Book a free visit today
           </ButtonCTA>
-          <ButtonLink link="/faq" altArrowColor="arrow-white">
+          <ButtonLink href="/faq" altArrowColor="arrow-white">
             Check our FAQ
           </ButtonLink>
         </div>
