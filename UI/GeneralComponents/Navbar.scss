@@ -17,7 +17,7 @@
 }
 .lj-logo .LJWhite {
   fill: var(--bkg-1);
-} /* Make width calculations include padding for perfect edge alignment */
+}
 .menu-container,
 .megamenu-content {
   box-sizing: border-box;
@@ -29,7 +29,7 @@
   padding: 0 20px;
   margin: 0 auto;
   height: 100px;
-  position: relative; /* <-- containing block for .megamenu */
+  position: relative;
   z-index: 20;
   border-radius: 16px 16px 0 0;
   .menu-link,
@@ -354,9 +354,6 @@
   }
 
   @media (max-width: 1400px) {
-  
     padding: 64px 5% 0 5%;
-  
   }
-  
 }

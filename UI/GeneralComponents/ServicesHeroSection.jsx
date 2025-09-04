@@ -29,11 +29,11 @@ const ServicesHeroSection = ({
             <p>{Description}</p>
           </div>
           <div className="button-container ">
-            <ButtonCTA extraClasses={"primary-button"}>
+            <ButtonCTA href="#contact" extraClasses={"primary-button"}>
               Book a free visit today
             </ButtonCTA>
-            <ButtonLink altArrowColor="arrow-white">
-              Check our projects
+            <ButtonLink href="/faq" altArrowColor="arrow-white">
+              Check our FAQ
             </ButtonLink>
           </div>
         </div>
