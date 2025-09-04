@@ -49,7 +49,7 @@ function Design() {
             At LJ&amp;Gonzalez, we respect your privacy and are committed to
             protecting the personal information you share with us. This Privacy
             Policy explains what information we collect, how we use it, and your
-            choices regarding that information.
+            choices regarding that information that we collect.
           </p>
 
           <br />
