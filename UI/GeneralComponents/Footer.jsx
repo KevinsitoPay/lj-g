@@ -5,6 +5,7 @@ import Link from "next/link";
 import ButtonLink from "../Buttons/ButtonLink";
 import LJLogo from "./LJLogo";
 import ButtonCTA from "../Buttons/ButtonCTA";
+import PhoneIcon from "../Icons/PhoneIcon";
 
 function Footer() {
   return (
@@ -26,7 +27,12 @@ function Footer() {
             </p>
 
             <div className="button-container">
-              <ButtonLink>Book a free consultation</ButtonLink>
+              <ButtonCTA
+                extraClasses={"primary-button"}
+                href={"tel:+34666666666"}
+              >
+                Give us a call
+              </ButtonCTA>
             </div>
           </div>
           <div className="footer-col2">
@@ -37,7 +43,9 @@ function Footer() {
 
         <div className="footer-box-links">
           <div className="footer-box-col1">
-            <LJLogo />
+            <Link href="/">
+              <LJLogo />
+            </Link>
           </div>
           <div className="footer-box-col2">
             <h6> Information </h6>
@@ -49,7 +57,7 @@ function Footer() {
                 <Link href="/faq">FAQ</Link>
               </li>
               <li>
-                <Link href="/Contractors">Contractors</Link>
+                <Link href="/contractors">Contractors</Link>
               </li>
             </ul>
           </div>
@@ -57,22 +65,27 @@ function Footer() {
             <h6> Our services </h6>
             <ul>
               <li>
-                <Link href="/land-leveling">Service Name</Link>
+                <Link href="/land-leveling">Land leveling</Link>
               </li>
               <li>
-                <Link href="/land-leveling">Service Name</Link>
+                <Link href="/land-leveling">Sod installation</Link>
               </li>
               <li>
-                <Link href="/land-leveling">Service Name</Link>
+                <Link href="/land-leveling">Functional plants</Link>
               </li>
               <li>
-                <Link href="/land-leveling">Service Name</Link>
+                <Link href="/land-leveling">Mulch application</Link>
               </li>
               <li>
-                <Link href="/land-leveling">Service Name</Link>
+                <Link href="/land-leveling">River rock installation</Link>
               </li>
               <li>
-                <Link href="/land-leveling">Service Name</Link>
+                <Link href="/land-leveling">Wall retaining installation</Link>
+              </li>
+              <li>
+                <Link href="/land-leveling">
+                  Irrigation system installation
+                </Link>
               </li>
             </ul>
           </div>
@@ -121,11 +134,11 @@ function Footer() {
             <div className="footer-box-col1">
               <p>
                 ©LJ&Gonzalez 2025 | Web Development by{" "}
-                <a href="https://monettedev.com">Monette Dev</a>{" "}
+                <a href="https://monette.dev">Monette Dev</a>{" "}
               </p>
             </div>
             <div className="footer-box-col2 col-left">
-              <Link href="/privay-policy">Privacy Policy</Link>
+              <Link href="/privacy-policy">Privacy Policy</Link>
             </div>
           </div>
         </div>
