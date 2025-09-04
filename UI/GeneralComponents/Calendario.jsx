@@ -1,69 +1,205 @@
 "use client";
-import ArrowRight from "../Icons/ArrowRight";
 import React, { useState } from "react";
 import dynamic from "next/dynamic";
 import "./Calendario.scss";
 import "react-calendar/dist/Calendar.css";
 import "react-time-picker/dist/TimePicker.css";
-import Schedule from "../Icons/Schedule";
+import ArrowIcon from "../Icons/ArrowIcon";
 
 const Calendar = dynamic(() => import("react-calendar"), { ssr: false });
 const TimePicker = dynamic(() => import("react-time-picker"), { ssr: false });
 
+const isEmailValid = (email) => /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+const isPhoneNumberValid = (phone) => /^\+?[0-9]{7,15}$/.test(phone);
+const isNameValid = (name) => /^[a-zA-Z\s]+$/.test(name.trim());
+const isProjectMessageValid = (message) => /^[a-zA-Z0-9\s]+$/.test(message.trim());
+
 const Calendario = () => {
-  const [date, setDate] = useState(new Date());
-  const [time, setTime] = useState("10:30 AM");
-  const [submittedData, setSubmittedData] = useState(null);
+  const [currentStep, setCurrentStep] = useState(1);
+  const [formData, setFormData] = useState({
+    date: new Date(),
+    time: "10:30 AM",
+    name: "",
+    city: "",
+    email: "",
+    phone: "",
+    projectMessage: ""
+  });
+  const [errors, setErrors] = useState({});
+  const [loading, setLoading] = useState(false);
 
   const handleDateChange = (newDate) => {
-    setDate(newDate);
+    setFormData((prevData) => ({ ...prevData, date: newDate }));
   };
 
   const handleTimeChange = (newTime) => {
-    setTime(newTime);
+    setFormData((prevData) => ({ ...prevData, time: newTime }));
   };
 
-  const handleSubmit = (event) => {
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData((prevData) => ({ ...prevData, [name]: value }));
+  };
+
+  const validateStep2 = () => {
+    const newErrors = {};
+    if (!formData.name.trim()) {
+      newErrors.name = "Name is required";
+    } else if (!isNameValid(formData.name)) {
+      newErrors.name = "Name can only contain letters and spaces";
+    }
+    if (!formData.city.trim()) newErrors.city = "City is required";
+    if (!isEmailValid(formData.email)) newErrors.email = "Invalid email address";
+    if (!isPhoneNumberValid(formData.phone)) newErrors.phone = "Invalid phone number";
+    if (!formData.projectMessage.trim()) {
+      newErrors.projectMessage = "Project description is required";
+    } else if (!isProjectMessageValid(formData.projectMessage)) {
+      newErrors.projectMessage = "Project description can contain only letters, numbers, and spaces";
+    }
+    return newErrors;
+  };
+
+  const handleSubmitStep1 = (event) => {
     event.preventDefault();
-    const formData = { date, time };
-    setSubmittedData(formData);
-    console.log("Form submitted:", formData);
+    setCurrentStep(2);
+  };
+
+  const handleSubmitStep2 = (event) => {
+    event.preventDefault();
+    const formErrors = validateStep2();
+    if (Object.keys(formErrors).length > 0) {
+      setErrors(formErrors);
+    } else {
+      setErrors({});
+      setLoading(true);
+
+      // Simular un retraso de 2 segundos antes de mostrar el tercer paso
+      setTimeout(() => {
+        setLoading(false);
+        setCurrentStep(3);
+
+        // Convertir la hora al formato de 12 horas
+        const [hour, minute] = formData.time.split(':');
+        const date = new Date();
+        date.setHours(hour, minute);
+        const timeIn12HourFormat = date.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit', hour12: true });
+
+        console.log("Complete form submitted:", {
+          ...formData,
+          time: timeIn12HourFormat,
+        });
+
+        // Lógica para enviar datos al servidor podría ir aquí
+      }, 2000);
+    }
   };
 
   return (
     <div className="container">
-      <div className="text-top">
-        <p>
-          {" "}
-          After submitting your appointment, we will contact you to confirm it
-          or future dates based on our schedule.{" "}
-        </p>
-      </div>
-      <form onSubmit={handleSubmit}>
-        <Calendar
-          onChange={handleDateChange}
-          value={date}
-          minDate={new Date()}
-          locale="en-US"
-        />
-        <div className="timeContainer">
-          <TimePicker
-            onChange={handleTimeChange}
-            value={time}
-            disableClock={true}
-            format="h:mm a"
-            clearIcon={null}
-            clockIcon={true}
-          />
+      {currentStep === 1 && (
+        <div className="step1">
+          <div className="text-top">
+            <p>
+              After submitting your appointment, we will contact you to confirm it
+              or future dates based on our schedule.
+            </p>
+          </div>
+          <form onSubmit={handleSubmitStep1}>
+            <Calendar
+              onChange={handleDateChange}
+              value={formData.date}
+              minDate={new Date()}
+              locale="en-US"
+            />
+            <div className="timeContainer">
+              <TimePicker
+                onChange={handleTimeChange}
+                value={formData.time}
+                disableClock={true}
+                format="h:mm a"
+                clearIcon={null}
+                clockIcon={true}
+              />
+            </div>
+            <button type="submit" className="button">
+              Confirm Appointment <ArrowIcon alt size="sm" />
+            </button>
+          </form>
         </div>
-        <button type="submit" className="button">
-          Confirm Appointment <ArrowRight size="sm" />
-        </button>
-      </form>
-      {submittedData && (
-        <div className="selected">
-          Appointment confirmed for: {submittedData.date.toDateString()} at{" "}
-          {submittedData.time}
+      )}
+
+      {currentStep === 2 && (
+        <div className="step2">
+          <h5>One last step! Share your details with us.</h5>
+          <form onSubmit={handleSubmitStep2} className="form">
+            {loading && <p className="loading-message">Processing...</p>}
+            <div className="input-container">
+              <input
+                type="text"
+                name="name"
+                placeholder="Your Name"
+                value={formData.name}
+                onChange={handleChange}
+                required
+              />
+              {errors.name && <span className="error">{errors.name}</span>}
+            </div>
+            <div className="input-container">
+              <input
+                type="text"
+                name="city"
+                placeholder="Your City"
+                value={formData.city}
+                onChange={handleChange}
+                required
+              />
+              {errors.city && <span className="error">{errors.city}</span>}
+            </div>
+            <div className="input-container">
+              <input
+                type="email"
+                name="email"
+                placeholder="Your Email"
+                value={formData.email}
+                onChange={handleChange}
+                required
+              />
+              {errors.email && <span className="error">{errors.email}</span>}
+            </div>
+            <div className="input-container">
+              <input
+                type="tel"
+                name="phone"
+                placeholder="Your Phone Number"
+                value={formData.phone}
+                onChange={handleChange}
+                required
+              />
+              {errors.phone && <span className="error">{errors.phone}</span>}
+            </div>
+            <div className="input-container">
+              <textarea
+                name="projectMessage"
+                placeholder="Tell us about your project"
+                value={formData.projectMessage}
+                onChange={handleChange}
+                rows="4"
+                required
+              />
+              {errors.projectMessage && <span className="error">{errors.projectMessage}</span>}
+            </div>
+            <button type="submit" className="button" disabled={loading}>
+              Submit <ArrowIcon alt size="sm" />
+            </button>
+          </form>
+        </div>
+      )}
+
+      {currentStep === 3 && (
+        <div className="step3-confirmation-message">
+          <h4>Thank You for Your Preference!</h4>
+          <img src="/images/ai-deal.webp" alt="Confirmation" />
+          <p>Your information has been submitted successfully. We will be in contact with you shortly.</p>
         </div>
       )}
     </div>
@@ -71,3 +207,10 @@ const Calendario = () => {
 };
 
 export default Calendario;
+
+
+
+
+
+
+
