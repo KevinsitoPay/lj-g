@@ -6,7 +6,8 @@ export default function PageLoader({ children }) {
 
   useEffect(() => {
     const handleLoad = () => {
-      setTimeout(() => setLoading(false), 2000); // hide splash after 2s
+      // small timeout so gif is visible a bit, optional
+      setTimeout(() => setLoading(false), 1500);
     };
 
     if (document.readyState === "complete") {
@@ -17,21 +18,17 @@ export default function PageLoader({ children }) {
     }
   }, []);
 
-  return (
-    <div className="page-wrapper">
-      {loading && (
-        <div className={`splash-screen ${loading ? "visible" : "hidden"}`}>
-          <img
-            src="/images/loading.gif"
-            alt="Loading..."
-            className="splash-logo"
-          />
-        </div>
-      )}
-
-      <div className={`page-content ${loading ? "hidden" : "visible"}`}>
-        {children}
+  if (loading) {
+    return (
+      <div className="splash-screen">
+        <img
+          src="/images/loading.gif"
+          alt="Loading..."
+          className="splash-logo"
+        />
       </div>
-    </div>
-  );
+    );
+  }
+
+  return <>{children}</>;
 }
