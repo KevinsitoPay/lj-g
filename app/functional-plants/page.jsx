@@ -160,7 +160,7 @@ function Design() {
           </span>
         }
         Description="Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet."
-        Title="This is the text "
+        Title="This is the texts "
         Highlight="and this is the highlight."
         Video="/videos/stock-functionalplants.webm"
       />
