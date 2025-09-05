@@ -6,7 +6,7 @@ import VideoPlayer from "@/UI/GeneralComponents/VideoPlayer";
 import List from "@/UI/Icons/List";
 import Lotus from "@/UI/Icons/Lotus";
 import Shovel from "@/UI/Icons/Shovel";
-import HowCarrousel from "./How-carrousel";
+import HowCarrousel from "./how-carrousel";
 import Dropdown from "@/UI/GeneralComponents/Dropdown";
 import "./page.scss";
 

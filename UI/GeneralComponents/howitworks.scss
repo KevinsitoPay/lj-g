@@ -1,0 +1,146 @@
+.how-section-carrousel {
+  overflow-x: auto;
+  overflow-y: hidden;
+  -webkit-overflow-scrolling: touch;
+  width: 100%;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+.carrousel-track {
+  display: inline-flex;
+  gap: 32px;
+  padding-bottom: 8px; /* avoid scrollbar overlap */
+}
+
+.how-card {
+  box-sizing: border-box;
+  width: 400px;
+  height: fit-content;
+  max-height: 250px;
+  padding: 1.5rem;
+  background: var(--primary-300);
+  border-radius: 1rem;
+  cursor: grab;
+  user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+
+  .button-link-link {
+    padding: 0;
+    margin-top: 4px;
+    gap: 4px;
+    width: fit-content;
+  }
+
+  @media (max-width: 1060px) {
+    width: 300px;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+  }
+}
+
+.how-card:active {
+  cursor: grabbing;
+}
+
+.how-card.card-first {
+  background: url("/Images/orange-bkg.png");
+  color: var(--text-200);
+}
+
+@media (max-width: 1060px) {
+  .how {
+    flex-direction: column;
+    gap: 32px;
+
+    .how-col1 {
+      max-width: 650px;
+
+      align-items: flex-start;
+      text-align: flex-start;
+      .how-text .icon-section {
+        justify-content: flex-start;
+        gap: 16px;
+      }
+    }
+  }
+}
+
+.how {
+  display: flex;
+  gap: 5%;
+  padding: 104px 0;
+
+  .how-col1 {
+    flex: 3;
+    min-width: 0;
+    display: flex;
+    flex-direction: column;
+
+    .how-reviews {
+      .review {
+        font-weight: 500;
+        font-style: italic;
+      }
+
+      .author {
+        font-weight: 600;
+      }
+
+      .rating {
+        color: var(--primary-900);
+      }
+    }
+
+    @media (min-width: 1060px) {
+      &.sticky-col {
+        position: sticky;
+        top: 52px;
+        align-self: flex-start;
+      }
+    }
+  }
+
+  .how-col2 {
+    flex: 7;
+    min-width: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 40vh; // spacing between sections
+
+    .how-section {
+      .how-section-info {
+        padding-top: 1rem;
+      }
+    }
+
+    @media (max-width: 1060px) {
+      gap: 200px;
+    }
+  }
+}
+
+@media (max-width: 1400px) {
+  .how {
+    padding: 104px 5% 104px 5%;
+  }
+}
+
+@media (max-width: 1060px) {
+  .how {
+    flex-direction: column;
+    gap: 32px;
+
+    // .how-col1 {
+    //   max-width: 650px;
+    //   position: relative;
+    //   top: auto; // disable sticky on smaller screens
+    // }
+  }
+}
