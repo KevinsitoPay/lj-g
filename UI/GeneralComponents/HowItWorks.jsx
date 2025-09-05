@@ -1,14 +1,13 @@
 "use client";
 
-import { useState, useEffect } from "react";
 import ButtonCTA from "@/UI/Buttons/ButtonCTA";
 import VideoPlayer from "@/UI/GeneralComponents/VideoPlayer";
 import List from "@/UI/Icons/List";
 import Lotus from "@/UI/Icons/Lotus";
 import Shovel from "@/UI/Icons/Shovel";
-import HowCarrousel from "../../app/how-it-works/How-carrousel";
+import HowCarrousel from "../../app/how-it-works/how-carrousel";
 import Dropdown from "@/UI/GeneralComponents/Dropdown";
-import "../../app/how-it-works/page.scss";
+import "./howitworks.scss";
 
 export default function HowItWorks() {
   return (
@@ -20,7 +19,7 @@ export default function HowItWorks() {
             Learn how it works...
           </div>
           <h3 className="mb-4">
-            lOREM OAHSDFOA{" "}
+            This is the heading{" "}
             <span className="highlight-primary">This is the highlight</span>
           </h3>
           <p>
