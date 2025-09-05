@@ -54,8 +54,8 @@ function Home() {
         <div className="hero-content">
           <div className="hero-content-text">
             <h1>
-              Tittle where we adress the{" "}
-              <span className="highlight"> main pain point</span>
+              Transform Your Space with{" "}
+              <span className="highlight"> Expert Contracting Solutions</span>
             </h1>
 
             <p>
@@ -65,10 +65,10 @@ function Home() {
             </p>
           </div>
           <div className="button-container reveal-fade">
-            <ButtonCTA extraClasses={"primary-button"}>
+            <ButtonCTA href={"#contact"} extraClasses={"primary-button"}>
               Book a free visit today
             </ButtonCTA>
-            <ButtonLink>Check our projects</ButtonLink>
+            <ButtonLink href={"/faq"}>Check our projects</ButtonLink>
           </div>
         </div>
       </div>
@@ -80,8 +80,8 @@ function Home() {
           "Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet."
         }
         title={"Lorem impsun in dolore"}
-        videoPoster={"/videos/poster/poster-irrigation.webp"}
-        videoSrc={"/videos/videoDemo.mp4"}
+        videoPoster={"/videos/videodemoService.webm"}
+        videoSrc={"/videos/videodemoService.webm"}
         highlight={"highlight"}
       />
 

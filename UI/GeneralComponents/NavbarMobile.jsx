@@ -97,7 +97,7 @@ const NavbarMobile = ({ onClose }) => {
                   <FunctionalPlants size="sm" />
                     Functional Plants
                   </Link>
-                  <Link href="/mulch-applications" className="mobile-submenu-link heading-icon">
+                  <Link href="/mulch-application" className="mobile-submenu-link heading-icon">
                   <MulchApplication size="sm" />
                     Mulch Applications
                   </Link>
@@ -108,11 +108,11 @@ const NavbarMobile = ({ onClose }) => {
                     <RiverRock size="sm" />
                     River Rock Installation
                   </Link>
-                  <Link href="/wall-retaining" className="mobile-submenu-link heading-icon">
+                  <Link href="/wall-retaining-installation" className="mobile-submenu-link heading-icon">
                     <WallRetaining size="sm" />
                     Wall Retaining
                   </Link>
-                  <Link href="/irrigation-system" className="mobile-submenu-link heading-icon">
+                  <Link href="/irrigation-system-installation" className="mobile-submenu-link heading-icon">
                     <IrrigationSystem size="sm" />
                     Irrigation System
                   </Link>

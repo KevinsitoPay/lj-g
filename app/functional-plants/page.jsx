@@ -12,18 +12,18 @@ import BenefitsService from "@/UI/GeneralComponents/BenefitsService";
 import ServicesHeroSectionVideo from "@/UI/GeneralComponents/ServicesHeroSectionVideo";
 import Image from "next/image";
 import "./service.scss";
-import LandLeveling from "@/UI/Icons/LandLeveling";
+import Plants from "@/UI/Icons/Plants";
 
 export const metadata = {
-  title: "Land Leveling | LJ & Gonzalez Landscaping",
+  title: "Functional plants | LJ & Gonzalez Landscaping",
   description:
-    "Smooth out your lawn with our land leveling service. Perfect for outdoor activities and entertainment.",
-  keywords: "land leveling, lawn leveling, yard grading, yard leveling",
+    "At LJ & González, we enhance functional plants with advanced technology and expertise, boosting efficiency and ensuring sustainable performance.",
+  keywords: "Functional plants",
   openGraph: {
     title: "Land Leveling | LJ & Gonzalez Landscaping",
     description:
       "Our land leveling service provides homeowners with a smooth and even lawn, perfect for outdoor activities and entertainment. Learn more about our land leveling services and how we can help you achieve your dream lawn.",
-    url: "https://www.ljandgonzalez.com/land-leveling",
+    url: "https://www.ljandgonzalez.com/functional-plants",
     images: [
       {
         url: "/videos/poster/poster-functional.webp",
@@ -39,10 +39,10 @@ export const metadata = {
     noimageindex: true,
     noarchive: true,
   },
-  canonical: "https://www.ljandgonzalez.com/land-leveling",
+  canonical: "https://www.ljandgonzalez.com/functional-plants",
 };
 
-const serviceName = "Land Leveling";
+const serviceName = "Functional plants";
 
 const testimonials = [
   {
@@ -156,12 +156,12 @@ function Design() {
       <ServicesHeroSectionVideo
         ServiceName={
           <span className="flex items-center gap-2">
-            <LandLeveling size="sm" /> {serviceName}
+            <Plants size="sm" /> {serviceName}
           </span>
         }
         Description="Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet."
-        Title="This is the texts "
-        Highlight="and this is the highlight."
+        Title="Boost plant health "
+        Highlight="improve systems now."
         Video="/videos/stock-functionalplants.webm"
       />
 
@@ -172,7 +172,7 @@ function Design() {
         title="Lorem impsun in dolore"
         highlight="pastrun getlufa"
         paragraph="Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet. Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in hendrerit urna."
-        videoSrc="/videos/videoDemo.mp4"
+        videoSrc="/videos/videodemoService.webm"
         videoPoster="/videos/poster/poster-functional.webp"
       />
 

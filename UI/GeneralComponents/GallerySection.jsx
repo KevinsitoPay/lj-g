@@ -1,12 +1,12 @@
 "use client";
 import React, { useState, useRef, useEffect } from "react";
 import styles from "./GallerySection.module.scss";
-import ArrowRight from "../Icons/ArrowRight";
 import Grading from "../Icons/Grading";
 import Grass from "../Icons/Grass";
 import Plants from "../Icons/Plants";
 import Mulch from "../Icons/Mulch";
 import Link from "next/link";
+import ArrowIcon from "../Icons/ArrowIcon";
 
 const services = [
   {
@@ -23,7 +23,7 @@ const services = [
     icon: Grading,
   },
   {
-    name: "Soil Installation",
+    name: "Sod Installation",
     images: [
       "service-ai-5.webp",
       "service-ai-6.webp",
@@ -32,7 +32,7 @@ const services = [
     ],
     description:
       "Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet.",
-    link: "/soil-installation",
+    link: "/sod-installation",
     icon: Grass,
   },
   {
@@ -58,7 +58,7 @@ const services = [
     ],
     description:
       "Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet.",
-    link: "/mulch-applications",
+    link: "/mulch-application",
     icon: Mulch,
   },
 ];
@@ -220,7 +220,7 @@ const GallerySection = () => {
               <Link href={selectedService.link} className={styles.ctaButton}>
                 Learn More
                 <span className={styles.icon}>
-                  <ArrowRight size="sm" />
+                  <ArrowIcon size="sm" />
                 </span>
               </Link>
             </div>

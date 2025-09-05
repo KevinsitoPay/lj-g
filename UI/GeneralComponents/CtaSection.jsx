@@ -10,7 +10,7 @@ function CtaSection({ title, description, highlight }) {
         <p>{description}</p>
         <div className="cta-section-button">
           <div className="button-container">
-            <ButtonCTA extraClasses={"primary-button"}>
+            <ButtonCTA href={"#contact"} extraClasses={"primary-button"}>
               Book a free visit today
             </ButtonCTA>
           </div>

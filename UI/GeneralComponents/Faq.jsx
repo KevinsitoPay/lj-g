@@ -19,8 +19,8 @@ function Faq({ title, highlight, children }) {
       <div className="faq-box-left">
         <h3>{title} <span className="highlight">{highlight}</span></h3>
         <div className="button-container">
-          <ButtonCTA extraClasses={"primary-button-lofi"}>Book a free visit today</ButtonCTA>
-          <ButtonLink extraClasses={"secondary-button-lofi"} link="/services">Explore Services</ButtonLink>
+          <ButtonCTA href="#contact" extraClasses={"primary-button-lofi"}>Book a free visit today</ButtonCTA>
+          <ButtonLink href={"/faq"} extraClasses={"secondary-button-lofi"} link="/services">Learn more in our FAQ</ButtonLink>
         </div>
         <div className="dropdown">
           {children.map((item, index) => (
@@ -40,7 +40,7 @@ function Faq({ title, highlight, children }) {
         <h4>Your dream garden is possible</h4>
         <p>Book your first visit today. Our consultation is totally free and our promise is that after our visit You will have a clearer plan for Your garden.</p>
         <div className="button-container">
-          <ButtonCTA extraClasses={"primary-button"}>Book a free visit today</ButtonCTA>
+          <ButtonCTA href="#contact" extraClasses={"primary-button"}>Book a free visit today</ButtonCTA>
         </div>
       </div>
     </div>

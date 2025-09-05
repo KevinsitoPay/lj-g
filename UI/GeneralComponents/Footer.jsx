@@ -68,22 +68,22 @@ function Footer() {
                 <Link href="/land-leveling">Land leveling</Link>
               </li>
               <li>
-                <Link href="/land-leveling">Sod installation</Link>
+                <Link href="/sod-installation">Sod installation</Link>
               </li>
               <li>
-                <Link href="/land-leveling">Functional plants</Link>
+                <Link href="/functional-plants">Functional plants</Link>
               </li>
               <li>
-                <Link href="/land-leveling">Mulch application</Link>
+                <Link href="/mulch-application">Mulch application</Link>
               </li>
               <li>
-                <Link href="/land-leveling">River rock installation</Link>
+                <Link href="/river-rock-installation">River rock installation</Link>
               </li>
               <li>
-                <Link href="/land-leveling">Wall retaining installation</Link>
+                <Link href="/wall-retaining-installation">Wall retaining installation</Link>
               </li>
               <li>
-                <Link href="/land-leveling">
+                <Link href="/irrigation-system-installation">
                   Irrigation system installation
                 </Link>
               </li>

@@ -94,7 +94,7 @@ function GalleryService({ title, highlight, paragraph, images, icon }) {
       </div>
 
       <div className="section-3-box-button">
-        <ButtonCTA extraClasses={"primary-button-lofi"}>
+        <ButtonCTA href="#contact" extraClasses={"primary-button-lofi"}>
           Book a free visit today
         </ButtonCTA>
       </div>

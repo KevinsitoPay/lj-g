@@ -12,18 +12,18 @@ import BenefitsService from "@/UI/GeneralComponents/BenefitsService";
 import ServicesHeroSectionVideo from "@/UI/GeneralComponents/ServicesHeroSectionVideo";
 import Image from "next/image";
 import "./service.scss";
-import LandLeveling from "@/UI/Icons/LandLeveling";
+import RiverRock from "@/UI/Icons/RiverRock";
 
 export const metadata = {
-  title: "Land Leveling | LJ & Gonzalez Landscaping",
+  title: "River rock installation | LJ & Gonzalez Landscaping",
   description:
-    "Smooth out your lawn with our land leveling service. Perfect for outdoor activities and entertainment.",
-  keywords: "land leveling, lawn leveling, yard grading, yard leveling",
+    "At LJ & González, we install river rock to prevent erosion and improve landscape aesthetics, ensuring effective drainage and lasting stability.",
+  keywords: "River rock installation",
   openGraph: {
-    title: "Land Leveling | LJ & Gonzalez Landscaping",
+    title: "River rock installation | LJ & Gonzalez Landscaping",
     description:
       "Our land leveling service provides homeowners with a smooth and even lawn, perfect for outdoor activities and entertainment. Learn more about our land leveling services and how we can help you achieve your dream lawn.",
-    url: "https://www.ljandgonzalez.com/land-leveling",
+    url: "https://www.ljandgonzalez.com/river-rock-installation",
     images: [
       {
         url: "/videos/poster/poster-sod.webp",
@@ -39,10 +39,10 @@ export const metadata = {
     noimageindex: true,
     noarchive: true,
   },
-  canonical: "https://www.ljandgonzalez.com/land-leveling",
+  canonical: "https://www.ljandgonzalez.com/river-rock-installation",
 };
 
-const serviceName = "Land Leveling";
+const serviceName = "River rock installation";
 
 const testimonials = [
   {
@@ -156,12 +156,12 @@ function Design() {
       <ServicesHeroSectionVideo
         ServiceName={
           <span className="flex items-center gap-2">
-            <LandLeveling size="sm" /> {serviceName}
+            <RiverRock size="sm" /> {serviceName}
           </span>
         }
         Description="Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet."
-        Title="This is the text "
-        Highlight="and this is the highlight."
+        Title="Erosion threatens landscapes "
+        Highlight="stabilize with river rock."
         Video="/videos/stock-river.webm"
       />
 
@@ -172,7 +172,7 @@ function Design() {
         title="Lorem impsun in dolore"
         highlight="pastrun getlufa"
         paragraph="Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet. Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in hendrerit urna."
-        videoSrc="/videos/videoDemo.mp4"
+        videoSrc="/videos/videodemoService.webm"
         videoPoster="/videos/poster/poster-river.webp"
       />
 

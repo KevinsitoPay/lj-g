@@ -31,7 +31,7 @@ export default function DesignContent() {
         </div>
 
         <div className="how-button mb-16">
-          <ButtonCTA extraClasses={"primary-button-lofi"}>
+          <ButtonCTA href="#contact"  extraClasses={"primary-button-lofi"}>
             Book a free visit today
           </ButtonCTA>
         </div>
