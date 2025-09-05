@@ -20,7 +20,7 @@ export default function DesignContent() {
             Learn how it works...
           </div>
           <h3 className="mb-4">
-            lOREM OAHSDFOA{" "}
+            This is the heading{" "}
             <span className="highlight-primary">This is the highlight</span>
           </h3>
           <p>
