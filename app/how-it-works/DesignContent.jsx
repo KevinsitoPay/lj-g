@@ -1,13 +1,12 @@
 "use client";
 
-import { useState, useEffect } from "react";
 import ButtonCTA from "@/UI/Buttons/ButtonCTA";
+import Dropdown from "@/UI/GeneralComponents/Dropdown";
 import VideoPlayer from "@/UI/GeneralComponents/VideoPlayer";
 import List from "@/UI/Icons/List";
 import Lotus from "@/UI/Icons/Lotus";
 import Shovel from "@/UI/Icons/Shovel";
 import HowCarrousel from "./how-carrousel";
-import Dropdown from "@/UI/GeneralComponents/Dropdown";
 import "./page.scss";
 
 export default function DesignContent() {
@@ -31,7 +30,7 @@ export default function DesignContent() {
         </div>
 
         <div className="how-button mb-16">
-          <ButtonCTA href="#contact"  extraClasses={"primary-button-lofi"}>
+          <ButtonCTA href="#contact" extraClasses={"primary-button-lofi"}>
             Book a free visit today
           </ButtonCTA>
         </div>
@@ -54,7 +53,7 @@ export default function DesignContent() {
         {/* Section 1 */}
         <div className="how-section reveal-right" id="step-1">
           <VideoPlayer
-            poster="/videos/design-hero.jpg"
+            poster="/videos/design-hero.webp"
             src="/videos/VideoDemo.mp4"
           />
           <h3 className="mb-8 mt-16 heading-icon">
@@ -70,7 +69,7 @@ export default function DesignContent() {
         {/* Section 2 */}
         <div className="how-section reveal-right" id="step-2">
           <VideoPlayer
-            poster="/videos/design-hero.jpg"
+            poster="/videos/design-hero.webp"
             src="/videos/VideoDemo.mp4"
           />
           <h3 className="mb-8 mt-16 heading-icon">
@@ -86,7 +85,7 @@ export default function DesignContent() {
         {/* Section 3 */}
         <div className="how-section reveal-right" id="step-3">
           <VideoPlayer
-            poster="/videos/design-hero.jpg"
+            poster="/videos/design-hero.webp"
             src="/videos/VideoDemo.mp4"
           />
           <h3 className="mb-8 mt-16 heading-icon">

@@ -1,11 +1,9 @@
 "use client";
-import "./Footer.scss";
-import Calendario from "./Calendario";
 import Link from "next/link";
-import ButtonLink from "../Buttons/ButtonLink";
-import LJLogo from "./LJLogo";
 import ButtonCTA from "../Buttons/ButtonCTA";
-import PhoneIcon from "../Icons/PhoneIcon";
+import Calendario from "./Calendario";
+import "./Footer.scss";
+import LJLogo from "./LJLogo";
 
 function Footer() {
   return (
@@ -77,10 +75,14 @@ function Footer() {
                 <Link href="/mulch-application">Mulch application</Link>
               </li>
               <li>
-                <Link href="/river-rock-installation">River rock installation</Link>
+                <Link href="/river-rock-installation">
+                  River rock installation
+                </Link>
               </li>
               <li>
-                <Link href="/wall-retaining-installation">Wall retaining installation</Link>
+                <Link href="/wall-retaining-installation">
+                  Wall retaining installation
+                </Link>
               </li>
               <li>
                 <Link href="/irrigation-system-installation">

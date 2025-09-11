@@ -53,7 +53,7 @@ export default function HowItWorks() {
         {/* Section 1 */}
         <div className="how-section reveal-right" id="step-1">
           <VideoPlayer
-            poster="/videos/design-hero.jpg"
+            poster="/videos/design-hero.webp"
             src="/videos/VideoDemo.mp4"
           />
           <h3 className="mb-8 mt-16 heading-icon">
@@ -69,7 +69,7 @@ export default function HowItWorks() {
         {/* Section 2 */}
         <div className="how-section reveal-right" id="step-2">
           <VideoPlayer
-            poster="/videos/design-hero.jpg"
+            poster="/videos/design-hero.webp"
             src="/videos/VideoDemo.mp4"
           />
           <h3 className="mb-8 mt-16 heading-icon">
@@ -85,7 +85,7 @@ export default function HowItWorks() {
         {/* Section 3 */}
         <div className="how-section reveal-right" id="step-3">
           <VideoPlayer
-            poster="/videos/design-hero.jpg"
+            poster="/videos/design-hero.webp"
             src="/videos/VideoDemo.mp4"
           />
           <h3 className="mb-8 mt-16 heading-icon">
