@@ -1,4 +1,3 @@
-"use client";
 import Link from "next/link";
 import ButtonCTA from "../Buttons/ButtonCTA";
 import Calendario from "./Calendario";

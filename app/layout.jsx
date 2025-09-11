@@ -1,5 +1,3 @@
-"use client";
-
 import "../Styles/GlobalStyles.scss";
 import Footer from "@/UI/GeneralComponents/Footer";
 import ScrollAnimations from "@/UI/GeneralComponents/ScrollAnimations";
@@ -15,7 +13,7 @@ export default function RootLayout({ children }) {
           {children}
         </PageFade>
         <footer>
-          <Footer />
+          <Footer fetchpriority="low" />
         </footer>
       </body>
     </html>

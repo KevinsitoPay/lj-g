@@ -1,5 +1,4 @@
 "use client";
-
 import dynamic from "next/dynamic";
 import "plyr-react/plyr.css";
 import "./VideoPlayer.scss";

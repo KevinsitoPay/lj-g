@@ -1,5 +1,3 @@
-"use client";
-
 import ButtonCTA from "@/UI/Buttons/ButtonCTA";
 import Dropdown from "@/UI/GeneralComponents/Dropdown";
 import VideoPlayer from "@/UI/GeneralComponents/VideoPlayer";
