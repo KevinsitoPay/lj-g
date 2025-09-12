@@ -50,7 +50,7 @@
       display: flex;
       flex-direction: column;
       justify-content: center;
-      background: url("/images/Green-bkg.jpg") no-repeat center center / cover;
+      background: url("/images/Green-bkg.webp") no-repeat center center / cover;
       border-radius: 16px;
       padding: 16px;
       color: #fff;
@@ -160,7 +160,8 @@
       }
 
       &.reviews-grid-item-green {
-        background: url("/images/Green-bkg.jpg") no-repeat center center / cover;
+        background: url("/images/Green-bkg.webp") no-repeat center center /
+          cover;
       }
 
       h6 {

@@ -166,10 +166,9 @@ function Design() {
       />
 
       <GoogleReviews />
-
       <VideoComponent
         imageSrc="/images/white-house.jpg"
-        title="Lorem impsun in dolore"
+        title="Learn more about our service"
         highlight="pastrun getlufa"
         paragraph="Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet. Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in hendrerit urna."
         videoSrc="/videos/videodemoService.webm"
