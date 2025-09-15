@@ -69,7 +69,7 @@ const testimonials = [
 
 const benefits = [
   {
-    image: "/images/footer_bkg.jpg",
+    image: "/images/footer_bkg.webp",
     icon: Leaf,
     title: "Improved",
     highlight: "drainage",
@@ -166,12 +166,11 @@ function Design() {
       />
 
       <GoogleReviews />
-
       <VideoComponent
         imageSrc="/images/white-house.jpg"
-        title="Protect your property with"
-        highlight="natural elegance"
-        paragraph="River rock installations control erosion and enhance drainage while adding a natural, aesthetic touch to your landscape. Our expert team ensures a durable, attractive solution."
+        title="Lorem impsun in dolore"
+        highlight="pastrun getlufa"
+        paragraph="Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet. Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in hendrerit urna."
         videoSrc="/videos/videodemoService.webm"
         videoPoster="/videos/poster/poster-river.webp"
       />

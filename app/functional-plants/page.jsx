@@ -69,7 +69,7 @@ const testimonials = [
 
 const benefits = [
   {
-    image: "/images/footer_bkg.jpg",
+    image: "/images/footer_bkg.webp",
     icon: Leaf,
     title: "Enhanced",
     highlight: "aesthetics",

@@ -1,20 +1,17 @@
-import Button from "@/UI/Buttons/ButtonCTA";
-import "./Home.scss";
-import GoogleReviews from "@/UI/GeneralComponents/GoogleReviews";
-import VideoComponent from "@/UI/GeneralComponents/VideoSection";
-import CtaSection from "@/UI/GeneralComponents/CtaSection";
-import List from "@/UI/Icons/List";
-import GallerySection from "@/UI/GeneralComponents/GallerySection";
-import Faq from "@/UI/GeneralComponents/Faq";
-import Navbar from "@/UI/GeneralComponents/Navbar";
 import ButtonCTA from "@/UI/Buttons/ButtonCTA";
 import ButtonLink from "@/UI/Buttons/ButtonLink";
-import Quotes from "@/UI/Icons/Quotes";
-import ServiceGridHome from "@/UI/GeneralComponents/ServiceGridHome";
-import LandLeveling from "@/UI/Icons/LandLeveling";
-import Grass from "@/UI/Icons/Grass";
+import CtaSection from "@/UI/GeneralComponents/CtaSection";
+import Faq from "@/UI/GeneralComponents/Faq";
+import GallerySection from "@/UI/GeneralComponents/GallerySection";
+import GoogleReviews from "@/UI/GeneralComponents/GoogleReviews";
 import HowItWorks from "@/UI/GeneralComponents/HowItWorks";
-import BenefitsService from "@/UI/GeneralComponents/BenefitsService";
+import Navbar from "@/UI/GeneralComponents/Navbar";
+import ServiceGridHome from "@/UI/GeneralComponents/ServiceGridHome";
+import VideoComponent from "@/UI/GeneralComponents/VideoSection";
+import Grass from "@/UI/Icons/Grass";
+import LandLeveling from "@/UI/Icons/LandLeveling";
+import Quotes from "@/UI/Icons/Quotes";
+import "./Home.scss";
 
 export const metadata = {
   title: "LJ & Gonzalez Landscaping Services",
@@ -80,7 +77,7 @@ function Home() {
           "Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet."
         }
         title={"Lorem impsun in dolore"}
-        videoPoster={"/videos/videodemoService.webm"}
+        videoPoster={"/videos/poster/poster-services.webp"}
         videoSrc={"/videos/videodemoService.webm"}
         highlight={"highlight"}
       />
@@ -115,7 +112,7 @@ function Home() {
             </h6>
           </div>
           <div className="reviews-grid-item-image-1">
-            <img src="/images/collage.png" />
+            <img src="/images/collage.webp" />
           </div>
           <div className="reviews-grid-item-black">
             <Quotes size="lg" />
