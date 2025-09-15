@@ -71,46 +71,46 @@ const benefits = [
   {
     image: "/images/footer_bkg.jpg",
     icon: Leaf,
-    title: "Primary",
-    highlight: "benefit",
-    text: "Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi.",
+    title: "Better",
+    highlight: "Drainage",
+    text: "Leveling prevents water from pooling around your home, protecting foundations and keeping yards safe.",
   },
   {
     image: "/images/house-gray.jpg",
     icon: Grading,
-    title: "Secundary",
-    highlight: "benefit",
-    text: "Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi.",
+    title: "Smooth Outdoor",
+    highlight: "Spaces",
+    text: "Even ground creates a cleaner look and makes your lawn, patio, or garden easier to enjoy.",
   },
   {
     image: "/images/house-footer.jpg",
     icon: Schovel,
-    title: "Tertiary",
-    highlight: "benefit",
-    text: "Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi.",
+    title: "Stronger Property",
+    highlight: "Value",
+    text: "A well-leveled yard improves curb appeal and adds long-term value to your home.",
   },
 ];
 
 const considerationItems = [
   {
     icon: Leaf,
-    title: "Lorem ipsum dolor sit",
-    text: "Lorem ipsum dolor sit amet consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna.",
+    title: "Check Your Drainage Needs",
+    text: "Proper leveling helps prevent water from pooling, but first evaluate if drainage is already an issue.",
   },
   {
     icon: Lotus,
-    title: "Lorem ipsum dolor sit",
-    text: "Lorem ipsum dolor sit amet consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna.",
+    title: "Review Property Slope",
+    text: "The natural grade of your yard determines how much work the leveling will require.",
   },
   {
     icon: Schovel,
-    title: "Lorem ipsum dolor sit",
-    text: "Lorem ipsum dolor sit amet consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna.",
+    title: "Consider Landscape Plans",
+    text: "Think about future patios, gardens, or walkways so leveling supports long-term goals.",
   },
   {
     icon: Grass,
-    title: "Lorem ipsum dolor sit",
-    text: "Lorem ipsum dolor sit amet consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna.",
+    title: "Budget and Timing",
+    text: "Project scope and seasonality can affect cost and scheduling, so plan ahead.",
   },
 ];
 
@@ -129,24 +129,24 @@ const galleryImages = [
 
 const faqItems = [
   {
-    question: "Question 1: Lorem ipsum dolor sit amet consectetur?",
+    question: "What is the average cost of land leveling?",
     answer:
-      "Answer 1: Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi.",
+      "The cost varies based on project specifics. Contact us for a detailed estimate.",
   },
   {
-    question: "Question 2: Lorem ipsum dolor sit amet consectetur?",
+    question: "How long does the leveling process take?",
     answer:
-      "Answer 2: Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi.",
+      "Most projects are completed within a few days, but duration depends on site conditions and size.",
   },
   {
-    question: "Question 3: Lorem ipsum dolor sit amet consectetur?",
+    question: "Can land leveling be done on sloped areas?",
     answer:
-      "Answer 3: Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi.",
+      "Yes, we expertly handle varied slopes to ensure even leveling and proper drainage.",
   },
   {
-    question: "Question 4: Lorem ipsum dolor sit amet consectetur?",
+    question: "What equipment do you use for leveling?",
     answer:
-      "Answer 4: Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi.",
+      "We utilize advanced lasers and grading machinery for precise results.",
   },
 ];
 
@@ -159,9 +159,9 @@ function Design() {
             <LandLeveling size="sm" /> {serviceName}
           </span>
         }
-        Description="Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet."
+        Description="At LJ & González, our expert team employs cutting-edge precision equipment and time-tested techniques to level land to perfection."
         Title="Unlevel land leads to waste "
-        Highlight="improve your fields."
+        Highlight="improve your fields"
         Video="/videos/stock-landleveling.webm"
       />
 
@@ -169,16 +169,16 @@ function Design() {
 
       <VideoComponent
         imageSrc="/images/white-house.jpg"
-        title="Lorem impsun in dolore"
-        highlight="pastrun getlufa"
-        paragraph="Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet. Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in hendrerit urna."
+        title="Level land today to"
+        highlight="save water tomorrow"
+        paragraph="Land leveling is essential to improve irrigation, prevent soil erosion, and maximize your harvest. At LJ & González, we use precision equipment and proven techniques to deliver smooth, balanced fields."
         videoSrc="/videos/videodemoService.webm"
         videoPoster="/videos/poster/poster-LandLeveling.webp"
       />
 
       <BenefitsService
-        title="This is the heading"
-        highlight="and this is the highlight."
+        title="Advantages of"
+        highlight="Land leveling"
         testimonials={testimonials}
         benefits={benefits.map((b) => ({
           ...b,
@@ -189,10 +189,7 @@ function Design() {
       <div className="section-2-container section reveal">
         <div className="section-2-box-text">
           <p className="heading-5">
-            Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa
-            mi. Aliquam in hendrerit urna. Pellentesque sit amet. Lorem ipsum
-            dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam
-            in hendrerit urna. Pellentesque sit amet.
+            Land leveling can greatly improve your yard by ensuring proper drainage, smoother outdoor spaces, and better curb appeal. Before choosing this service, consider the current landscape condition, property slope, and your long-term plans.
           </p>
         </div>
         <div className="section-2-box-main">
@@ -227,21 +224,21 @@ function Design() {
 
       <GalleryService
         icon={<Grading size="lg" />}
-        title="Lorem ipsum"
-        highlight="dolor sit amet"
-        paragraph="Lorem ipsum dolor sit amet consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices."
+        title="Our success"
+        highlight="stories"
+        paragraph="Explore the impressive projects by LJ & González that demonstrate our expertise in delivering superior land leveling and landscaping solutions."
         images={galleryImages}
       />
 
       <CtaSection
-        title="Lorem ipsum dolor sit"
-        highlight="lorem ipsum dolor sit amet"
-        description="Hola. Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices."
+        title="Elevate your property with"
+        highlight="Precision Land leveling"
+        description="Revitalize your landscape with expert leveling that enhances beauty and functionality. Let LJ & González transform your property today."
       />
 
       <Faq
-        title="This is where we show you the frequently asked"
-        highlight="questions."
+        title="Frequently asked questions about"
+        highlight="Land leveling"
       >
         {faqItems}
       </Faq>

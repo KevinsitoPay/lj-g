@@ -71,46 +71,46 @@ const benefits = [
   {
     image: "/images/footer_bkg.jpg",
     icon: Leaf,
-    title: "Primary",
-    highlight: "benefit",
-    text: "Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi.",
+    title: "Improved Soil",
+    highlight: "Stability",
+    text: "Retaining walls prevent soil erosion and preserve your landscape’s integrity.",
   },
   {
     image: "/images/house-gray.jpg",
     icon: Grading,
-    title: "Secundary",
-    highlight: "benefit",
-    text: "Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi.",
+    title: "Enhanced",
+    highlight: "aesthetics",
+    text: "Thoughtfully designed walls add dimension and visual appeal to your yard.",
   },
   {
     image: "/images/house-footer.jpg",
     icon: Schovel,
-    title: "Tertiary",
-    highlight: "benefit",
-    text: "Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi.",
+    title: "Increased",
+    highlight: "value",
+    text: "A well-installed retaining wall boosts curb appeal and property value.",
   },
 ];
 
 const considerationItems = [
   {
     icon: Leaf,
-    title: "Lorem ipsum dolor sit",
-    text: "Lorem ipsum dolor sit amet consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna.",
+    title: "Evaluate water runoff	",
+    text: "Determine if your landscape suffers from water drainage issues affecting stability.",
   },
   {
     icon: Lotus,
-    title: "Lorem ipsum dolor sit",
-    text: "Lorem ipsum dolor sit amet consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna.",
+    title: "Assess landscape design",
+    text: "Consider how the wall will integrate with your existing landscape features.",
   },
   {
     icon: Schovel,
-    title: "Lorem ipsum dolor sit",
-    text: "Lorem ipsum dolor sit amet consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna.",
+    title: "Budget planning	",
+    text: "Plan your budget, considering material costs and complexity of the installation.",
   },
   {
     icon: Grass,
-    title: "Lorem ipsum dolor sit",
-    text: "Lorem ipsum dolor sit amet consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna.",
+    title: "Timing the installation",
+    text: "Consider seasonal factors to ensure ideal installation conditions.",
   },
 ];
 
@@ -129,24 +129,24 @@ const galleryImages = [
 
 const faqItems = [
   {
-    question: "Question 1: Lorem ipsum dolor sit amet consectetur?",
+    question: "What materials do you use for retaining walls?",
     answer:
-      "Answer 1: Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi.",
+      "We use high-quality durable materials such as concrete, stone, and timber to ensure long-lasting strength and beauty.",
   },
   {
-    question: "Question 2: Lorem ipsum dolor sit amet consectetur?",
+    question: "How long does the installation process take?",
     answer:
-      "Answer 2: Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi.",
+      "The timeline depends on the project size and complexity, but typically installations take between 1 to 2 weeks.",
   },
   {
-    question: "Question 3: Lorem ipsum dolor sit amet consectetur?",
+    question: "Do I need a permit to install a retaining wall?",
     answer:
-      "Answer 3: Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi.",
+      "Permits may be required depending on the wall’s height and local regulations; we can guide you through the process.",
   },
   {
-    question: "Question 4: Lorem ipsum dolor sit amet consectetur?",
+    question: "Can retaining walls help with my drainage issues?",
     answer:
-      "Answer 4: Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi.",
+      "Yes, properly designed retaining walls can significantly improve drainage and protect your landscape from erosion.",
   },
 ];
 
@@ -159,9 +159,9 @@ function Design() {
             <Wall size="sm" /> {serviceName}
           </span>
         }
-        Description="Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet."
+        Description="At LJ & González, we expertly install retaining walls using durable materials and precise techniques. Our solutions prevent soil erosion, enhance landscape aesthetics, and increase property value, providing you with a sturdy and attractive outdoor space."
         Title="Shifting soil threatens foundations "
-        Highlight="secure them with walls."
+        Highlight="secure them with walls"
         Video="/videos/stock-river.webm"
       />
 
@@ -169,16 +169,16 @@ function Design() {
 
       <VideoComponent
         imageSrc="/images/white-house.jpg"
-        title="Lorem impsun in dolore"
-        highlight="pastrun getlufa"
-        paragraph="Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet. Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in hendrerit urna."
+        title="Stabilize your ground today for"
+        highlight="a safer tomorrow"
+        paragraph="Retaining wall installation is crucial to prevent soil erosion, manage water runoff, and enhance the beauty of your landscape. At LJ & González, we utilize quality materials and expert craftsmanship to deliver strong and reliable walls."
         videoSrc="/videos/videodemoService.webm"
         videoPoster="/videos/poster/poster-river.webp"
       />
 
       <BenefitsService
-        title="This is the heading"
-        highlight="and this is the highlight."
+        title="Benefits of"
+        highlight="Wall retaining installation"
         testimonials={testimonials}
         benefits={benefits.map((b) => ({
           ...b,
@@ -189,10 +189,7 @@ function Design() {
       <div className="section-2-container section reveal">
         <div className="section-2-box-text">
           <p className="heading-5">
-            Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa
-            mi. Aliquam in hendrerit urna. Pellentesque sit amet. Lorem ipsum
-            dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam
-            in hendrerit urna. Pellentesque sit amet.
+            Installing a retaining wall can greatly enhance your landscape, offering stability, improved aesthetics, and increased property value. Before committing, assess your property’s needs, potential water runoff issues, the complexity of the landscape design, and budget considerations.
           </p>
         </div>
         <div className="section-2-box-main">
@@ -226,22 +223,22 @@ function Design() {
       </div>
 
       <GalleryService
-        icon={<Grading size="lg" />}
-        title="Lorem ipsum"
-        highlight="dolor sit amet"
-        paragraph="Lorem ipsum dolor sit amet consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices."
+        icon={<Wall size="lg" />}
+        title="Browse our recent projects in"
+        highlight="retaining wall excellence"
+        paragraph="Discover how LJ & González combines craftsmanship and innovation to deliver exceptional retaining wall projects that enhance both function and aesthetics."
         images={galleryImages}
       />
 
       <CtaSection
-        title="Lorem ipsum dolor sit"
-        highlight="lorem ipsum dolor sit amet"
-        description="Hola. Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices."
+        title="Transform your landscape with"
+        highlight="reliable retaining walls"
+        description="Ensure your property’s safety and beauty with expertly installed retaining walls by LJ & González. Contact us now to secure your home against erosion and elevate its visual appeal. Let's craft the perfect solution for your outdoor space!"
       />
 
       <Faq
-        title="This is where we show you the frequently asked"
-        highlight="questions."
+        title="Frequently asked questions about"
+        highlight="Wall retaining installation"
       >
         {faqItems}
       </Faq>

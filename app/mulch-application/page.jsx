@@ -71,46 +71,46 @@ const benefits = [
   {
     image: "/images/footer_bkg.jpg",
     icon: Leaf,
-    title: "Primary",
-    highlight: "benefit",
-    text: "Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi.",
+    title: "Temperature",
+    highlight: "control",
+    text: "Regulates soil temperature, protecting plants from extreme weather conditions.",
   },
   {
     image: "/images/house-gray.jpg",
     icon: Grading,
-    title: "Secundary",
-    highlight: "benefit",
-    text: "Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi.",
+    title: "Moisture",
+    highlight: "retention",
+    text: "Mulch helps retain soil moisture, reducing the need for frequent watering.",
   },
   {
     image: "/images/house-footer.jpg",
     icon: Schovel,
-    title: "Tertiary",
-    highlight: "benefit",
-    text: "Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi.",
+    title: "Weed",
+    highlight: "suppression",
+    text: "Suppressed weed growth keeps your garden tidy and reduces maintenance time.",
   },
 ];
 
 const considerationItems = [
   {
     icon: Leaf,
-    title: "Lorem ipsum dolor sit",
-    text: "Lorem ipsum dolor sit amet consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna.",
+    title: "Select the right mulch type",
+    text: "Different plants benefit from specific mulch types; choose accordingly.",
   },
   {
     icon: Lotus,
-    title: "Lorem ipsum dolor sit",
-    text: "Lorem ipsum dolor sit amet consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna.",
+    title: "Assess Mulch Depth",
+    text: "Proper depth is essential; too much can suffocate plants, too little may be ineffective.",
   },
   {
     icon: Schovel,
-    title: "Lorem ipsum dolor sit",
-    text: "Lorem ipsum dolor sit amet consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna.",
+    title: "Plan for Seasonal Changes",
+    text: "Different seasons require different mulch adjustments for optimal results.",
   },
   {
     icon: Grass,
-    title: "Lorem ipsum dolor sit",
-    text: "Lorem ipsum dolor sit amet consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna.",
+    title: "Consider Plant Types",
+    text: "Some plants may need specific mulching approaches to thrive.",
   },
 ];
 
@@ -129,24 +129,28 @@ const galleryImages = [
 
 const faqItems = [
   {
-    question: "Question 1: Lorem ipsum dolor sit amet consectetur?",
+    question: "What is the cost of mulch application?",
     answer:
-      "Answer 1: Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi.",
+      "Costs vary by garden size and mulch type; contact us for a quote.",
   },
   {
-    question: "Question 2: Lorem ipsum dolor sit amet consectetur?",
+    question: "How often should mulch be reapplied?",
     answer:
-      "Answer 2: Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi.",
+      "Typically, once a year or when it’s decomposed significantly.",
   },
   {
-    question: "Question 3: Lorem ipsum dolor sit amet consectetur?",
+    question: "Can mulch attract pests?",
     answer:
-      "Answer 3: Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi.",
+      "Quality mulch usually doesn’t, but routine checks are recommended.",
   },
   {
-    question: "Question 4: Lorem ipsum dolor sit amet consectetur?",
+    question: "How thick should the mulch layer be?",
     answer:
-      "Answer 4: Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi.",
+      "Generally 2-4 inches thick, depending on plant and mulch type.",
+  },
+  { question: "What types of mulch do you recommend?",
+    answer:
+      "We recommend organic mulches like wood chips or bark for most gardens.",
   },
 ];
 
@@ -159,9 +163,9 @@ function Design() {
             <Mulch size="sm" /> {serviceName}
           </span>
         }
-        Description="Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet."
+        Description="LJ & González provide expert mulch applications to retain soil moisture, suppress weeds, and enhance garden aesthetics. Our professionals ensure a healthy, vibrant landscape."
         Title="Weed growth harms plants "
-        Highlight="protect with mulch."
+        Highlight="protect with mulch"
         Video="/videos/stock-mulchapplication.webm"
       />
 
@@ -169,16 +173,16 @@ function Design() {
 
       <VideoComponent
         imageSrc="/images/white-house.jpg"
-        title="Lorem impsun in dolore"
-        highlight="pastrun getlufa"
-        paragraph="Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet. Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in hendrerit urna."
+        title="Enrich your soil and beautify"
+        highlight="your garden"
+        paragraph="Mulch application offers numerous benefits, from moisture retention to weed prevention. LJ & González apply mulch expertly to safeguard and enhance your garden landscape."
         videoSrc="/videos/videodemoService.webm"
         videoPoster="/videos/poster/poster-mulch.webp"
       />
 
       <BenefitsService
-        title="This is the heading"
-        highlight="and this is the highlight."
+        title="Benefits of"
+        highlight="Mulch application"
         testimonials={testimonials}
         benefits={benefits.map((b) => ({
           ...b,
@@ -189,10 +193,7 @@ function Design() {
       <div className="section-2-container section reveal">
         <div className="section-2-box-text">
           <p className="heading-5">
-            Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa
-            mi. Aliquam in hendrerit urna. Pellentesque sit amet. Lorem ipsum
-            dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam
-            in hendrerit urna. Pellentesque sit amet.
+            Applying mulch can significantly enhance your garden, but it’s crucial to consider mulch type, garden layout, and plant needs. Understanding these factors ensures mulch is used effectively to improve plant health and garden appearance.
           </p>
         </div>
         <div className="section-2-box-main">
@@ -226,22 +227,22 @@ function Design() {
       </div>
 
       <GalleryService
-        icon={<Grading size="lg" />}
-        title="Lorem ipsum"
-        highlight="dolor sit amet"
-        paragraph="Lorem ipsum dolor sit amet consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices."
+        icon={<Mulch size="lg" />}
+        title="See our mulch application"
+        highlight="artistry"
+        paragraph="Discover how LJ & González transform gardens with strategic mulch application. Explore our gallery of stunning results."
         images={galleryImages}
       />
 
       <CtaSection
-        title="Lorem ipsum dolor sit"
-        highlight="lorem ipsum dolor sit amet"
-        description="Hola. Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices."
+        title="Protect and enrich your"
+        highlight="garden with mulch"
+        description="Improve soil health and garden aesthetics with professional mulch application from LJ & González. Contact us today!"
       />
 
       <Faq
-        title="This is where we show you the frequently asked"
-        highlight="questions."
+        title="Frequently asked questions about"
+        highlight="Mulch application"
       >
         {faqItems}
       </Faq>
