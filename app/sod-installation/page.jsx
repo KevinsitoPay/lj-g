@@ -70,46 +70,46 @@ const benefits = [
   {
     image: "/images/footer_bkg.webp",
     icon: Leaf,
-    title: "Primary",
-    highlight: "benefit",
-    text: "Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi.",
+    title: "Instant",
+    highlight: "lawn",
+    text: "Achieve a fully green and lush lawn immediately after installation.",
   },
   {
     image: "/images/house-gray.jpg",
     icon: Grading,
-    title: "Secundary",
-    highlight: "benefit",
-    text: "Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi.",
+    title: "Erosion",
+    highlight: "control",
+    text: "Sod stabilizes soil quickly, preventing erosion and protecting your landscape.",
   },
   {
     image: "/images/house-footer.jpg",
     icon: Schovel,
-    title: "Tertiary",
-    highlight: "benefit",
-    text: "Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi.",
+    title: "Increased",
+    highlight: "curb appeal",
+    text: "A fresh, green lawn significantly enhances the aesthetic value of your property.",
   },
 ];
 
 const considerationItems = [
   {
     icon: Leaf,
-    title: "Lorem ipsum dolor sit",
-    text: "Lorem ipsum dolor sit amet consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna.",
+    title: "Soil condition",
+    text: "Ensure your soil is healthy to support new sod growth.",
   },
   {
     icon: Lotus,
-    title: "Lorem ipsum dolor sit",
-    text: "Lorem ipsum dolor sit amet consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna.",
+    title: "Irrigation needs",
+    text: "Consistent watering is crucial for sod to establish roots.",
   },
   {
     icon: Schovel,
-    title: "Lorem ipsum dolor sit",
-    text: "Lorem ipsum dolor sit amet consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna.",
+    title: "Consider timing",
+    text: "Installing sod during cooler months can promote better root growth.",
   },
   {
     icon: Grass,
-    title: "Lorem ipsum dolor sit",
-    text: "Lorem ipsum dolor sit amet consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna.",
+    title: "Budget and Timing",
+    text: "Installation costs and timing may vary; plan according to your schedule and budget.",
   },
 ];
 
@@ -128,24 +128,24 @@ const galleryImages = [
 
 const faqItems = [
   {
-    question: "Question 1: Lorem ipsum dolor sit amet consectetur?",
+    question: "What is the cost of sod installation?",
     answer:
-      "Answer 1: Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi.",
+      "Costs vary by lawn size and sod type; contact us for an estimate.",
   },
   {
-    question: "Question 2: Lorem ipsum dolor sit amet consectetur?",
+    question: "How long does it take for sod to root?",
     answer:
-      "Answer 2: Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi.",
+      "Typically 2-3 weeks under ideal watering and care conditions.",
   },
   {
-    question: "Question 3: Lorem ipsum dolor sit amet consectetur?",
+    question: "How soon can I use my lawn after sod installation?",
     answer:
-      "Answer 3: Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi.",
+      "Light use is typically okay after about 3 weeks, once the sod roots well.",
   },
   {
-    question: "Question 4: Lorem ipsum dolor sit amet consectetur?",
+    question: "What maintenance does new sod require?",
     answer:
-      "Answer 4: Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi.",
+      "Regular watering and mowing are essential for healthy sod establishment.",
   },
 ];
 
@@ -158,9 +158,9 @@ function Design() {
             <Grass size="sm" /> {serviceName}
           </span>
         }
-        Description="Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet."
+        Description="LJ & González deliver top-quality sod installations for instant, lush lawns. Our expertise ensures seamless integration and long-lasting beauty for your outdoor spaces."
         Title="Patchy lawns decrease curb appeal "
-        Highlight="achieve lush coverage."
+        Highlight="achieve lush coverage"
         Video="/videos/stock-sodinstallation.webm"
       />
 
@@ -168,16 +168,16 @@ function Design() {
 
       <VideoComponent
         imageSrc="/images/white-house.jpg"
-        title="Lorem impsun in dolore"
-        highlight="pastrun getlufa"
-        paragraph="Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet. Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in hendrerit urna."
+        title="Transform your lawn with fresh"
+        highlight="green sod"
+        paragraph="Sod installation provides an immediate, flawless lawn. LJ & González use superior techniques to ensure healthy, green grass with minimal downtime."
         videoSrc="/videos/videodemoService.webm"
         videoPoster="/videos/poster/poster-sod.webp"
       />
 
       <BenefitsService
-        title="This is the heading"
-        highlight="and this is the highlight."
+        title="Benefits of"
+        highlight="sod installation"
         testimonials={testimonials}
         benefits={benefits.map((b) => ({
           ...b,
@@ -188,10 +188,7 @@ function Design() {
       <div className="section-2-container section reveal">
         <div className="section-2-box-text">
           <p className="heading-5">
-            Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa
-            mi. Aliquam in hendrerit urna. Pellentesque sit amet. Lorem ipsum
-            dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam
-            in hendrerit urna. Pellentesque sit amet.
+            Laying sod can instantly transform your yard, but it’s important to consider factors such as soil preparation, irrigation needs, and the timing of installation. Proper understanding of these elements ensures a smooth transition to a vibrant lawn, enhancing both beauty and functionality.
           </p>
         </div>
         <div className="section-2-box-main">
@@ -225,22 +222,22 @@ function Design() {
       </div>
 
       <GalleryService
-        icon={<Grading size="lg" />}
-        title="Lorem ipsum"
-        highlight="dolor sit amet"
-        paragraph="Lorem ipsum dolor sit amet consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices."
+        icon={<Grass size="lg" />}
+        title="See our sod installation"
+        highlight="transformations"
+        paragraph="Explore the beautiful lawns created by LJ & González through expert sod installation."
         images={galleryImages}
       />
 
       <CtaSection
-        title="Lorem ipsum dolor sit"
-        highlight="lorem ipsum dolor sit amet"
-        description="Hola. Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices."
+        title="Achieve a flawless lawn with"
+        highlight="our sod expertise"
+        description="Instant beauty and immediate satisfaction with LJ & González’s professional sod installation. Contact us today!"
       />
 
       <Faq
-        title="This is where we show you the frequently asked"
-        highlight="questions."
+        title="Frequently asked questions about"
+        highlight="Sod Installation"
       >
         {faqItems}
       </Faq>

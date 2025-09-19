@@ -71,46 +71,46 @@ const benefits = [
   {
     image: "/images/footer_bkg.webp",
     icon: Leaf,
-    title: "Primary",
-    highlight: "benefit",
-    text: "Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi.",
+    title: "Time",
+    highlight: "savings",
+    text: "Automate your watering schedule, freeing up valuable time for other activities.",
   },
   {
     image: "/images/house-gray.jpg",
     icon: Grading,
-    title: "Secundary",
-    highlight: "benefit",
-    text: "Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi.",
+    title: "Water",
+    highlight: "efficiency",
+    text: "Systems minimize wastage and provide precise watering, conserving resources.",
   },
   {
     image: "/images/house-footer.jpg",
     icon: Schovel,
-    title: "Tertiary",
-    highlight: "benefit",
-    text: "Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi.",
+    title: "Healthier",
+    highlight: "Plants",
+    text: "Ensure consistent hydration for lush, vibrant gardens all year round.",
   },
 ];
 
 const considerationItems = [
   {
     icon: Leaf,
-    title: "Lorem ipsum dolor sit",
-    text: "Lorem ipsum dolor sit amet consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna.",
+    title: "Garden size",
+    text: "Larger areas may need more complex systems for effective coverage.",
   },
   {
     icon: Lotus,
-    title: "Lorem ipsum dolor sit",
-    text: "Lorem ipsum dolor sit amet consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna.",
+    title: "Current methods",
+    text: "Review existing manual watering efforts that could be automated.",
   },
   {
     icon: Schovel,
-    title: "Lorem ipsum dolor sit",
-    text: "Lorem ipsum dolor sit amet consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna.",
+    title: "Budget and timing	",
+    text: "Installation complexity affects cost and timeline, so plan accordingly.",
   },
   {
     icon: Grass,
-    title: "Lorem ipsum dolor sit",
-    text: "Lorem ipsum dolor sit amet consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna.",
+    title: "Water needs",
+    text: "Understand plant-specific requirements to optimize system settings.",
   },
 ];
 
@@ -129,25 +129,30 @@ const galleryImages = [
 
 const faqItems = [
   {
-    question: "Question 1: Lorem ipsum dolor sit amet consectetur?",
+    question: "What is the cost of irrigation system installation?",
     answer:
-      "Answer 1: Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi.",
+      "Costs vary depending on system type and area; contact us for a precise quote.",
   },
   {
-    question: "Question 2: Lorem ipsum dolor sit amet consectetur?",
+    question: "How long does the installation process take?",
     answer:
-      "Answer 2: Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi.",
+      "Typically a few days, depending on garden size and system complexity.",
   },
   {
-    question: "Question 3: Lorem ipsum dolor sit amet consectetur?",
+    question: "Can irrigation systems reduce my water bill?",
     answer:
-      "Answer 3: Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi.",
+      "Yes, they are designed to water efficiently, reducing overall usage.",
   },
   {
-    question: "Question 4: Lorem ipsum dolor sit amet consectetur?",
+    question: "How often should the system be maintained?",
     answer:
-      "Answer 4: Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi.",
+      "Regularly check system function seasonally to ensure optimal performance.",
   },
+  {
+    question: "Do you offer customization for different plant types?",
+    answer:
+      "Absolutely, we tailor systems to meet the specific needs of your plants.",
+  }
 ];
 
 function Design() {
@@ -159,9 +164,9 @@ function Design() {
             <Irrigation size="sm" /> {serviceName}
           </span>
         }
-        Description="Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet."
+        Description="LJ & González offers precision irrigation system installations, ensuring even water distribution for lush landscapes. Save time, water, and enhance garden health with our expert solutions."
         Title="Inconsistent watering wastes resources "
-        Highlight="ensure efficient irrigation."
+        Highlight="ensure efficient irrigation"
         Video="/videos/stock-irrigation.webm"
       />
 
@@ -169,16 +174,16 @@ function Design() {
 
       <VideoComponent
         imageSrc="/images/white-house.jpg"
-        title="Lorem impsun in dolore"
-        highlight="pastrun getlufa"
-        paragraph="Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet. Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in hendrerit urna."
+        title="Optimize your watering"
+        highlight="maximize your garden"
+        paragraph="An efficient irrigation system conserves water and nurtures plant growth. LJ & González provide tailored solutions to keep your landscape thriving with minimal effort."
         videoSrc="/videos/videodemoService.webm"
         videoPoster="/videos/poster/poster-irrigation.webp"
       />
 
       <BenefitsService
-        title="This is the heading"
-        highlight="and this is the highlight."
+        title="Benefits of Irrigation"
+        highlight="system installation"
         testimonials={testimonials}
         benefits={benefits.map((b) => ({
           ...b,
@@ -189,10 +194,7 @@ function Design() {
       <div className="section-2-container section reveal">
         <div className="section-2-box-text">
           <p className="heading-5">
-            Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa
-            mi. Aliquam in hendrerit urna. Pellentesque sit amet. Lorem ipsum
-            dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam
-            in hendrerit urna. Pellentesque sit amet.
+            Installing an irrigation system can transform your garden's health and efficiency. Assess your garden’s size, water needs, current watering methods, and future landscaping plans to ensure the system meets your long-term goals effectively.
           </p>
         </div>
         <div className="section-2-box-main">
@@ -226,22 +228,22 @@ function Design() {
       </div>
 
       <GalleryService
-        icon={<Grading size="lg" />}
-        title="Lorem ipsum"
-        highlight="dolor sit amet"
-        paragraph="Lorem ipsum dolor sit amet consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices."
+        icon={<Irrigation size="lg" />}
+        title="Explore our irrigation system"
+        highlight="solutions"
+        paragraph="View the innovative irrigation systems installed by LJ & González that ensure healthy, thriving landscapes."
         images={galleryImages}
       />
 
       <CtaSection
-        title="Lorem ipsum dolor sit"
-        highlight="lorem ipsum dolor sit amet"
-        description="Hola. Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices."
+        title="Streamline your watering with"
+        highlight="expert irrigation systems"
+        description="Conserve water, save time, and enhance garden health with LJ & González’s custom irrigation solutions. Contact us today!"
       />
 
       <Faq
-        title="This is where we show you the frequently asked"
-        highlight="questions."
+        title="Frequently asked questions about"
+        highlight="Irrigation system installation."
       >
         {faqItems}
       </Faq>

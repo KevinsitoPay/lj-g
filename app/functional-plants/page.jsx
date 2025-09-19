@@ -71,46 +71,46 @@ const benefits = [
   {
     image: "/images/footer_bkg.webp",
     icon: Leaf,
-    title: "Primary",
-    highlight: "benefit",
-    text: "Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi.",
+    title: "Enhanced",
+    highlight: "aesthetics",
+    text: "Functional plants beautify your yard, enhancing the visual appeal effortlessly.",
   },
   {
     image: "/images/house-gray.jpg",
     icon: Grading,
-    title: "Secundary",
-    highlight: "benefit",
-    text: "Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi.",
+    title: "Low",
+    highlight: "maintenance",
+    text: "Enjoy vibrant gardens that require minimal upkeep and reduce gardening effort.",
   },
   {
     image: "/images/house-footer.jpg",
     icon: Schovel,
-    title: "Tertiary",
-    highlight: "benefit",
-    text: "Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi.",
+    title: "Eco-friendly",
+    highlight: "options",
+    text: "Choose plants that support local ecosystems and promote biodiversity naturally.",
   },
 ];
 
 const considerationItems = [
   {
     icon: Leaf,
-    title: "Lorem ipsum dolor sit",
-    text: "Lorem ipsum dolor sit amet consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna.",
+    title: "Evaluate sunlight needs",
+    text: "Determine how much light your garden receives to select suitable plants.",
   },
   {
     icon: Lotus,
-    title: "Lorem ipsum dolor sit",
-    text: "Lorem ipsum dolor sit amet consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna.",
+    title: "Check Soil Quality",
+    text: "Understanding your soil helps in choosing plants that will thrive.",
   },
   {
     icon: Schovel,
-    title: "Lorem ipsum dolor sit",
-    text: "Lorem ipsum dolor sit amet consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna.",
+    title: "Consider Water Needs",
+    text: "Plan for water-efficient plants if your area is arid.",
   },
   {
     icon: Grass,
-    title: "Lorem ipsum dolor sit",
-    text: "Lorem ipsum dolor sit amet consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna.",
+    title: "Budget and Timing",
+    text: "Installation cost and seasonality may affect plant selection and success.",
   },
 ];
 
@@ -129,24 +129,24 @@ const galleryImages = [
 
 const faqItems = [
   {
-    question: "Question 1: Lorem ipsum dolor sit amet consectetur?",
+    question: "What is the cost of installing functional plants?",
     answer:
-      "Answer 1: Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi.",
+      "Costs vary by plant type and design; contact us for a quote.",
   },
   {
-    question: "Question 2: Lorem ipsum dolor sit amet consectetur?",
+    question: "How long does the plant installation take?",
     answer:
-      "Answer 2: Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi.",
+      "Usually a few days, depending on garden size and complexity.",
   },
   {
-    question: "Question 3: Lorem ipsum dolor sit amet consectetur?",
+    question: "Can you provide plant options for my climate?",
     answer:
-      "Answer 3: Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi.",
+      "Yes, we select plants suited to your specific climate conditions.",
   },
   {
-    question: "Question 4: Lorem ipsum dolor sit amet consectetur?",
+    question: "What maintenance do functional plants require?",
     answer:
-      "Answer 4: Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi.",
+      "Minimal; designed to be low maintenance with occasional care.",
   },
 ];
 
@@ -159,9 +159,9 @@ function Design() {
             <Plants size="sm" /> {serviceName}
           </span>
         }
-        Description="Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet."
+        Description="At LJ & González, we curate beautiful, low-maintenance gardens that add value to your property. Our expertise ensures vibrant, sustainable landscapes tailored to your needs."
         Title="Boost plant health "
-        Highlight="improve systems now."
+        Highlight="improve systems now"
         Video="/videos/stock-functionalplants.webm"
       />
 
@@ -169,16 +169,16 @@ function Design() {
 
       <VideoComponent
         imageSrc="/images/white-house.jpg"
-        title="Lorem impsun in dolore"
-        highlight="pastrun getlufa"
-        paragraph="Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet. Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in hendrerit urna."
+        title="Grow a stunning garden"
+        highlight="with minimal effort"
+        paragraph="Functional plants offer beauty and ease. Using expert selection and placement, LJ & González create low-maintenance landscapes that thrive. Enjoy lush, healthy gardens without hassle."
         videoSrc="/videos/videodemoService.webm"
         videoPoster="/videos/poster/poster-functional.webp"
       />
 
       <BenefitsService
-        title="This is the heading"
-        highlight="and this is the highlight."
+        title="Benefits of"
+        highlight="functional plants"
         testimonials={testimonials}
         benefits={benefits.map((b) => ({
           ...b,
@@ -189,10 +189,7 @@ function Design() {
       <div className="section-2-container section reveal">
         <div className="section-2-box-text">
           <p className="heading-5">
-            Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa
-            mi. Aliquam in hendrerit urna. Pellentesque sit amet. Lorem ipsum
-            dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam
-            in hendrerit urna. Pellentesque sit amet.
+            Functional plants provide beauty with ease. Consider existing soil, sunlight, and climate needs before choosing this service.
           </p>
         </div>
         <div className="section-2-box-main">
@@ -226,22 +223,22 @@ function Design() {
       </div>
 
       <GalleryService
-        icon={<Grading size="lg" />}
-        title="Lorem ipsum"
-        highlight="dolor sit amet"
-        paragraph="Lorem ipsum dolor sit amet consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices."
+        icon={<Plants size="lg" />}
+        title="Discover our Functional plant"
+        highlight="creations"
+        paragraph="Browse stunning gardens by LJ & González and see our skill in merging beauty with functionality."
         images={galleryImages}
       />
 
       <CtaSection
-        title="Lorem ipsum dolor sit"
-        highlight="lorem ipsum dolor sit amet"
-        description="Hola. Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices."
+        title="Transform your outdoors"
+        highlight="with Functional plants"
+        description="Enjoy a vibrant garden with LJ & González’s expert plant selection and design. Let us create a beautiful, low-maintenance landscape for you."
       />
 
       <Faq
-        title="This is where we show you the frequently asked"
-        highlight="questions."
+        title="Frequently asked questions about"
+        highlight="Functional plants"
       >
         {faqItems}
       </Faq>

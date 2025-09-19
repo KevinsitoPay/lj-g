@@ -55,10 +55,9 @@ function Navbar({ type = "main" }) {
       <div className="megamenu-content">
         <div className="megamenu-col1  ">
           <span>
-            <h4>This are our services</h4>
+            <h4>Your ideal outdoor space starts here</h4>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa
-              quasi ad, molestiae dolorum debitis porro.
+              Explore our diverse range of services designed to transform your outdoor space into a beautiful and functional environment. 
             </p>
           </span>
 
