@@ -2,7 +2,7 @@
 
 import "../Styles/GlobalStyles.scss";
 import dynamic from "next/dynamic";
-import ScrollAnimations from "@/UI/GeneralComponents/scrollAnimations";
+import ScrollAnimations from "@/UI/GeneralComponents/ScrollAnimations";
 import PageFade from "@/UI/GeneralComponents/PageFade";
 
 //
