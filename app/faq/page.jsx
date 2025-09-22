@@ -42,7 +42,7 @@ function FaqPage() {
 
       <ServicesHeroSection
         Description={
-          "Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet."
+          "Discover answers to the most common questions our clients have. Whether you’re curious about our services, pricing, or how to get started, we’ve got you covered. "
         }
         Title={"Frequently asked "}
         Highlight={"questions."}
@@ -53,16 +53,13 @@ function FaqPage() {
       <div className="cta-section section">
         <div className="cta-content-left">
           <h2>
-            Lorem impsun in dolore{" "}
-            <span className="highlight">pastrun getlufa</span>
+            Thorough answers to {" "}
+            <span className="highlight">Your queries</span>
           </h2>
         </div>
         <div className="cta-content-right">
           <p>
-            Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa
-            mi. Aliquam in hendrerit urna. Pellentesque sit amet. Lorem ipsum
-            dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam
-            in hendrerit urna. Pellentesque sit amet.
+            Welcome to our FAQ section where you'll find answers to the questions we get asked the most. From services to support, we aim to address your concerns and make your experience with us as seamless as possible.
           </p>
           <div className="button-container">
             <ButtonLink className="button-reverse">

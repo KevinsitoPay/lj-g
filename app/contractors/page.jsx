@@ -71,46 +71,46 @@ const benefits = [
   {
     image: "/images/footer_bkg.webp",
     icon: Leaf,
-    title: "Primary",
-    highlight: "benefit",
-    text: "Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi.",
+    title: "Full",
+    highlight: "support",
+    text: "From the initial consultation to the final stages of implementation, we provide comprehensive support to ensure a seamless process. Our team is readily available to address any questions or concerns you may have, offering expert guidance and assistance.",
   },
   {
     image: "/images/house-gray.jpg",
     icon: Grading,
-    title: "Secundary",
-    highlight: "benefit",
-    text: "Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi.",
+    title: "Tailored",
+    highlight: "services",
+    text: "We recognize that each project is unique, and we are committed to delivering services that are specifically tailored to your individual needs. By understanding your vision and requirements, we develop custom solutions that align perfectly with your goals.",
   },
   {
     image: "/images/house-footer.jpg",
     icon: Schovel,
-    title: "Tertiary",
-    highlight: "benefit",
-    text: "Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi.",
+    title: "On-Time",
+    highlight: "delivery",
+    text: "We understand the importance of meeting deadlines and the impact it has on the success of your project. Through effective planning and efficient project management, we ensure that every phase is executed on schedule. ",
   },
 ];
 
 const considerationItems = [
   {
     icon: Leaf,
-    title: "Lorem ipsum dolor sit",
-    text: "Lorem ipsum dolor sit amet consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna.",
+    title: "Full support",
+    text: "From the initial consultation to the final stages of implementation, we provide comprehensive support to ensure a seamless process.  ",
   },
   {
     icon: Lotus,
-    title: "Lorem ipsum dolor sit",
-    text: "Lorem ipsum dolor sit amet consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna.",
+    title: "On-Time delivery",
+    text: "We understand the importance of meeting deadlines and the impact it has on the success of your project. ",
   },
   {
     icon: Schovel,
-    title: "Lorem ipsum dolor sit",
-    text: "Lorem ipsum dolor sit amet consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna.",
+    title: "Tailored services",
+    text: "We recognize that each project is unique, and we are committed to delivering services that are specifically tailored to your individual needs.",
   },
   {
     icon: Grass,
-    title: "Lorem ipsum dolor sit",
-    text: "Lorem ipsum dolor sit amet consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna.",
+    title: "Proven expertise",
+    text: "Our team consists of highly skilled professionals with extensive industry experience.",
   },
 ];
 
@@ -159,9 +159,9 @@ function Design() {
             <Shovel size="sm" /> {serviceName}
           </span>
         }
-        Description="Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet."
+        Description="Our expert contractors provide tailored solutions, ensuring your project is completed with precision and on time. Trust us for professional and dedicated service."
         Title="Expert contractors "
-        Highlight="ready for your project."
+        Highlight="ready for your project"
         Video="/videos/stock-contractors.webm"
       />
 
@@ -170,10 +170,7 @@ function Design() {
       <div className="section-2-container section reveal">
         <div className="section-2-box-text">
           <p className="heading-5">
-            Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa
-            mi. Aliquam in hendrerit urna. Pellentesque sit amet. Lorem ipsum
-            dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam
-            in hendrerit urna. Pellentesque sit amet.
+            LJ & Gonzalez delivers high-quality services with an expert team ensuring exceptional and tailored results. We are committed to on-time project delivery through efficient management. We provide comprehensive support throughout the process to ensure a stress-free and satisfactory experience.
           </p>
         </div>
         <div className="section-2-box-main">
@@ -197,7 +194,7 @@ function Design() {
           </div>
           <div className="section-2-box-right">
             <Image
-              src="/images/service-ai-6.webp"
+              src="/images/ai-deal.webp"
               alt={`Image of ${serviceName}`}
               width={500}
               height={400}
