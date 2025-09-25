@@ -5,52 +5,56 @@ import House from "@/UI/Icons/House";
 import LandLeveling from "@/UI/Icons/LandLeveling";
 import SodInstallation from "@/UI/Icons/SodInstallation";
 import React, { useRef } from "react";
+import Grass from "@/UI/Icons/Grass";
+import RiverRock from "@/UI/Icons/RiverRock";
+import Schovel from "@/UI/Icons/Shovel";
+import Lotus from "@/UI/Icons/Lotus";
 
 const howInfo = [
   {
     title: (
       <>
-        <House size="sm" /> Name of the perk
+        <Grass size="sm" /> Property assessment
       </>
     ),
     description:
-      "Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet.",
+      "We begin with a thorough assessment of your property, analyzing features, dimensions, and any existing elements. This helps us understand the space we’ll be working with and its potential.",
   },
   {
     title: (
       <>
-        <House size="sm" /> Name of the perk
+        <House size="sm" /> Identifying client goals
       </>
     ),
     description:
-      "Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet.",
+      "During the evaluation, we focus on your goals and preferences. Whether aesthetic or functional, aligning our insights with your vision is our priority.",
   },
   {
     title: (
       <>
-        <House size="sm" /> Name of the perk
+        <RiverRock size="sm" /> Addressing Challenges
       </>
     ),
     description:
-      "Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet.",
+      "We identify potential challenges the site may present. Early recognition allows us to plan effective solutions, minimizing any disruptions during implementation.",
   },
   {
     title: (
       <>
-        <House size="sm" /> Name of the perk
+        <Schovel size="sm" /> Gathering detailed information
       </>
     ),
     description:
-      "Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet.",
+      "We compile a comprehensive overview of your property and desires, laying a solid foundation for the planning and design stages that follow.",
   },
   {
     title: (
       <>
-        <House size="sm" /> Name of the perk
+        <Lotus size="sm" /> Planning next steps
       </>
     ),
     description:
-      "Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet.",
+      "With all the information gathered, we collaboratively plan the next steps. Clear communication ensures that every aspect aligns with your expectations.",
   },
 ];
 
@@ -62,7 +66,7 @@ const serviceInfo = [
       </>
     ),
     description:
-      "Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet.",
+      "Ensure your outdoor space is perfectly level for optimal functionality and aesthetic appeal. Visit our page to see examples of our precise land leveling projects and the transformation it brings to landscapes.",
     link: "/land-leveling",
   },
   {
@@ -72,7 +76,7 @@ const serviceInfo = [
       </>
     ),
     description:
-      "Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet.",
+      "Ensure your outdoor space is perfectly level for optimal functionality and aesthetic appeal. Visit our page to see examples of our precise land leveling projects and the transformation it brings to landscapes.",
     link: "/land-leveling",
   },
 ];

@@ -24,7 +24,7 @@ export default function DesignPage() {
     <>
       <ServicesHeroSection
         Background={"how-it-works-bg"}
-        Description="Lorem ipsum et al sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet."
+        Description="Discover how our seamless process at LJ & Gonzalez Landscaping transforms your outdoor space from start to finish. We begin with a personalized consultation to understand your vision and assess your site. "
         Title="Explore our efficient process "
         Highlight="from start to finish."
       />

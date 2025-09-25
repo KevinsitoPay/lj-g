@@ -168,9 +168,9 @@ function Design() {
       <GoogleReviews />
       <VideoComponent
         imageSrc="/images/white-house.jpg"
-        title="Lorem impsun in dolore"
-        highlight="pastrun getlufa"
-        paragraph="Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet. Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in hendrerit urna."
+        title="Transform your landscape with"
+        highlight="river rock installation"
+        paragraph="Enhance the beauty and function of your outdoor space with our expert river rock installation service. At LJ & Gonzalez, we promise meticulous attention to detail and high-quality materials, ensuring a stunning and durable result. "
         videoSrc="/videos/videodemoService.webm"
         videoPoster="/videos/poster/poster-river.webp"
       />
