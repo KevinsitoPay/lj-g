@@ -21,25 +21,35 @@ export const metadata = {
 
 const faqItems = [
   {
-    question: "Question 1: Lorem ipsum dolor sit amet consectetur?",
+    question: "What landscaping services do you offer?",
     answer:
-      "Answer 1: Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi.",
+      "We offer a wide range of services, including land leveling, sod installation, functional plant design, mulch application, river rock installation, wall retaining installation, and irrigation system installation.",
   },
   {
-    question: "Question 2: Lorem ipsum dolor sit amet consectetur?",
+    question: "How do you ensure the quality of your landscaping projects?",
     answer:
-      "Answer 2: Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi.",
+      "Our team uses high-quality materials and follows industry best practices. We work closely with clients to ensure that each project meets their standards and expectations.",
   },
   {
-    question: "Question 3: Lorem ipsum dolor sit amet consectetur?",
+    question: "Can I see examples of your previous work?",
     answer:
-      "Answer 3: Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi.",
+      "Yes, we have a portfolio of completed projects available for viewing. It showcases the quality and variety of our landscaping solutions.",
   },
   {
-    question: "Question 4: Lorem ipsum dolor sit amet consectetur?",
+    question: "Do you provide consultations before starting a project?",
     answer:
-      "Answer 4: Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi.",
+      "Absolutely! We offer free consultations to discuss your needs, assess your space, and provide tailored recommendations.",
   },
+  {
+    question: "Are your services suitable for both residential and commercial properties?",
+    answer:
+      "Yes, we cater to both residential and commercial clients, providing customized solutions to fit the specific requirements of each property type.",
+  },
+  {
+    question: "What is the typical timeline for a landscaping project?",
+    answer:
+      "The timeline varies depending on the scope and complexity of the project. During the consultation, we provide an estimated timeline to help you plan accordingly.",
+  }
 ];
 
 function Home() {
@@ -56,9 +66,7 @@ function Home() {
             </h1>
 
             <p>
-              Description where we adress how we can resolve the main pain point
-              main pain point that the client might have. Proving our value and
-              being apart of our competitors.
+              At LJ & Gonzalez Landscaping, we address your key challenges with targeted solutions like land leveling, sod installation, and efficient irrigation systems. Our expert services resolve common pain points, enhancing both beauty and stability. 
             </p>
           </div>
           <div className="button-container reveal-fade">
@@ -74,12 +82,12 @@ function Home() {
 
       <VideoComponent
         paragraph={
-          "Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet."
+          "We turn your landscaping dreams into reality. With LJ & Gonzalez Landscaping, experience seamless integration of functionality and design, ensuring your outdoor area not only meets but exceeds expectations."
         }
-        title={"Lorem impsun in dolore"}
+        title={" Revitalize your yard"}
         videoPoster={"/videos/poster/poster-services.webp"}
         videoSrc={"/videos/videodemoService.webm"}
-        highlight={"highlight"}
+        highlight={"with our solutions"}
       />
 
       {/* Grid reviews section */}
@@ -88,13 +96,12 @@ function Home() {
         <div className="reviews-grid-title">
           <h6>Welcome to LJ&G </h6>
           <h2>
-            Lorem ipsum dolor sit amet{" "}
-            <span className="highlight">consectetur adipiscing elit.</span>
+            Elevate your outdoor{" "}
+            <span className="highlight">space with our expertise</span>
           </h2>
           <p>
             {" "}
-            Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa
-            mi. Aliquam in hendrerit urna. Pellentesque sit amet.
+            Our clients' feedback speaks volumes about our dedication to excellence. LJ & Gonzalez Landscaping consistently delivers beautiful, functional outdoor spaces that our clients are proud of.
           </p>
         </div>
         <div className="reviews-grid">
@@ -105,7 +112,7 @@ function Home() {
             </span>
             <h6>
               {" "}
-              Lorem ipsum dolor sit amet{" "}
+              Create a stable, level surface to prevent water pooling and support your landscaping needs.{" "}
               <span className="highlight">
                 consectetur adipiscing elit.
               </span>{" "}
@@ -118,11 +125,9 @@ function Home() {
             <Quotes size="lg" />
             <h6>
               {" "}
-              Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa
-              mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien
-              fringilla, mattis ligula consectetur, ultrices.{" "}
+              The team at LJ & Gonzalez exceeded our expectations. They handled every aspect of our project with care and precision, turning our ideas into reality. Our backyard has never looked better, and we love spending time there now.{" "}
             </h6>
-            <p> John Roberts - Builder & Co Founder </p>
+            <p> Olivia Martinez </p>
           </div>
           <div className="reviews-grid-item-service-green">
             <span>
@@ -131,7 +136,7 @@ function Home() {
             </span>
             <h6>
               {" "}
-              Lorem ipsum dolor sit amet{" "}
+              Achieve an instant, green lawn with easy-to-maintain sod for a beautiful yard.{" "}
               <span className="highlight">
                 consectetur adipiscing elit.
               </span>{" "}
@@ -141,11 +146,9 @@ function Home() {
             <Quotes size="lg" />
             <h6>
               {" "}
-              Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa
-              mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien
-              fringilla, mattis ligula consectetur, ultrices.{" "}
+              Great experience working with LJ & Gonzalez! They were attentive and responsive, and the quality of their work really shows. They helped us achieve a beautiful and functional outdoor space that fits our lifestyle perfectly.{" "}
             </h6>
-            <p> John Roberts - Builder & Co Founder </p>
+            <p> William Thompson </p>
           </div>
           <div className="reviews-grid-item-image-2">
             <img src="/images/service-ai-3.webp" />
@@ -154,9 +157,7 @@ function Home() {
             <Quotes size="lg" />
             <h6>
               {" "}
-              Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa
-              mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien
-              fringilla, mattis ligula consectetur, ultrices.{" "}
+              From the initial consultation to the final touches, the process was smooth and efficient. The landscaping team provided solutions and suggestions that perfectly suited our vision.{" "}
             </h6>
             <p> John Roberts - Builder & Co Founder </p>
           </div>
@@ -164,11 +165,9 @@ function Home() {
             <Quotes size="lg" />
             <h6>
               {" "}
-              Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa
-              mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien
-              fringilla, mattis ligula consectetur, ultrices.{" "}
+              Great attention to detail and a strong focus on customer satisfaction. The staff was friendly and communicative, ensuring we were happy with each stage of the project. Highly recommend their services for anyone looking to enhance their landscape.{" "}
             </h6>
-            <p> John Roberts - Builder & Co Founder </p>
+            <p> James Anderson </p>
           </div>
         </div>
       </div>
@@ -179,10 +178,10 @@ function Home() {
 
       <CtaSection
         description={
-          "Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet."
+          "Transform your yard with ease. Connect with our team for a complimentary visit to explore innovative, personalized options. Schedule your consultation now!"
         }
-        highlight={"highlight"}
-        title={"This is the title"}
+        highlight={"vision a reality"}
+        title={"Make your"}
       />
 
       <HowItWorks />
@@ -190,8 +189,8 @@ function Home() {
       <GallerySection />
 
       <Faq
-        title="This is where we show you the frequently asked"
-        highlight="questions."
+        title="Frequently asked questions"
+        highlight="about LJ & Gonzalez"
       >
         {faqItems}
       </Faq>

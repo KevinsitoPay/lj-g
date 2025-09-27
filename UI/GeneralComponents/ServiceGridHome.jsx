@@ -53,8 +53,8 @@ const ServiceGridHome = () => {
     <div className="service-grid-container section reveal-right">
       <div className="service-grid-title">
         <h6>Welcome to LJ&G</h6>
-        <h2>Lorem ipsum dolor sit amet <span className="highlight">consectetur adipiscing elit.</span></h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet.</p>
+        <h2>Your ideal outdoor <span className="highlight">space starts here</span></h2>
+        <p>At LJ&G, we resolve landscape issues with expert services, improving drainage and creating lush lawns to transform your outdoor space.</p>
       </div>
       
       <div className="service-grid">

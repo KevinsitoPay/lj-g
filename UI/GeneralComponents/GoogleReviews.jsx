@@ -11,24 +11,24 @@ function GoogleReviews() {
 
   const reviews = [
     {
-      text: "“Fue un excelente servicio, estoy muy satisfecho”",
-      author: "Nadia Quezada ★★★★★",
+      text: "“The service was excellent, I'm very satisfied.”",
+      author: "Jessica Smith ★★★★★",
     },
     {
-      text: "“Honestamente se lo recomiendo, son todos unos expertos”",
-      author: "Jorge Ortiz ★★★★★",
+      text: "“Honestly, I highly recommend them; they are truly experts.”",
+      author: "Jorge Lara ★★★★★",
     },
     {
-      text: "“Quedé enamorada de la atención y profesionalismo”",
-      author: "Maria Quezada ★★★★",
+      text: "“I fell in love with their attention and professionalism.”",
+      author: "Emily Davis ★★★★",
     },
     {
-      text: "“Me los recomendó un amigo y me encantaron”",
-      author: "Miriam García ★★★★★",
+      text: "“A friend recommended them, and I loved their work.”",
+      author: "Sarah Brown ★★★★★",
     },
     {
-      text: "“La verdad fue un gran trabajo, además de siempre tener una buena atención”",
-      author: "Pepe Perez ★★★★",
+      text: "“They did a great job, plus their customer service was excellent.”",
+      author: "John Miller ★★★★",
     },
   ];
 

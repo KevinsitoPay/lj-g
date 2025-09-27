@@ -4,8 +4,10 @@ import styles from "./GallerySection.module.scss";
 import Grading from "../Icons/Grading";
 import Grass from "../Icons/Grass";
 import Plants from "../Icons/Plants";
+import RiverRock from "../Icons/RiverRock";
 import Mulch from "../Icons/Mulch";
 import Link from "next/link";
+import Wall from "../Icons/Wall";
 import ArrowIcon from "../Icons/ArrowIcon";
 
 const services = [
@@ -18,7 +20,7 @@ const services = [
       "service-ai-4.webp",
     ],
     description:
-      "Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet.",
+      "Prevents water pooling, protects foundations, and ensures a stable base for landscaping or construction.",
     link: "/land-leveling",
     icon: Grading,
   },
@@ -31,7 +33,7 @@ const services = [
       "service-ai-2.webp",
     ],
     description:
-      "Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet.",
+      "Gives you an instant, healthy lawn that is easy to maintain and looks great in any setting.",
     link: "/sod-installation",
     icon: Grass,
   },
@@ -44,7 +46,7 @@ const services = [
       "service-ai-7.webp",
     ],
     description:
-      "Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet.",
+      "Creates beautiful, low-maintenance gardens that add value to your property and enhance the overall aesthetic.",
     link: "/functional-plants",
     icon: Plants,
   },
@@ -57,10 +59,23 @@ const services = [
       "service-ai-3.webp",
     ],
     description:
-      "Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet.",
+      "Helps soil retain moisture, blocks weeds, and enhances the look of your landscape.",
     link: "/mulch-application",
     icon: Mulch,
   },
+  {
+    name: "River Rock Installation",
+    images: [
+      "service-ai-3.webp",
+      "service-ai-4.webp",
+      "service-ai-5.webp",
+      "service-ai-6.webp",
+    ],
+    description:
+      "Controls erosion, improves drainage, and adds natural beauty.",
+    link: "/river-rock-installation",
+    icon: RiverRock,
+  }
 ];
 
 const GallerySection = () => {
@@ -182,12 +197,11 @@ const GallerySection = () => {
     <div className="section">
       <div className={styles.gallerySection}>
         <h3>
-          Lorem ipsum dolor sit amet consectetur{" "}
-          <span className={styles.highlight}>adipiscing elit Ut.</span>
+          Bringing nature’s elegance{" "}
+          <span className={styles.highlight}>to your doorstep</span>
         </h3>
         <p>
-          Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi.
-          Aliquam in hendrerit urna. Pellentesque sit amet.
+          Our landscaping services focus on creating stunning outdoor experiences. From vibrant planting schemes to thoughtful pathway design, we redefine landscapes.
         </p>
 
         <div className={styles.buttons}>
