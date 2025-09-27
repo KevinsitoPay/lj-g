@@ -64,7 +64,7 @@ const Calendario = () => {
     setCurrentStep(2);
   };
 
-  const handleSubmitStep2 = (event) => {
+  const handleSubmitStep2 = async (event) => {
     event.preventDefault();
     const formErrors = validateStep2();
     if (Object.keys(formErrors).length > 0) {
@@ -73,24 +73,45 @@ const Calendario = () => {
       setErrors({});
       setLoading(true);
 
-      // Simular un retraso de 2 segundos antes de mostrar el tercer paso
-      setTimeout(() => {
-        setLoading(false);
-        setCurrentStep(3);
-
+      try {
         // Convertir la hora al formato de 12 horas
         const [hour, minute] = formData.time.split(':');
         const date = new Date();
         date.setHours(hour, minute);
         const timeIn12HourFormat = date.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit', hour12: true });
 
-        console.log("Complete form submitted:", {
-          ...formData,
+        // Preparar datos para enviar
+        const emailData = {
+          date: formData.date.toLocaleDateString(),
           time: timeIn12HourFormat,
+          name: formData.name,
+          city: formData.city,
+          email: formData.email,
+          phone: formData.phone,
+          projectMessage: formData.projectMessage
+        };
+
+        // Enviar email usando Resend
+        const response = await fetch('/api/send', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify(emailData),
         });
 
-        // Lógica para enviar datos al servidor podría ir aquí
-      }, 2000);
+        if (response.ok) {
+          console.log("Email sent successfully!");
+          setCurrentStep(3);
+        } else {
+          throw new Error('Failed to send email');
+        }
+      } catch (error) {
+        console.error('Error sending email:', error);
+        setErrors({ submit: 'Error sending appointment. Please try again.' });
+      } finally {
+        setLoading(false);
+      }
     }
   };
 
@@ -133,6 +154,7 @@ const Calendario = () => {
           <h5>One last step! Share your details with us.</h5>
           <form onSubmit={handleSubmitStep2} className="form">
             {loading && <p className="loading-message">Processing...</p>}
+            {errors.submit && <p className="error">{errors.submit}</p>}
             <div className="input-container">
               <input
                 type="text"
@@ -207,6 +229,7 @@ const Calendario = () => {
 };
 
 export default Calendario;
+
 
 
 
