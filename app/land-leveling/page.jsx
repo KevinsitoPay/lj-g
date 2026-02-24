@@ -39,7 +39,9 @@ export const metadata = {
     noimageindex: true,
     noarchive: true,
   },
-  canonical: "https://www.ljandgonzalez.com/land-leveling",
+      alternates: {
+    canonical: "https://www.ljandgonzalez.com/land-leveling",
+  },
 };
 
 const serviceName = "Land leveling";

@@ -39,7 +39,9 @@ export const metadata = {
     noimageindex: true,
     noarchive: true,
   },
-  canonical: "https://www.ljandgonzalez.com/river-rock-installation",
+      alternates: {
+    canonical: "https://www.ljandgonzalez.com/river-rock-installation",
+  },
 };
 
 const serviceName = "River rock installation";

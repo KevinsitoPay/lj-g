@@ -39,7 +39,9 @@ export const metadata = {
     noimageindex: true,
     noarchive: true,
   },
-  canonical: "https://www.ljandgonzalez.com/mulch-application",
+      alternates: {
+    canonical: "https://www.ljandgonzalez.com/mulch-application",
+  },
 };
 
 const serviceName = "Mulch application";

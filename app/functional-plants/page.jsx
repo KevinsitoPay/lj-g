@@ -39,7 +39,9 @@ export const metadata = {
     noimageindex: true,
     noarchive: true,
   },
-  canonical: "https://www.ljandgonzalez.com/functional-plants",
+      alternates: {
+    canonical: "https://www.ljandgonzalez.com/functional-plants",
+  },
 };
 
 const serviceName = "Functional plants";

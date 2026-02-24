@@ -38,7 +38,9 @@ export const metadata = {
     noimageindex: true,
     noarchive: true,
   },
-  canonical: "https://www.ljandgonzalez.com/sod-installation",
+      alternates: {
+    canonical: "https://www.ljandgonzalez.com/sod-installation",
+  },
 };
 
 const serviceName = "Sod installation	";

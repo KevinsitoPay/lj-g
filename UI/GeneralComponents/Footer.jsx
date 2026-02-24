@@ -98,11 +98,11 @@ function Footer() {
             <div>
               <p>
                 {" "}
-                +1 (999) 999-99-99 <br /> info@ljandgonzalez.com{" "}
+                +1 (864) 417-1643  <br /> info@ljandgonzalez.com{" "}
               </p>
               <p>
                 {" "}
-                1901 Thornridge Cir. Shiloh, <br /> Hawaii 81063
+                212 C and S Drive, <br /> Greer South Carolina 29651{" "}
               </p>
             </div>
           </div>
@@ -119,22 +119,13 @@ function Footer() {
             </div>
 
             <div className="footer-box-col2">
-              <p className="heading-6">
-                Just send us your contact email and we will contact you.
-              </p>
-              <form className="form-input">
-                <div className="input-wrapper">
-                  <input type="text" placeholder="Your email / phone number" />
-                  <span className="arrow">→</span>
-                </div>
-              </form>
             </div>
           </div>
 
           <div className="footer-section">
             <div className="footer-box-col1">
               <p>
-                ©LJ&Gonzalez 2025 | Web Development by{" "}
+                ©LJ&Gonzalez 2026 | Web Development by{" "}
                 <a href="https://monette.dev">Monette Dev</a>{" "}
               </p>
             </div>

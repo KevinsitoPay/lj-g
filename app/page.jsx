@@ -17,6 +17,21 @@ export const metadata = {
   title: "LJ & Gonzalez Landscaping Services",
   description: "Home page Landscaping description",
   keywords: "landscaping, gardening",
+
+  openGraph: {
+    title: "LJ & Gonzalez Landscaping Services",
+    description: "Home page Landscaping description",
+    url: "https://www.ljandgonzalez.com"
+  },
+
+  robots: {
+    index: true,
+    follow: true,
+  },
+
+    alternates: {
+    canonical: "https://www.ljandgonzalez.com",
+  },
 };
 
 const faqItems = [

@@ -39,7 +39,9 @@ export const metadata = {
     noimageindex: true,
     noarchive: true,
   },
-  canonical: "https://www.ljandgonzalez.com/wall-retaining-installation",
+      alternates: {
+    canonical: "https://www.ljandgonzalez.com/wall-retaining-installation",
+  },
 };
 
 const serviceName = "Wall retaining installation";

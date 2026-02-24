@@ -39,7 +39,9 @@ export const metadata = {
     noimageindex: true,
     noarchive: true,
   },
-  canonical: "https://www.ljandgonzalez.com/irrigation-system-installation",
+      alternates: {
+    canonical: "https://www.ljandgonzalez.com/irrigation-system-installation",
+  },
 };
 
 const serviceName = "Irrigation system installation	";
