@@ -5,7 +5,7 @@
   min-height: 15vh;
   max-height: 300px;
   padding: 40px 104px;
-  display: flex;
+  display:  flex;
   align-items: center;
 
   @media (max-width: 820px) {
@@ -15,7 +15,7 @@
 }
 
 .google-reviews-container {
-  display: flex;
+  display: none;  // none because they not used yet, but will be used in the future when we have more reviews
   justify-content: space-between;
   align-items: center;
   background-size: cover;
