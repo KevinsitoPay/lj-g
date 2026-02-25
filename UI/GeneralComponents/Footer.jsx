@@ -26,7 +26,7 @@ function Footer() {
             <div className="button-container">
               <ButtonCTA
                 extraClasses={"primary-button"}
-                href={"tel:+34666666666"}
+                href={"tel:+18644171643"}
               >
                 Give us a call
               </ButtonCTA>
@@ -50,9 +50,9 @@ function Footer() {
               <li>
                 <Link href="/how-it-works">How It Works</Link>
               </li>
-              <li>
+            {/*  <li>
                 <Link href="/faq">FAQ</Link>
-              </li>
+              </li> */}
               <li>
                 <Link href="/contractors">Contractors</Link>
               </li>
@@ -91,10 +91,10 @@ function Footer() {
             </ul>
           </div>
           <div className="footer-box-col2">
-            <ButtonCTA extraClasses={"accent-button-lofi"}>
+          {/*  <ButtonCTA extraClasses={"accent-button-lofi"}>
               {" "}
               Check our Google Reviews{" "}
-            </ButtonCTA>
+            </ButtonCTA> */}
             <div>
               <p>
                 {" "}

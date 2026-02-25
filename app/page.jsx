@@ -88,7 +88,7 @@ function Home() {
             <ButtonCTA href={"#contact"} extraClasses={"primary-button"}>
               Book a free visit today
             </ButtonCTA>
-            <ButtonLink href={"/faq"}>Check our projects</ButtonLink>
+            {/*<ButtonLink href={"/faq"}>Check our projects</ButtonLink>*/}
           </div>
         </div>
       </div>
