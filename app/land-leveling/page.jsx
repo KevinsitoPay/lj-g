@@ -39,7 +39,9 @@ export const metadata = {
     noimageindex: true,
     noarchive: true,
   },
-  canonical: "https://www.ljandgonzalez.com/land-leveling",
+      alternates: {
+    canonical: "https://www.ljandgonzalez.com/land-leveling",
+  },
 };
 
 const serviceName = "Land leveling";
@@ -168,7 +170,7 @@ function Design() {
       <GoogleReviews />
 
       <VideoComponent
-        imageSrc="/images/white-house.jpg"
+        imgSrc="/images/white-house.jpg"
         title="Level land today to"
         highlight="save water tomorrow"
         paragraph="Land leveling is essential to improve irrigation, prevent soil erosion, and maximize your harvest. At LJ & González, we use precision equipment and proven techniques to deliver smooth, balanced fields."

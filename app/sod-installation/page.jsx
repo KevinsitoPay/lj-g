@@ -38,7 +38,9 @@ export const metadata = {
     noimageindex: true,
     noarchive: true,
   },
-  canonical: "https://www.ljandgonzalez.com/sod-installation",
+      alternates: {
+    canonical: "https://www.ljandgonzalez.com/sod-installation",
+  },
 };
 
 const serviceName = "Sod installation	";
@@ -167,7 +169,7 @@ function Design() {
       <GoogleReviews />
 
       <VideoComponent
-        imageSrc="/images/white-house.jpg"
+        imgSrc="/images/sod-installation-poster.webp"
         title="Transform your lawn with fresh"
         highlight="green sod"
         paragraph="Sod installation provides an immediate, flawless lawn. LJ & González use superior techniques to ensure healthy, green grass with minimal downtime."

@@ -39,7 +39,9 @@ export const metadata = {
     noimageindex: true,
     noarchive: true,
   },
-  canonical: "https://www.ljandgonzalez.com/contractors",
+    alternates: {
+    canonical: "https://www.ljandgonzalez.com/contractors",
+  },
 };
 
 const serviceName = "Contractors";

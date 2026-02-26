@@ -223,13 +223,6 @@ function Navbar({ type = "main" }) {
               >
                 Contractors
               </Link>
-              <Link
-                className="menu-link"
-                href="/faq"
-                onMouseEnter={() => setShowServices(false)}
-              >
-                FAQ
-              </Link>
             </div>
           </div>
         </div>
@@ -290,13 +283,6 @@ function Navbar({ type = "main" }) {
               >
                 Contractors
               </Link>
-              <Link
-                className="menu-link"
-                href="/faq"
-                onMouseEnter={() => setShowServices(false)}
-              >
-                FAQ
-              </Link>
             </div>
           </div>
         </div>
@@ -356,13 +342,6 @@ function Navbar({ type = "main" }) {
                 onMouseEnter={() => setShowServices(false)}
               >
                 Contractors
-              </Link>
-              <Link
-                className="menu-link"
-                href="/faq"
-                onMouseEnter={() => setShowServices(false)}
-              >
-                FAQ
               </Link>
             </div>
           </div>

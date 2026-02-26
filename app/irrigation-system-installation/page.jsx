@@ -39,7 +39,9 @@ export const metadata = {
     noimageindex: true,
     noarchive: true,
   },
-  canonical: "https://www.ljandgonzalez.com/irrigation-system-installation",
+      alternates: {
+    canonical: "https://www.ljandgonzalez.com/irrigation-system-installation",
+  },
 };
 
 const serviceName = "Irrigation system installation	";
@@ -173,7 +175,7 @@ function Design() {
       <GoogleReviews />
 
       <VideoComponent
-        imageSrc="/images/white-house.jpg"
+        imgSrc="/images/irrigation-system-poster.webp"
         title="Optimize your watering"
         highlight="maximize your garden"
         paragraph="An efficient irrigation system conserves water and nurtures plant growth. LJ & González provide tailored solutions to keep your landscape thriving with minimal effort."

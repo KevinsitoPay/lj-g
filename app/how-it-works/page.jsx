@@ -2,15 +2,20 @@ import ServicesHeroSection from "@/UI/GeneralComponents/ServicesHeroSection";
 import DesignContent from "./DesignContent";
 
 export const metadata = {
-  title: "How-it-works | LJ & Gonzalez Landscaping",
+  title: "How it works | LJ & Gonzalez Landscaping",
   description: "How the application works and its features",
-  keywords: "how it works, application guide",
+  keywords: ["how it works", "application guide"],
+
+  alternates: {
+    canonical: "https://www.ljandgonzalez.com/how-it-works",
+  },
+
   openGraph: {
     title: "How-it-works | LJ & Gonzalez Landscaping",
     description: "How the application works and its features",
     url: "https://www.ljandgonzalez.com/how-it-works",
   },
-  canonical: "https://www.ljandgonzalez.com/how-it-works",
+
   robots: {
     index: true,
     follow: true,

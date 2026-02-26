@@ -38,9 +38,11 @@ const ServicesHeroSection = ({
           <ButtonCTA href="#contact" extraClasses={"primary-button"}>
             Book a free visit today
           </ButtonCTA>
-          <ButtonLink href="/faq" altArrowColor="arrow-white">
-            Check our FAQ
-          </ButtonLink>
+            {/*
+            <ButtonLink href="/faq" altArrowColor="arrow-white">
+              Check our FAQ
+            </ButtonLink>
+            */}
         </div>
       </div>
     </div>

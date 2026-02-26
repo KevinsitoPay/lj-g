@@ -20,7 +20,7 @@ function Faq({ title, highlight, children }) {
         <h3>{title} <span className="highlight">{highlight}</span></h3>
         <div className="button-container">
           <ButtonCTA href="#contact" extraClasses={"primary-button-lofi"}>Book a free visit today</ButtonCTA>
-          <ButtonLink href={"/faq"} extraClasses={"secondary-button-lofi"} link="/services">Learn more in our FAQ</ButtonLink>
+         {/* <ButtonLink href={"/faq"} extraClasses={"secondary-button-lofi"} link="/services">Learn more in our FAQ</ButtonLink> */}
         </div>
         <div className="dropdown">
           {children.map((item, index) => (

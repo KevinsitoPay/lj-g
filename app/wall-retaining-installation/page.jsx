@@ -39,7 +39,9 @@ export const metadata = {
     noimageindex: true,
     noarchive: true,
   },
-  canonical: "https://www.ljandgonzalez.com/wall-retaining-installation",
+      alternates: {
+    canonical: "https://www.ljandgonzalez.com/wall-retaining-installation",
+  },
 };
 
 const serviceName = "Wall retaining installation";
@@ -168,7 +170,7 @@ function Design() {
       <GoogleReviews />
 
       <VideoComponent
-        imageSrc="/images/white-house.jpg"
+        imgSrc="/images/wall-poster.webp"
         title="Stabilize your ground today for"
         highlight="a safer tomorrow"
         paragraph="Retaining wall installation is crucial to prevent soil erosion, manage water runoff, and enhance the beauty of your landscape. At LJ & González, we utilize quality materials and expert craftsmanship to deliver strong and reliable walls."

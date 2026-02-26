@@ -39,7 +39,9 @@ export const metadata = {
     noimageindex: true,
     noarchive: true,
   },
-  canonical: "https://www.ljandgonzalez.com/river-rock-installation",
+      alternates: {
+    canonical: "https://www.ljandgonzalez.com/river-rock-installation",
+  },
 };
 
 const serviceName = "River rock installation";
@@ -167,7 +169,7 @@ function Design() {
 
       <GoogleReviews />
       <VideoComponent
-        imageSrc="/images/white-house.jpg"
+        imgSrc="/images/river-rock-poster.webp"
         title="Transform your landscape with"
         highlight="river rock installation"
         paragraph="Enhance the beauty and function of your outdoor space with our expert river rock installation service. At LJ & Gonzalez, we promise meticulous attention to detail and high-quality materials, ensuring a stunning and durable result. "

@@ -39,7 +39,9 @@ export const metadata = {
     noimageindex: true,
     noarchive: true,
   },
-  canonical: "https://www.ljandgonzalez.com/functional-plants",
+      alternates: {
+    canonical: "https://www.ljandgonzalez.com/functional-plants",
+  },
 };
 
 const serviceName = "Functional plants";
@@ -168,7 +170,7 @@ function Design() {
       <GoogleReviews />
 
       <VideoComponent
-        imageSrc="/images/white-house.jpg"
+        imgSrc="/images/plants-poster.webp"
         title="Grow a stunning garden"
         highlight="with minimal effort"
         paragraph="Functional plants offer beauty and ease. Using expert selection and placement, LJ & González create low-maintenance landscapes that thrive. Enjoy lush, healthy gardens without hassle."

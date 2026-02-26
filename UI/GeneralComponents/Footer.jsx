@@ -26,7 +26,7 @@ function Footer() {
             <div className="button-container">
               <ButtonCTA
                 extraClasses={"primary-button"}
-                href={"tel:+34666666666"}
+                href={"tel:+18644171643"}
               >
                 Give us a call
               </ButtonCTA>
@@ -50,9 +50,9 @@ function Footer() {
               <li>
                 <Link href="/how-it-works">How It Works</Link>
               </li>
-              <li>
+            {/*  <li>
                 <Link href="/faq">FAQ</Link>
-              </li>
+              </li> */}
               <li>
                 <Link href="/contractors">Contractors</Link>
               </li>
@@ -91,18 +91,18 @@ function Footer() {
             </ul>
           </div>
           <div className="footer-box-col2">
-            <ButtonCTA extraClasses={"accent-button-lofi"}>
+          {/*  <ButtonCTA extraClasses={"accent-button-lofi"}>
               {" "}
               Check our Google Reviews{" "}
-            </ButtonCTA>
+            </ButtonCTA> */}
             <div>
               <p>
                 {" "}
-                +1 (999) 999-99-99 <br /> info@ljandgonzalez.com{" "}
+                +1 (864) 417-1643  <br /> info@ljandgonzalez.com{" "}
               </p>
               <p>
                 {" "}
-                1901 Thornridge Cir. Shiloh, <br /> Hawaii 81063
+                212 C and S Drive, <br /> Greer South Carolina 29651{" "}
               </p>
             </div>
           </div>
@@ -119,22 +119,13 @@ function Footer() {
             </div>
 
             <div className="footer-box-col2">
-              <p className="heading-6">
-                Just send us your contact email and we will contact you.
-              </p>
-              <form className="form-input">
-                <div className="input-wrapper">
-                  <input type="text" placeholder="Your email / phone number" />
-                  <span className="arrow">→</span>
-                </div>
-              </form>
             </div>
           </div>
 
           <div className="footer-section">
             <div className="footer-box-col1">
               <p>
-                ©LJ&Gonzalez 2025 | Web Development by{" "}
+                ©LJ&Gonzalez 2026 | Web Development by{" "}
                 <a href="https://monette.dev">Monette Dev</a>{" "}
               </p>
             </div>
