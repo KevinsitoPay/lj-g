@@ -174,7 +174,7 @@ function Design() {
       <GoogleReviews />
 
       <VideoComponent
-        imageSrc="/images/white-house.jpg"
+        imgSrc="/images/mulch-poster.webp"
         title="Enrich your soil and beautify"
         highlight="your garden"
         paragraph="Mulch application offers numerous benefits, from moisture retention to weed prevention. LJ & González apply mulch expertly to safeguard and enhance your garden landscape."
