@@ -100,6 +100,7 @@ function Home() {
           "We turn your landscaping dreams into reality. With LJ & Gonzalez Landscaping, experience seamless integration of functionality and design, ensuring your outdoor area not only meets but exceeds expectations."
         }
         title={" Revitalize your yard"}
+        imgSrc={"/images/white-house.jpg"}
         videoPoster={"/videos/poster/poster-services.webp"}
         videoSrc={"/videos/videodemoService.webm"}
         highlight={"with our solutions"}
@@ -134,7 +135,7 @@ function Home() {
             </h6>
           </div>
           <div className="reviews-grid-item-image-1">
-            <img src="/images/collage.webp" />
+            <img src="/images/wall-real.jpeg" />
           </div>
           <div className="reviews-grid-item-black">
             <Quotes size="lg" />
@@ -166,7 +167,7 @@ function Home() {
             <p> William Thompson </p>
           </div>
           <div className="reviews-grid-item-image-2">
-            <img src="/images/service-ai-3.webp" />
+            <img src="/images/rock-installation-real.jpeg" />
           </div>
           <div className="reviews-grid-item-yellow">
             <Quotes size="lg" />

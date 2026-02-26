@@ -107,8 +107,9 @@
       border-radius: 16px;
       padding: 16px;
       color: var(--bkg-1);
-      background: url("/images/house-bkg-black.webp") no-repeat center center /
-        cover;
+       background:
+    linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.45)),
+    url("/images/landscaping-real.jpeg") no-repeat center center / cover;
       max-width: 670px;
 
       svg {

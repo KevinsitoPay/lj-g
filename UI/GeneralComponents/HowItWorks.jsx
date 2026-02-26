@@ -31,7 +31,7 @@ export default function HowItWorks() {
           </ButtonCTA>
         </div>
 
-        <div className="how-reviews reveal">
+       {/* <div className="how-reviews reveal">
           <p className="review mb-4">
             "I'm thoroughly impressed with LJ & Gonzalez. Their attention to detail and commitment to understanding my needs made the process smooth and enjoyable. The result exceeded my expectations!"
           </p>
@@ -39,7 +39,7 @@ export default function HowItWorks() {
             <span className="author">Andres Michel</span>
             <span className="rating">★★★★★</span>
           </p>
-        </div>
+        </div> */}
       </div>
 
       {/* Right column sections */}

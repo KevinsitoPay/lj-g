@@ -17,16 +17,16 @@ const ServiceGridHome = () => {
   const [isTextExpanded, setTextExpanded] = useState(Array(7).fill(false)); 
 
   const topModules = [
-    { icon: <LandLeveling size="sm" />, title: "Land Leveling", text: "Prevents water pooling, protects foundations, and ensures a stable base for landscaping or construction.", backgroundImage: "url('/images/service-ai-1.webp')", link: '/land-leveling' },
-    { icon: <Grass size="sm" />, title: "Sod Installation", text: "Gives you an instant, healthy lawn that enhances your outdoor space and increases property value.", backgroundImage: "url('/images/service-ai-2.webp')", link: '/sod-installation' },
-    { icon: <FunctionalPlants size="sm" />, title: "Functional plants", text: "Creates beautiful, low-maintenance gardens that thrive with minimal care and attract beneficial wildlife.", backgroundImage: "url('/images/service-ai-3.webp')", link: '/functional-plants' },
-    { icon: <MulchApplication size="sm" />, title: "Mulch application", text: "Helps soil retain moisture, blocks weed growth, and enhances the soil's nutrient levels.", backgroundImage: "url('/images/service-ai-4.webp')", link: '/mulch-application'   },
+    { icon: <LandLeveling size="sm" />, title: "Grating", text: "Prevents water pooling, protects foundations, and ensures a stable base for landscaping or construction.", backgroundImage: "url('/images/white-house.jpg')", link: '/land-leveling' },
+    { icon: <Grass size="sm" />, title: "Sod Installation", text: "Gives you an instant, healthy lawn that enhances your outdoor space and increases property value.", backgroundImage: "url('/images/sod-installation-poster.webp')", link: '/sod-installation' },
+    { icon: <FunctionalPlants size="sm" />, title: "Functional plants", text: "Creates beautiful, low-maintenance gardens that thrive with minimal care and attract beneficial wildlife.", backgroundImage: "url('/images/plants-poster.webp')", link: '/functional-plants' },
+    { icon: <MulchApplication size="sm" />, title: "Mulch application", text: "Helps soil retain moisture, blocks weed growth, and enhances the soil's nutrient levels.", backgroundImage: "url('/images/mulch-poster.webp')", link: '/mulch-application'   },
   ];
 
   const bottomModules = [
-    { icon: <RiverRock size="sm" />, title: "River Rock Installation", text: "Controls erosion, improves drainage, and adds a decorative element to landscapes.", backgroundImage: "url('/images/service-ai-5.webp')", link: '/river-rock-installation' },
-    { icon: <WallRetaining size="sm" />, title: "Wall retaining installation", text: "Stabilizes sloped areas, prevents soil loss, and provides structural support to your landscape.", backgroundImage: "url('/images/service-ai-6.webp')", link: '/wall-retaining-installation' },
-    { icon: <IrrigationSystem size="sm" />, title: "Irrigation System Installation", text: "Delivers water efficiently, saves time and ensures lush, healthy plant growth with optimal resource use.", backgroundImage: "url('/images/service-ai-7.webp')", link: '/irrigation-system-installation' },
+    { icon: <RiverRock size="sm" />, title: "River Rock Installation", text: "Controls erosion, improves drainage, and adds a decorative element to landscapes.", backgroundImage: "url('/images/river-rock-poster.webp')", link: '/river-rock-installation' },
+    { icon: <WallRetaining size="sm" />, title: "Wall retaining installation", text: "Stabilizes sloped areas, prevents soil loss, and provides structural support to your landscape.", backgroundImage: "url('/images/wall-poster.webp')", link: '/wall-retaining-installation' },
+    { icon: <IrrigationSystem size="sm" />, title: "Irrigation System Installation", text: "Delivers water efficiently, saves time and ensures lush, healthy plant growth with optimal resource use.", backgroundImage: "url('/images/irrigation-system-poster.webp')", link: '/irrigation-system-installation' },
   ];
 
   const handleExpandTop = (index) => {
